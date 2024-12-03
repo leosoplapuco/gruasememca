@@ -23,9 +23,10 @@ body::-webkit-scrollbar{
     --body: #F5F5F5;
     
     --header: #FFFFFF;
+    --footer: #111111;
 
     --red: #DA131F;
-    --check: rgb(108, 247, 108);
+    --check: rgb(108 247 108);
 
     --black-0: #000000;
     --black-1: #111111;
@@ -124,7 +125,7 @@ body{
 
 .home-hero-container{
     width: 100%;
-    min-height: 100vh;
+    height: 100vh;
     max-height: 1000px;
     padding: 40px 20px;
     display: flex;
@@ -179,7 +180,8 @@ body{
 }
 
 .home-hero-content img{
-    width: 450px;
+    width: 100%;
+    max-width: 450px;
     height: auto;
     object-fit: contain;
 }
@@ -235,8 +237,8 @@ body{
 /**/
 
 .text-title{
-    font-size: 24px;
-    color: var(--yexy);
+    font-size: 20px;
+    color: var(--black-0);
 }
 
 .text{
@@ -620,61 +622,50 @@ header.active{
 
 /**/
 
-.home-clients-container{
-    width: 100%;
-    overflow-x: scroll;
-}
-
-.home-clients-container::-webkit-scrollbar{
+.home-clients-block-container{
     display: none;
 }
 
+.home-clients-block-container section{
+    border: 2px solid orange;
+    padding: 20px;
+}
+
+.home-clients-container{
+    width: 100%;
+}
+
 .home-clients{
-    width: 200%;
     display: flex;
     align-items: center;
     justify-content: space-between;
     gap: 20px;
-    animation: homeClients 15s linear alternate infinite;
+    flex-wrap: wrap;
 }
 
-@keyframes homeClients{
-    100%{
-        margin-left: -100%;
-    }
+.home-clients li{
+    width: calc((100% / 5) - (80px / 4));
+    display: flex;
 }
 
 .home-clients li img{
+    margin: auto;
     width: 150px;
-    height: 80px;
+    height: 70px;
     object-fit: contain;
 }
 
 /**/
 
 .home-services-container{
-    width: 100%;
-}
-
-.home-services{
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: 1fr 2fr;
     gap: 20px;
 }
 
-.home-services li{
-    display: flex;
-    width: 100%;
-    /* height: 100px; */
-    overflow: hidden;
-    border-radius: 10px;
-    background: #FFffff;
-    border: 1px solid #d9d9d9;
-}
-
-.home-services li a img{
-    width: 100%;
-    height: 200px;
+.home-services-container div{
+    padding: 30px;
+    background: orange;
 }
 
 /**/
@@ -729,6 +720,18 @@ footer{
 
     /**/
 
+    .button-link{
+        min-height: 48px;
+    }
+
+    /**/
+
+    .text-title{
+        font-size: 18px;
+    }
+
+    /**/
+
     .home-hero-container{
         padding: 10px;
         height: auto;
@@ -755,6 +758,10 @@ footer{
 
     .home-hero-content ul.d-flex.gap-10 li{
         width: 100%;
+    }
+
+    .home-hero-links{
+        flex-direction: column;
     }
 
     .home-hero-img{
@@ -803,6 +810,7 @@ footer{
         padding: 20px 0;
         overflow-y: auto;
         z-index: 99;
+        display: none;
     }
 
     .menu{
@@ -935,5 +943,11 @@ footer{
     .home-clients li img{
         width: 100px;
         height: 50px;
+    }
+
+    /**/
+
+    .blog-targets{
+        flex-direction: column;
     }
 }

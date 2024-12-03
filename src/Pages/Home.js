@@ -2,11 +2,10 @@ import React from "react";
 import { Helmet } from "react-helmet";
 import { useTranslation } from 'react-i18next';
 
-import Header from '../Components/Header';
-// import Hero from '../Components/Hero';
 import HeroVideo from '../Components/heroVideo';
+import Header from '../Components/Header';
 import BlogTargets from '../Components/BlogTargets';
-// import ChatBot from '../Components/ChatBot'
+import Footer from '../Components/Footer';
 
 const Home = () => {
     const { t } = useTranslation('home');
@@ -29,9 +28,8 @@ const Home = () => {
                 <meta name="twitter:image" content={t('head.0.twitterImage')} />
             </Helmet>
 
-            <Header/>
-
             <HeroVideo/>
+            <Header/>
 
             <main>
 
@@ -55,7 +53,7 @@ const Home = () => {
                                         </li>
                                     </ul>
 
-                                    <ul className="d-flex gap-10">
+                                    <ul className="d-flex gap-10 home-hero-links">
                                         <li>
                                             <a href={t('hero.0.links.0.href')} className="button-link hero-link-2">
                                                 <p className="">{t('hero.0.links.0.text')}</p>
@@ -105,7 +103,7 @@ const Home = () => {
                     </section>
                 </div>
 
-                <div className="block-container">
+                <div className="block-container home-clients-block-container">
                     <section className="block-content">
                         <div className="block-title-container">
                             <h3>{t('clients.0.titleH3')}</h3>
@@ -130,24 +128,30 @@ const Home = () => {
                         </div>
 
                         <div className="home-services-container">
-                            <ul className="home-services">
-                                {t("services.0.list", { returnObjects: true }).map((item) => (
-                                    <li key={item.id}>
-                                        <a href={item.href} className="hover-target">
-                                            <img src={item.imgSrc}></img>
-                                            <div className="d-flex">
-                                                <p>{item.text}</p>
-                                            </div>
-                                        </a>
-                                    </li>
-                                ))}
-                            </ul>
+                            <div>1</div>
+                            <div>2</div>
                         </div>
                     </section>
                 </div>
 
                 <BlogTargets/>
+
+                <div className="block-container">
+                    <section className="block-content">
+                        <div className="block-title-container">
+                            <h3>Contáctanos y cotiza nuestros servicios</h3>
+                        </div>
+
+                        <div className="d-flex-center">
+                            <a className="button-link button-link-1">
+                                <p className="button-link-text">Llamar ahora</p>
+                            </a>
+                        </div>
+                    </section>
+                </div>
             </main>
+
+            <Footer/>
 
         </>
     );

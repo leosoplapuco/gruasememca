@@ -5,7 +5,6 @@ import { useTranslation } from 'react-i18next';
 import CustomCursor from "./Components/customCursor/customCursor";
 
 import Home from './Pages/Home';
-
 import Services from './Pages/Services';
 
 import i18next from 'i18next';
