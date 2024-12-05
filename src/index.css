@@ -500,8 +500,17 @@ header.active{
     padding: 20px;
     display: flex;
     background: var(--header);
+    transition: var(--t-300);
     border-radius: 8px;
-    display: none;
+    opacity: 0;
+    pointer-events: none;
+    user-select: none;
+}
+
+.sub-header-container.active{
+    opacity: 1;
+    pointer-events: unset;
+    user-select: unset;
 }
 
 .sub-header{
@@ -802,7 +811,7 @@ footer{
     .menu-container{
         background: var(--header);
         position: fixed;
-        right: 0;
+        right: -100%;
         top: 0;
         width: 100%;
         max-width: 360px;
@@ -810,7 +819,10 @@ footer{
         padding: 20px 0;
         overflow-y: auto;
         z-index: 99;
-        display: none;
+    }
+
+    .menu-container.active{
+        right: 0;
     }
 
     .menu{
@@ -891,10 +903,22 @@ footer{
         translate: unset;
         width: 100%;
         max-width: 1440px;
-        padding: 20px;
+        padding: 0 20px;
+        height: 0;
+        overflow: hidden;
         display: flex;
         background: var(--header);
+        interpolate-size: allow-keywords;
         border-radius: 8px;
+
+        opacity: 1;
+        pointer-events: unset;
+        user-select: unset;
+    }
+
+    .sub-header-container.active{
+        height: auto;
+        padding: 20px;
     }
 
     .sub-header-content{

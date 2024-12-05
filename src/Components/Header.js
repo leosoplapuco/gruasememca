@@ -5,6 +5,8 @@ function Header(){
     const { t } = useTranslation('header');
 
     const [isActive, setIsActive] = useState(false);
+    const [activeMenu, setActiveMenu] = useState(null);
+    const [menuOpen, setMenuOpen] = useState(false);
 
     useEffect(() => {
         const handleScroll = () => {
@@ -21,6 +23,14 @@ function Header(){
         };
     }, []);
 
+    const handleMenuClick = (menu) => {
+        setActiveMenu(menu === activeMenu ? null : menu);
+    };
+
+    const toggleMenu = () => {
+        setMenuOpen(!menuOpen);
+    };
+
     return (
         <header className={isActive ? 'active' : ''}>
             <div className='header'>
@@ -28,16 +38,16 @@ function Header(){
                     <p>Grúas <span>Ememca</span></p>
                 </a>
 
-                <nav className='menu-container'>
+                <nav className={`menu-container ${menuOpen ? 'active' : ''}`}>
                     <ul className="menu">
                         <li>
-                            <button type='button' className='menu-link menu-link-1 hover-target'>
+                            <button type="button" className={`menu-link menu-link-1 hover-target ${activeMenu === 'menu-1' ? 'active' : ''}`} onClick={() => handleMenuClick('menu-1')}>
                                 <span className="material-symbols-outlined menu-link-icon">{t('menuLinks.0.icon')}</span>
-                                <h2 className=''>{t('menuLinks.0.text')}</h2>
+                                <h2>{t('menuLinks.0.text')}</h2>
                                 <span className="material-symbols-outlined">keyboard_arrow_down</span>
                             </button>
 
-                            <div className='sub-header-container sub-header-container-1'>
+                            <div className={`sub-header-container sub-header-container-1 ${activeMenu === 'menu-1' ? 'active' : ''}`}>
                                 <div className='sub-header d-flex-column gap-10'>
                                     <p className='sub-header-title'>{t('menuLinks.0.subHeader.0.title')}</p>
 
@@ -108,7 +118,7 @@ function Header(){
                     </li>
                 </ul>
 
-                <button className='menu-icon'>
+                <button className={`menu-icon ${menuOpen ? 'active' : ''}`} onClick={toggleMenu}>
                     <span className="material-symbols-outlined hamburguer">menu</span>
                     <span className="material-symbols-outlined close">close</span>
                 </button>
