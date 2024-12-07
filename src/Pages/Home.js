@@ -5,7 +5,7 @@ import { useTranslation } from 'react-i18next';
 import HeroVideo from '../Components/heroVideo';
 import Header from '../Components/Header';
 import BlogTargets from '../Components/BlogTargets';
-import Footer from '../Components/Footer';
+// import Footer from '../Components/Footer';
 
 const Home = () => {
     const { t } = useTranslation('home');
@@ -151,7 +151,7 @@ const Home = () => {
                 </div>
             </main>
 
-            <Footer/>
+            {/* <Footer/> */}
 
         </>
     );
