@@ -56,9 +56,9 @@ function Header() {
                     </a>
 
                     <nav className={`menu-container ${menuOpen ? 'active' : ''}`}>
-                        {/* <button className='menu-close' type='button'>
-                            <span class="material-symbols-outlined">close</span>
-                        </button> */}
+                        <button className='menu-close-icon' type='button'>
+                            <span className="material-symbols-outlined">close</span>
+                        </button>
 
                         <ul className="menu">
                             <li>
