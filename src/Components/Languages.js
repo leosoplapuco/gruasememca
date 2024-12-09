@@ -31,21 +31,26 @@ function LanguageSwitcher() {
         });
     };
 
-    return (
-        <ul className='language-buttons margin-left'>
-            {i18next.language === 'es' ? (
-                <li>
-                    <button type='button' className='language-button en' onClick={() => changeLanguage('en')}>
-                        <span className="material-symbols-outlined text">language_us</span>
-                    </button>
-                </li>
-            ) : (
-                <li>
-                    <button type='button' className='language-button es' onClick={() => changeLanguage('es')}>
-                        <span className="material-symbols-outlined text">language_spanish</span>
-                    </button>
-                </li>
-            )}
+    return(
+        <ul className='language-buttons'>
+            <li className='d-flex-column gap-10'>
+                <p className='text'>Idioma:</p>
+
+                <ul className='d-flex gap-10'>
+                    <li>
+                        <button type='button' className='language-button en' onClick={() => changeLanguage('es')}>
+                            <img src="/assets/images/icons/espanol-icono.png"></img>
+                            <p>Español</p>
+                        </button>
+                    </li>
+                    <li>
+                        <button type='button' className='language-button es' onClick={() => changeLanguage('en')}>
+                            <img src="/assets/images/icons/ingles-icono.png"></img>
+                            <p>English</p>
+                        </button>
+                    </li>
+                </ul>
+            </li>
         </ul>
     );
 }

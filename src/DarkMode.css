@@ -17,12 +17,6 @@
 
 /**/
 
-.dark-mode .menu-link.active,
-.dark-mode .menu-link:hover,
-.dark-mode .menu-link.active{
-    background: rgba(235 235 235 / 0.075);
-}
-
 .dark-mode .menu-link h2,
 .dark-mode .menu-link span{
     color: var(--text);
@@ -53,6 +47,29 @@
 
 /**/
 
+.dark-mode .settings-container{
+    border-top: 2px solid var(--white);
+}
+
+.dark-mode .settings-button{
+    background: var(--white);
+}
+
+.dark-mode .settings-button span{
+    color: var(--red);
+}
+
+/**/
+
 .dark-mode footer{
     background: var(--black-0);
+}
+
+/**/
+
+@media screen and (max-width: 600px){
+    .dark-mode .menu-link:hover,
+    .dark-mode .menu-link.active{
+        background: rgba(235 235 235 / 0.075);
+    }
 }
