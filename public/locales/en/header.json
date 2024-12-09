@@ -31,7 +31,7 @@
                             "id": 1,
                             "imgSrc": "/assets/images/icons/grua.png",
                             "imgAlt": "gruas ememca",
-                            "src": "/en/services/telescopic-crane-rental",
+                            "href": "/en/services/telescopic-crane-rental",
                             "text": "Telescopic crane rental",
                             "description": "Contamos con nuestra propia flota de grúas telescópicas con capacidades de carga de hasta 220 toneladas."
                         },
@@ -39,7 +39,7 @@
                             "id": 2,
                             "imgSrc": "/assets/images/icons/izaje.png",
                             "imgAlt": "gruas ememca",
-                            "src": "/en/services/lifting",
+                            "href": "/en/services/lifting",
                             "text": "Lifting",
                             "description": "Realizamos servicios generales de izaje, para contenedores, estructuras metálicas, postes, maquinaria, y más."
                         },
@@ -47,7 +47,7 @@
                             "id": 3,
                             "imgSrc": "/assets/images/icons/grua.png",
                             "imgAlt": "gruas ememca",
-                            "src": "/en/services/assembly-and-disassembly",
+                            "href": "/en/services/assembly-and-disassembly",
                             "text": "Assembly and disassembly",
                             "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text"
                         },
@@ -55,7 +55,7 @@
                             "id": 4,
                             "imgSrc": "/assets/images/icons/eliminacion-de-tierra.png",
                             "imgAlt": "gruas ememca",
-                            "src": "/en/services/soil-removal",
+                            "href": "/en/services/soil-removal",
                             "text": "Soil removal",
                             "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text"
                         }
@@ -77,22 +77,45 @@
             "subHeader":[
                 {
                     "id": 1,
-                    "icon": "groups",
-                    "text": "Our team",
-                    "href": "/es/about-us/our-team"
+                    "title": "About us",
+                    "text": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text",
+                    "linkHref": "/en/about-us/",
+                    "link": "Learn more"
                 },
                 {
-                    "id": 2,
-                    "icon": "new_releases",
-                    "text": "Certificaciones",
-                    "href": "/en/about-us/certifications"
+                    "links":[
+                        {
+                            "id": 1,
+                            "imgSrc": "/assets/images/icons/grua.png",
+                            "imgAlt": "gruas ememca",
+                            "href": "/en/about-us/",
+                            "text": "About us",
+                            "description": "Somos una empresa con más de 15 años de experiencia especialistas en el alquiler de grúas telescópicas."
+                        },
+                        {
+                            "id": 2,
+                            "imgSrc": "/assets/images/icons/grua.png",
+                            "imgAlt": "gruas ememca",
+                            "href": "/en/about-us/our-team",
+                            "text": "Our team",
+                            "description": "Operadores altamente calificados y capacitados con más de 5000 horas en maniobras."
+                        },
+                        {
+                            "id": 3,
+                            "imgSrc": "/assets/images/icons/grua.png",
+                            "imgAlt": "gruas ememca",
+                            "href": "/en/about-us/certifications",
+                            "text": "Our certificactions",
+                            "description": "Nuestros operadores y pasar por constantes capacitaciones."
+                        }
+                    ]
                 }
             ]
         },
         {
             "id": 4,
             "icon": "mail",
-            "text": "Our clients",
+            "text": "Clients",
             "href": "/en/about-us/our-clients"
         },
         {

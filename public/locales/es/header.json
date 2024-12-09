@@ -76,29 +76,46 @@
             "href": "/es/nosotros/",
             "subHeader":[
                 {
-                    "id": 0,
-                    "icon": "diversity_3",
-                    "text": "Sobre nosotros",
-                    "href": "/es/nosotros/"
-                },
-                {
                     "id": 1,
-                    "icon": "groups",
-                    "text": "Nuestro equipo",
-                    "href": "/es/nosotros/nuestro-equipo"
+                    "title": "Sobre nosotros",
+                    "text": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text",
+                    "linkHref": "/es/nosotros/",
+                    "link": "Saber más"
                 },
                 {
-                    "id": 2,
-                    "icon": "new_releases",
-                    "text": "Certificaciones",
-                    "href": "/es/nosotros/certificaciones"
+                    "links":[
+                        {
+                            "id": 1,
+                            "imgSrc": "/assets/images/icons/grua.png",
+                            "imgAlt": "gruas ememca",
+                            "href": "/es/nosotros/",
+                            "text": "Sobre nosotros",
+                            "description": "Somos una empresa con más de 15 años de experiencia especialistas en el alquiler de grúas telescópicas."
+                        },
+                        {
+                            "id": 2,
+                            "imgSrc": "/assets/images/icons/grua.png",
+                            "imgAlt": "gruas ememca",
+                            "href": "/es/nosotros/nuestro-equipo",
+                            "text": "Nuestro equipo",
+                            "description": "Operadores altamente calificados y capacitados con más de 5000 horas en maniobras."
+                        },
+                        {
+                            "id": 3,
+                            "imgSrc": "/assets/images/icons/grua.png",
+                            "imgAlt": "gruas ememca",
+                            "href": "/es/nosotros/certificaciones",
+                            "text": "Nuestras certificaciones",
+                            "description": "Nuestros operadores y pasar por constantes capacitaciones."
+                        }
+                    ]
                 }
             ]
         },
         {
             "id": 4,
             "icon": "mail",
-            "text": "Nuestros clientes",
+            "text": "Clientes",
             "href": "/es/nosotros/clientes"
         },
         {
