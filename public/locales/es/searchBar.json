@@ -1,0 +1,35 @@
+{
+    "options": [
+        {
+            "id": 1,
+            "text": "alquiler de grúas telescópicas",
+            "href": "/es/servicios/alquiler-de-gruas-telescopicas"
+        },
+        {
+            "id": 2,
+            "text": "alquiler de camiones grúa",
+            "href": "/es/servicios/alquiler-de-camiones-grua"
+        },
+        {
+            "id": 3,
+            "text": "servicios de izaje",
+            "href": "/es/servicios/servicios-de-izaje"
+        },
+        {
+            "id": 4,
+            "text": "eliminación de tierra",
+            "href": "/es/servicios/eliminacion-de-tierra"
+        },
+        {
+            "id": 5 ,
+            "text": "eliminación de tierra",
+            "href": "/es/servicios/eliminacion-de-tierra"
+        },
+        {
+            "id": 6,
+            "text": "eliminación de tierra",
+            "href": "/es/servicios/eliminacion-de-tierra"
+        }
+    ],
+    "placeholder": "Buscar en gruasememca.com"
+}

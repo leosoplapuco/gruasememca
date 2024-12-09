@@ -1,0 +1,111 @@
+{
+    "logo":[
+        {
+            "href": "/es/"
+        }
+    ],
+    "headerTopContactLinks":[
+        {
+            "id": 1,
+            "icon": "phone_in_talk",
+            "text": "LLamar ahora",
+            "href": "tel: +51989361291"
+        }
+    ],
+    "menuLinks":[
+        {
+            "id": 1,
+            "icon": "handshake",
+            "text": "Servicios",
+            "subHeader":[
+                {
+                    "id": 1,
+                    "title": "Nuestros servicios",
+                    "text": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text",
+                    "linkHref": "/es/servicios/",
+                    "link": "Saber más"
+                },
+                {
+                    "links":[
+                        {
+                            "id": 1,
+                            "imgSrc": "/assets/images/icons/grua.png",
+                            "imgAlt": "gruas ememca",
+                            "href": "/es/servicios/alquiler-de-gruas-telescopicas",
+                            "text": "Alquiler de grúas telescópicas",
+                            "description": "Contamos con nuestra flota de grúas telescópicas con capacidades de carga de hasta 220 toneladas."
+                        },
+                        {
+                            "id": 2,
+                            "imgSrc": "/assets/images/icons/izaje.png",
+                            "imgAlt": "gruas ememca",
+                            "href": "/es/servicios/izaje",
+                            "text": "Izaje",
+                            "description": "Servicios generales de izaje, para contenedores, estructuras metálicas, postes, maquinaria, y más."
+                        },
+                        {
+                            "id": 3,
+                            "imgSrc": "/assets/images/icons/grua.png",
+                            "imgAlt": "gruas ememca",
+                            "href": "/es/servicios/montaje-y-desmontaje",
+                            "text": "Montaje y desmontaje",
+                            "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+                        },
+                        {
+                            "id": 4,
+                            "imgSrc": "/assets/images/icons/eliminacion-de-tierra.png",
+                            "imgAlt": "gruas ememca",
+                            "href": "/es/servicios/eliminacion-de-tierra",
+                            "text": "Eliminación de tierra",
+                            "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": 2,
+            "icon": "auto_towing",
+            "text": "Maquinaria",
+            "href": "/es/maquinaria/"
+        },
+        {
+            "id": 3,
+            "icon": "diversity_3",
+            "text": "Nosotros",
+            "href": "/es/nosotros/",
+            "subHeader":[
+                {
+                    "id": 0,
+                    "icon": "diversity_3",
+                    "text": "Sobre nosotros",
+                    "href": "/es/nosotros/"
+                },
+                {
+                    "id": 1,
+                    "icon": "groups",
+                    "text": "Nuestro equipo",
+                    "href": "/es/nosotros/nuestro-equipo"
+                },
+                {
+                    "id": 2,
+                    "icon": "new_releases",
+                    "text": "Certificaciones",
+                    "href": "/es/nosotros/certificaciones"
+                }
+            ]
+        },
+        {
+            "id": 4,
+            "icon": "mail",
+            "text": "Nuestros clientes",
+            "href": "/es/nosotros/clientes"
+        },
+        {
+            "id": 5,
+            "icon": "newspaper",
+            "text": "Blog",
+            "href": ""
+        }
+    ]
+}

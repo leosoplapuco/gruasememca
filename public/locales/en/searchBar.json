@@ -1,0 +1,35 @@
+{
+    "options": [
+        {
+            "id": 1,
+            "text": "telescopic crane rental",
+            "href": "/en/services/telescopic-crane-renta"
+        },
+        {
+            "id": 2,
+            "text": "truck crane rental",
+            "href": "/en/services/truck-crane-rental"
+        },
+        {
+            "id": 3,
+            "text": "lifting services",
+            "href": "/en/services/lifting-services"
+        },
+        {
+            "id": 4,
+            "text": "soil removal",
+            "href": "/en/services/soil-removal"
+        },
+        {
+            "id": 5 ,
+            "text": "eliminación de tierra",
+            "href": "/es/servicios/eliminacion-de-tierra"
+        },
+        {
+            "id": 6,
+            "text": "eliminación de tierra",
+            "href": "/es/servicios/eliminacion-de-tierra"
+        }
+    ],
+    "placeholder": "Search on gruasememca.com"
+}

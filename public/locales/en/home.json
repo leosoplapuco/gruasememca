@@ -1,0 +1,124 @@
+{
+    "head":[
+        {
+            "title": "Telescopic crane rental | Grúas Ememca",
+            "cannonical": "https://www.gruasememca.vercel.app/es/",
+            "description": "Descripción de la página principal",
+            
+            "ogTitle": "Telescopic crane rental | Grúas Ememca",
+            "ogDescription": "Descripción para card en redes sociales",
+            "ogImage": "url-imagen",
+            "ogUrl": "https://www.gruasememca.vercel.app/es/",
+
+            "twitterCard": "url-imagen",
+            "twitterTitle": "Telescopic crane rental | Grúas Ememca",
+            "twitterDescription": "Descripción para card de Twitter",
+            "twitterImage": "url-icono"
+        }
+    ],
+    "hero":[
+        {
+            "id": 1,
+            "name":[
+                {
+                    "nameOne": "Grúas",
+                    "nameTwo": "Ememca"
+                }
+            ],
+            "h1": "Telescopic",
+            "h1Span": "crane rental",
+            "text": "We are specialists in the rental of telescopic cranes with more than 15 years of experience offering guarantee and security. We carry out lifting services for containers, heavy machinery, structures, and more.",
+            "links":[
+                {
+                    "id": 1,
+                    "href": "/en/about-us/",
+                    "text": "More about us"
+                },
+                {
+                    "id": 2,
+                    "href": "tel: +51998877665",
+                    "text": "Call us now"
+                }
+            ]
+        }
+    ],
+    "us":[
+        {
+            "id": 1,
+            "titleH3": "About us",
+            "imgAlt": "Image of the Grúas Ememca team",
+            "text": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).",
+            "link":[
+                {
+                    "id": 1,
+                    "href": "/en/about-us/",
+                    "text": "More about us"
+                }
+            ]
+        }
+    ],
+    "clients":[
+        {
+            "id": 1,
+            "titleH3": "Clients",
+            "imgs":[
+                {
+                    "id": 1,
+                    "imgSrc": "https://www.gruasememca.com/media/img/companies/alpa.webp",
+                    "imgAlt": "Almacenera Pácifico"
+                },
+                {
+                    "id": 2,
+                    "imgSrc": "https://www.gruasememca.com/media/img/companies/alpa.webp",
+                    "imgAlt": "Almacenera Pácifico"
+                },
+                {
+                    "id": 3,
+                    "imgSrc": "https://www.gruasememca.com/media/img/companies/alpa.webp",
+                    "imgAlt": "Almacenera Pácifico"
+                },
+                {
+                    "id": 4,
+                    "imgSrc": "https://www.gruasememca.com/media/img/companies/alpa.webp",
+                    "imgAlt": "Almacenera Pácifico"
+                },
+                {
+                    "id": 5,
+                    "imgSrc": "https://www.gruasememca.com/media/img/companies/alpa.webp",
+                    "imgAlt": "Almacenera Pácifico"
+                },
+                {
+                    "id": 6,
+                    "imgSrc": "https://www.gruasememca.com/media/img/companies/alpa.webp",
+                    "imgAlt": "Almacenera Pácifico"
+                },
+                {
+                    "id": 7,
+                    "imgSrc": "https://www.gruasememca.com/media/img/companies/alpa.webp",
+                    "imgAlt": "Almacenera Pácifico"
+                },
+                {
+                    "id": 8,
+                    "imgSrc": "https://www.gruasememca.com/media/img/companies/alpa.webp",
+                    "imgAlt": "Almacenera Pácifico"
+                },
+                {
+                    "id": 9,
+                    "imgSrc": "https://www.gruasememca.com/media/img/companies/alpa.webp",
+                    "imgAlt": "Almacenera Pácifico"
+                },
+                {
+                    "id": 10,
+                    "imgSrc": "https://www.gruasememca.com/media/img/companies/alpa.webp",
+                    "imgAlt": "Almacenera Pácifico"
+                }
+            ]
+        }
+    ],
+    "services":[
+        {
+            "id": 1,
+            "titleH3": "Services"
+        }
+    ]
+}

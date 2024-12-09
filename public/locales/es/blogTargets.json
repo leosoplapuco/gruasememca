@@ -1,0 +1,44 @@
+{
+    "title": "Últimas novedades",
+    "list":[
+        {
+            "id": 1,
+            "href": "https://blog.gruasememca.com/",
+            "imgSrc": "https://cdn.pixabay.com/photo/2023/08/12/12/23/ai-generated-8185502_960_720.png",
+            "imgAlt": "",
+            "content":[
+                {
+                    "id": 1,
+                    "title": "Noticia del blog N°1",
+                    "text": "Various versions have evolved over the years, sometimes by accident"
+                }
+            ]
+        },
+        {
+            "id": 2,
+            "href": "https://blog.gruasememca.com/",
+            "imgSrc": "https://cdn.pixabay.com/photo/2023/08/12/12/23/ai-generated-8185502_960_720.png",
+            "imgAlt": "",
+            "content":[
+                {
+                    "id": 1,
+                    "title": "Noticia del blog N°2",
+                    "text": "Various versions have evolved over the years, sometimes by accident"
+                }
+            ]
+        },
+        {
+            "id": 3,
+            "href": "https://blog.gruasememca.com/",
+            "imgSrc": "https://cdn.pixabay.com/photo/2023/08/12/12/23/ai-generated-8185502_960_720.png",
+            "imgAlt": "",
+            "content":[
+                {
+                    "id": 1,
+                    "title": "Noticia del blog N°3",
+                    "text": "Various versions have evolved over the years, sometimes by accident"
+                }
+            ]
+        }
+    ]
+}

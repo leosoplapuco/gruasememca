@@ -1,0 +1,158 @@
+{
+    "head":[
+        {
+            "title": "Alquiler de grúas telescópicas | Grúas Ememca",
+            "cannonical": "https://www.gruasememca.vercel.app/es/",
+            "description": "Descripción de la página principal",
+            
+            "ogTitle": "Alquiler de grúas telescópicas | Grúas Ememca",
+            "ogDescription": "Descripción para card en redes sociales",
+            "ogImage": "url-imagen",
+            "ogUrl": "https://www.gruasememca.vercel.app/es/",
+
+            "twitterCard": "url-imagen",
+            "twitterTitle": "Alquiler de grúas telescópicas | Grúas Ememca",
+            "twitterDescription": "Descripción para card de Twitter",
+            "twitterImage": "url-icono"
+        }
+    ],
+    "hero":[
+        {
+            "id": 1,
+            "name":[
+                {
+                    "nameOne": "Grúas",
+                    "nameTwo": "Ememca"
+                }
+            ],
+            "h1": "Alquiler de",
+            "h1Span": "grúas telescópicas",
+            "text": "Somos especialistas en el alquiler de grúas telescópicas con más de 15 años de experiencia ofreciendo garantía y seguridad. Realizamos servicios de izaje para contenedores, maquinaria pesada, estructuras, y más.",
+            "links":[
+                {
+                    "id": 1,
+                    "href": "/es/nosotros/",
+                    "text": "Más de nosotros"
+                },
+                {
+                    "id": 2,
+                    "href": "tel: +51998877665",
+                    "text": "Llamar ahora"
+                }
+            ]
+        }
+    ],
+    "us":[
+        {
+            "id": 1,
+            "titleH3": "Nosotros",
+            "imgAlt": "Imagen del equipo de Grúas Ememca",
+            "text": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).",
+            "link":[
+                {
+                    "id": 1,
+                    "href": "/es/nosotros/",
+                    "text": "Más de nosotros"
+                }
+            ]
+        }
+    ],
+    "clients":[
+        {
+            "id": 1,
+            "titleH3": "Clientes",
+            "imgs":[
+                {
+                    "id": 1,
+                    "imgSrc": "https://www.gruasememca.com/media/img/companies/alpa.webp",
+                    "imgAlt": "Almacenera Pácifico"
+                },
+                {
+                    "id": 2,
+                    "imgSrc": "https://www.gruasememca.com/media/img/companies/alpa.webp",
+                    "imgAlt": "Almacenera Pácifico"
+                },
+                {
+                    "id": 3,
+                    "imgSrc": "https://www.gruasememca.com/media/img/companies/alpa.webp",
+                    "imgAlt": "Almacenera Pácifico"
+                },
+                {
+                    "id": 4,
+                    "imgSrc": "https://www.gruasememca.com/media/img/companies/alpa.webp",
+                    "imgAlt": "Almacenera Pácifico"
+                },
+                {
+                    "id": 5,
+                    "imgSrc": "https://www.gruasememca.com/media/img/companies/alpa.webp",
+                    "imgAlt": "Almacenera Pácifico"
+                },
+                {
+                    "id": 6,
+                    "imgSrc": "https://www.gruasememca.com/media/img/companies/alpa.webp",
+                    "imgAlt": "Almacenera Pácifico"
+                },
+                {
+                    "id": 7,
+                    "imgSrc": "https://www.gruasememca.com/media/img/companies/alpa.webp",
+                    "imgAlt": "Almacenera Pácifico"
+                },
+                {
+                    "id": 8,
+                    "imgSrc": "https://www.gruasememca.com/media/img/companies/alpa.webp",
+                    "imgAlt": "Almacenera Pácifico"
+                },
+                {
+                    "id": 9,
+                    "imgSrc": "https://www.gruasememca.com/media/img/companies/alpa.webp",
+                    "imgAlt": "Almacenera Pácifico"
+                },
+                {
+                    "id": 10,
+                    "imgSrc": "https://www.gruasememca.com/media/img/companies/alpa.webp",
+                    "imgAlt": "Almacenera Pácifico"
+                }
+            ]
+        }
+    ],
+    "services":[
+        {
+            "id": 1,
+            "titleH3": "Servicios",
+            "list":[
+                {
+                    "id": 1,
+                    "imgSrc": "https://www.gruasememca.com/media/img/gallery-1.webp",
+                    "imgAlt": "Alquiler de gruas telescopicas | Grúas Ememca",
+                    "href": "/es/servicios/alquiler-de-gruas-telescopicas",
+                    "text": "Alquiler de grúas telescópicas",
+                    "description": "Contamos con nuestra flota de grúas telescópicas con capacidades de carga de hasta 220 toneladas."
+                },
+                {
+                    "id": 2,
+                    "imgSrc": "https://www.gruasememca.com/media/img/gallery-1.webp",
+                    "imgAlt": "Servicios de izaje | Grúas Ememca",
+                    "href": "/es/servicios/izaje",
+                    "text": "Izaje",
+                    "description": "Servicios generales de izaje, para contenedores, estructuras metálicas, postes, maquinaria, y más."
+                },
+                {
+                    "id": 3,
+                    "imgSrc": "https://www.gruasememca.com/media/img/gallery-1.webp",
+                    "imgAlt": "Montaje y desmontaje | Grúas Ememca",
+                    "href": "/es/servicios/montaje-y-desmontaje",
+                    "text": "Montaje y desmontaje",
+                    "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+                },
+                {
+                    "id": 4,
+                    "imgSrc": "https://www.gruasememca.com/media/img/gallery-1.webp",
+                    "imgAlt": "Eliminación de tierra | Grúas Ememca",
+                    "href": "/es/servicios/eliminacion-de-tierra",
+                    "text": "Eliminación de tierra",
+                    "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+                }
+            ]
+        }
+    ]
+}

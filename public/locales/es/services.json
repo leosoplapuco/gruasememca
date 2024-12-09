@@ -1,0 +1,19 @@
+{
+    "head":[
+        {
+            "title": "Servicios | Grúas Ememca",
+            "cannonical": "https://www.gruasememca.vercel.app/es/",
+            "description": "Descripción de la página principal",
+            
+            "ogTitle": "Servicios | Grúas Ememca",
+            "ogDescription": "Descripción para card en redes sociales",
+            "ogImage": "url-imagen",
+            "ogUrl": "https://www.gruasememca.vercel.app/es/",
+
+            "twitterCard": "url-imagen",
+            "twitterTitle": "Servicios | Grúas Ememca",
+            "twitterDescription": "Descripción para card de Twitter",
+            "twitterImage": "url-icono"
+        }
+    ]
+}
