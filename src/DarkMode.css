@@ -1,11 +1,11 @@
 .dark-mode{
-    --body: #333333;
+    --body: #111111;
 
     --header: #222222;
 
     --red: #F13232;
 
-    --text: #FFFFFF;
+    --text: #C7C4C4;
 }
 
 /**/
@@ -13,4 +13,46 @@
 .dark-mode .dark-button:hover,
 .dark-mode .language-button:hover{
     background: rgba(235 235 235 / 0.25);
+}
+
+/**/
+
+.dark-mode .menu-link.active,
+.dark-mode .menu-link:hover,
+.dark-mode .menu-link.active{
+    background: rgba(235 235 235 / 0.075);
+}
+
+.dark-mode .menu-link h2,
+.dark-mode .menu-link span{
+    color: var(--text);
+}
+
+.dark-mode .menu-link:hover h2,
+.dark-mode .menu-link.active h2,
+.dark-mode .menu-link:hover span,
+.dark-mode .menu-link.active span{
+    color: var(--white);
+}
+
+/**/
+
+.dark-mode .menu-icon{
+    background: rgba(235 235 235 / 0.075);
+}
+
+.dark-mode .menu-icon span{
+    color: var(--white);
+}
+
+/**/
+
+.dark-mode .block-title-container h3{
+    color: var(--white);
+}
+
+/**/
+
+.dark-mode footer{
+    background: var(--black-0);
 }

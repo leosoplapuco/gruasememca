@@ -4,7 +4,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-size: 18px;
+    font-size: 17px;
     text-decoration: none;
     list-style: none;
     font-family: 'Roobert', sans-serif;
@@ -228,7 +228,7 @@ body{
 .block-title-container h3{
     font-family: 'Anton', sans-serif;
     text-transform: uppercase;
-    font-size: 32px;
+    font-size: 36px;
     font-weight: normal;
     color: var(--black-2);
 }
@@ -441,6 +441,7 @@ header.active{
     width: auto;
     height: 100%;
     display: flex;
+    transition: var(--t-300);
 }
 
 .menu{
@@ -450,27 +451,49 @@ header.active{
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 5px;
+    gap: 15px;
 }
 
 .menu-link{
     width: auto;
-    height: 44px;
-    padding: 0 15px;
+    /* height: 44px; */
+    /* padding: 0 15px; */
     display: flex;
     align-items: center;
     justify-content: center;
     position: relative;
     transition: var(--t-100);
-    border-radius: 5px;
+    /* border-radius: 5px; */
     /* gap: 5px; */
 }
 
-.menu-link.active,
+/* .menu-link.active,
 .menu-link:hover,
 .menu-link.active{
     background: rgba(218 19 31 / 0.07);
+} */
+
+.menu-link-5{
+    position: relative;
 }
+
+/* .menu-link-5::before{
+    content: 'Nuevo';
+    position: absolute;
+    left: 100%;
+    top: -10px;
+    translate: -50% 0;
+    width: auto;
+    height: 20px;
+    padding: 0 5px;
+    border-radius: 2.5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--red);
+    font-size: 9px;
+    color: var(--white);
+} */
 
 .menu-link-icon{
     display: none;
@@ -503,6 +526,7 @@ header.active{
     background: var(--header);
     transition: var(--t-300);
     border-radius: 8px;
+
     opacity: 0;
     pointer-events: none;
     user-select: none;
@@ -512,6 +536,8 @@ header.active{
     opacity: 1;
     pointer-events: unset;
     user-select: unset;
+
+    box-shadow: 0 0 5px rgba(0 0 0 / 0.5);
 }
 
 .sub-header{
@@ -585,6 +611,32 @@ header.active{
 
 .sub-header-content-list ul li a:hover p{
     text-decoration: underline;
+}
+
+/**/
+
+.header-layer{
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    background: transparent;
+    transition: var(--t-300);
+    z-index: 99;
+
+    cursor: none;
+    pointer-events: none;
+    user-select: none;
+}
+
+.header-layer.active{
+    background: rgba(0 0 0 / 0.1);
+    backdrop-filter: blur(2.5px);
+
+    cursor: pointer;
+    pointer-events: unset;
+    user-select: unset;
 }
 
 /**/
@@ -715,6 +767,37 @@ header.active{
 
 /**/
 
+.settings-container{
+    position: fixed;
+    right: 20px;
+    top: 50%;
+    /* background: var(--red); */
+    border-radius: 10px;
+    border: 2px solid var(--red);
+    /* background: var(--black-9); */
+}
+
+.settings{
+    width: 100%;
+    position: relative;
+}
+
+.settings-button{
+    width: 44px;
+    height: 20px;
+    position: absolute;
+    right: 25px;
+    bottom: 100%;
+    background: var(--red);
+    border-radius: 5px 5px 0 0;
+}
+
+.settings-button span{
+    color: var(--white);
+}
+
+/**/
+
 footer{
     background: var(--footer);
     padding: 20px;
@@ -743,7 +826,7 @@ footer{
     /**/
 
     .home-hero-container{
-        padding: 10px;
+        padding: 20px 10px;
         height: auto;
         min-height: 100vh;
         max-height: unset;
@@ -801,8 +884,8 @@ footer{
 
     .header > ul li .call-button{
         padding: 0;
-        width: 44px;
-        height: 44px;
+        width: 48px;
+        height: 48px;
     }
 
     .header > ul li .call-button .button-link-text{
@@ -816,6 +899,11 @@ footer{
         top: 0;
         width: 100%;
         max-width: 360px;
+        display: flex;
+        flex-direction: column;
+        align-items: unset;
+        justify-content: unset;
+        gap: 10px;
         height: 100vh;
         padding: 0;
         overflow-y: auto;
@@ -824,6 +912,16 @@ footer{
 
     .menu-container.active{
         right: 0;
+    }
+
+    .menu-close{
+        margin-left: auto;
+        margin-right: 20px;
+        width: 44px !important;
+        height: 44px !important;
+        border-radius: 100%;
+        display: flex;
+        background: #F9F9F9;
     }
 
     .menu{
@@ -856,8 +954,8 @@ footer{
 
     .menu-icon{
         display: flex;
-        width: 44px;
-        height: 44px;
+        width: 48px;
+        height: 48px;
         position: relative;
         background: rgba(0 0 0 / 0.075);
         border: 1px solid transparent;
@@ -909,6 +1007,7 @@ footer{
         overflow: hidden;
         display: flex;
         background: var(--header);
+        box-shadow: none;
         interpolate-size: allow-keywords;
         border-radius: 8px;
 
@@ -918,6 +1017,7 @@ footer{
     }
 
     .sub-header-container.active{
+        box-shadow: none;
         height: auto;
         padding: 10px 20px;
     }
