@@ -81,6 +81,20 @@ const Home = () => {
                 <div className="block-container">
                     <section className="block-content">
                         <div className="block-title-container">
+                            <h3>{t('services.0.titleH3')}</h3>
+                        </div>
+
+                        <div className="home-services-container">
+                            <ul className="home-services">
+                                <li className="home-service home-service-1 active"></li>
+                            </ul>
+                        </div>
+                    </section>
+                </div>
+
+                <div className="block-container">
+                    <section className="block-content">
+                        <div className="block-title-container">
                             <h3>{t('us.0.titleH3')}</h3>
                         </div>
 
@@ -106,10 +120,6 @@ const Home = () => {
 
                 <div className="block-container home-clients-block-container">
                     <section className="block-content">
-                        <div className="block-title-container">
-                            <h3>{t('clients.0.titleH3')}</h3>
-                        </div>
-
                         <div className="home-clients-container">
                             <ul className="home-clients">
                                 {t("clients.0.imgs", { returnObjects: true }).map((img) => (
@@ -122,24 +132,10 @@ const Home = () => {
                     </section>
                 </div>
 
-                <div className="block-container">
-                    <section className="block-content">
-                        <div className="block-title-container">
-                            <h3>{t('services.0.titleH3')}</h3>
-                        </div>
-
-                        <div className="home-services-container">
-                            <div>1</div>
-                            <div>2</div>
-                        </div>
-                    </section>
-                </div>
-
                 <Settings/>
             </main>
 
             <Footer/>
-
         </>
     );
 };
