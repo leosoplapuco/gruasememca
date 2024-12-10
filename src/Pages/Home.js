@@ -72,13 +72,13 @@ const Home = () => {
                             </div>
 
                             <div className="d-flex">
-                                <img src="/assets/images/gruas/crane.png" alt="" className="home-hero-img"></img>
+                                <img src="/assets/images/gruas/crane.png" alt="Nombre de la grua" className="home-hero-img"></img>
                             </div>
                         </div>
                     </section>
                 </div>
 
-                <div className="block-container">
+                <div className="block-container home-block-services">
                     <section className="block-content">
                         <div className="block-title-container">
                             <h3>{t('services.0.titleH3')}</h3>
@@ -87,8 +87,20 @@ const Home = () => {
                         <div className="home-services-container">
                             <ul className="home-services">
                                 <li className="home-service home-service-1 active"></li>
+                                <li className="home-service home-service-2"></li>
+                                <li className="home-service home-service-3"></li>
+                                <li className="home-service home-service-4"></li>
                             </ul>
                         </div>
+
+                        <ul className="home-services-buttons d-flex">
+                            <li>
+                                <span class="material-symbols-outlined">arrow_back</span>
+                            </li>
+                            <li>
+                                <span class="material-symbols-outlined">arrow_forward</span>
+                            </li>
+                        </ul>
                     </section>
                 </div>
 
