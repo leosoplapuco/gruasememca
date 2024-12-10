@@ -38,13 +38,13 @@ const DarkButton = () => {
                 <ul className='d-flex gap-10'>
                     <li>
                         <button type='button' className='theme-button active'>
-                            <span class="material-symbols-outlined">light_mode</span>
+                            <span className="material-symbols-outlined">light_mode</span>
                             <span className=''>{t('themes.0.theme.0.text')}</span>
                         </button>
                     </li>
                     <li>
                         <button type='button' className='theme-button'>
-                            <span class="material-symbols-outlined">bedtime</span>
+                            <span className="material-symbols-outlined">bedtime</span>
                             <span className=''>{t('themes.0.theme.1.text')}</span>
                         </button>
                     </li>

@@ -64,53 +64,43 @@
             "imgs":[
                 {
                     "id": 1,
-                    "imgSrc": "https://www.gruasememca.com/media/img/companies/alpa.webp",
-                    "imgAlt": "Almacenera Pácifico"
+                    "imgSrc": "/assets/images/clientes/ab-technology.webp",
+                    "imgAlt": "AB Technology - Soluciones segura"
                 },
                 {
                     "id": 2,
-                    "imgSrc": "https://www.gruasememca.com/media/img/companies/alpa.webp",
+                    "imgSrc": "/assets/images/clientes/alpa.webp",
                     "imgAlt": "Almacenera Pácifico"
                 },
                 {
                     "id": 3,
-                    "imgSrc": "https://www.gruasememca.com/media/img/companies/alpa.webp",
-                    "imgAlt": "Almacenera Pácifico"
+                    "imgSrc": "/assets/images/clientes/batalla-de-junin.webp",
+                    "imgAlt": "Batalla de Junin"
                 },
                 {
                     "id": 4,
-                    "imgSrc": "https://www.gruasememca.com/media/img/companies/alpa.webp",
-                    "imgAlt": "Almacenera Pácifico"
+                    "imgSrc": "/assets/images/clientes/binda.webp",
+                    "imgAlt": "BINDA"
                 },
                 {
                     "id": 5,
-                    "imgSrc": "https://www.gruasememca.com/media/img/companies/alpa.webp",
-                    "imgAlt": "Almacenera Pácifico"
+                    "imgSrc": "/assets/images/clientes/cerro-negro.webp",
+                    "imgAlt": "Cerro negro"
                 },
                 {
                     "id": 6,
-                    "imgSrc": "https://www.gruasememca.com/media/img/companies/alpa.webp",
-                    "imgAlt": "Almacenera Pácifico"
+                    "imgSrc": "/assets/images/clientes/ciltest.webp",
+                    "imgAlt": "CILTEST"
                 },
                 {
                     "id": 7,
-                    "imgSrc": "https://www.gruasememca.com/media/img/companies/alpa.webp",
-                    "imgAlt": "Almacenera Pácifico"
+                    "imgSrc": "/assets/images/clientes/humaquinas-y-cia.webp",
+                    "imgAlt": "Humaquinas y CIA"
                 },
                 {
                     "id": 8,
-                    "imgSrc": "https://www.gruasememca.com/media/img/companies/alpa.webp",
-                    "imgAlt": "Almacenera Pácifico"
-                },
-                {
-                    "id": 9,
-                    "imgSrc": "https://www.gruasememca.com/media/img/companies/alpa.webp",
-                    "imgAlt": "Almacenera Pácifico"
-                },
-                {
-                    "id": 10,
-                    "imgSrc": "https://www.gruasememca.com/media/img/companies/alpa.webp",
-                    "imgAlt": "Almacenera Pácifico"
+                    "imgSrc": "/assets/images/clientes/lepsa.webp",
+                    "imgAlt": "LEPSA"
                 }
             ]
         }
