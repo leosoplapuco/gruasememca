@@ -1,49 +1,8 @@
-// import React from 'react';
-// import { useTranslation } from 'react-i18next';
-
-// import Languages from './Languages';
-// // import DarkButton from './DarkButton';
-
-// function Settings(){
-//     const { t } = useTranslation('settings');
-
-//     const settingsButton = document.querySelector('.settings-button');
-//     settingsButton.addEventListener('click', function(){
-//         const settingsContainer = document.querySelector('.settings-container');
-
-//         settingsContainer.classList.toggle('active')
-//     })
-
-//     return(
-//         <>
-//             <div className='settings-container'>
-//                 <div className='settings d-flex-column gap-20'>
-//                     <button className='settings-button d-flex-align-center-justify-center'>
-//                         <span className="material-symbols-outlined">stat_1</span>
-//                     </button>
-
-//                     <div className='settings-top'>
-//                         <span className="material-symbols-outlined">settings</span>
-//                         <p className='text-title'>{t('title')}</p>
-//                     </div>
-
-//                     <div className='d-flex-column gap-20'>
-//                         <Languages/>
-//                         {/* <DarkButton/> */}
-//                     </div>
-//                 </div>
-//             </div>
-//         </>
-//     );
-// }
-
-// export default Settings;
-
 import React, { useState } from 'react';
 import { useTranslation } from 'react-i18next';
 
 import Languages from './Languages';
-// import DarkButton from './DarkButton';
+import DarkButton from './DarkButton';
 
 function Settings() {
     const { t } = useTranslation('settings');
@@ -53,29 +12,24 @@ function Settings() {
         setIsActive(!isActive);
     };
 
-    return (
-        <>
-            <div className={`settings-container ${isActive ? 'active' : ''}`}>
-                <div className='settings d-flex-column gap-20'>
-                    <button
-                        className='settings-button d-flex-align-center-justify-center'
-                        onClick={toggleSettings}
-                    >
-                        <span className="material-symbols-outlined">stat_1</span>
-                    </button>
+    return(
+        <div className={`settings-container ${isActive ? 'active' : ''}`}>
+            <div className='settings d-flex-column gap-20'>
+                <button className='settings-button d-flex-align-center-justify-center' onClick={toggleSettings}>
+                    <span className="material-symbols-outlined">stat_1</span>
+                </button>
 
-                    <div className='settings-top'>
-                        <span className="material-symbols-outlined">settings</span>
-                        <p className='text-title'>{t('title')}</p>
-                    </div>
+                <div className='settings-top'>
+                    <span className="material-symbols-outlined">settings</span>
+                    <p className='text-title'>{t('title')}</p>
+                </div>
 
-                    <div className='d-flex-column gap-20'>
-                        <Languages />
-                        {/* <DarkButton/> */}
-                    </div>
+                <div className='d-flex gap-20'>
+                    <Languages/>
+                    <DarkButton/>
                 </div>
             </div>
-        </>
+        </div>
     );
 }
 

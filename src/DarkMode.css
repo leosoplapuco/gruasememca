@@ -47,6 +47,12 @@
 
 /**/
 
+.dark-mode .text-title{
+    color: var(--white);
+}
+
+/**/
+
 .dark-mode .settings-container{
     border-top: 2px solid var(--white);
 }

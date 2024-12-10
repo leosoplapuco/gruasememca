@@ -1,4 +1,25 @@
 {
-    "id": 0,
-    "title": "Settings"
+    "id": 1,
+    "title": "Settings:",
+    "languages":[
+        {
+            "title": "Languages:"
+        }
+    ],
+    "themes":[
+        {
+            "title": "Themes:",
+            "theme":
+                [
+                    {
+                        "id": 1,
+                        "text": "Light"
+                    },
+                    {
+                        "id": 2,
+                        "text": "Dark"
+                    }
+                ]
+        }
+    ]
 }

@@ -1,4 +1,25 @@
 {
-    "id": 0,
-    "title": "Configuración"
+    "id": 1,
+    "title": "Configuración:",
+    "languages":[
+        {
+            "title": "Idioma:"
+        }
+    ],
+    "themes":[
+        {
+            "title": "Tema:",
+            "theme":
+                [
+                    {
+                        "id": 1,
+                        "text": "Claro"
+                    },
+                    {
+                        "id": 2,
+                        "text": "Oscuro"
+                    }
+                ]
+        }
+    ]
 }
