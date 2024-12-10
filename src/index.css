@@ -647,30 +647,6 @@ header.active{
 
 /**/
 
-.language-buttons{
-    display: flex;
-}
-
-.language-button{
-    width: auto;
-    height: 44px;
-    padding: 0 20px;
-    gap: 10px;
-    background: rgba(0 0 0 / 0.075);
-    border-radius: 5px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.language-button img{
-    width: 20px;
-    height: auto;
-    object-fit: contain;
-}
-
-/**/
-
 .menu-icon{
     display: none;
 }
@@ -744,7 +720,7 @@ header.active{
     max-width: 500px;
     border-radius: 10px;
     overflow: hidden;
-    border: 1px solid #dddddd;
+    border: 1px solid #DDDDDD;
     background: var(--header);
 }
 
@@ -770,17 +746,14 @@ header.active{
     position: fixed;
     left: 0;
     top: 100%;
-    /* top: 100%; */
     width: 100%;
-    border-top: 2px solid var(--red);
-    background: var(--body);
+    background: var(--red);
     padding: 20px;
-    /* background: var(--black-9); */
     transition: var(--t-300);
 }
 
 .settings-container.active{
-    top: calc(100% - 200px);
+    top: calc(100% - 178px);
 }
 
 .settings{
@@ -798,6 +771,7 @@ header.active{
     right: 25px;
     bottom: calc(100% + 20px);
     background: var(--red);
+    /* background: #ececec; */
     border-radius: 5px 5px 0 0;
 }
 
@@ -810,6 +784,78 @@ header.active{
     align-items: center;
     justify-content: left;
     gap: 10px;
+}
+
+.settings-top span{
+    width: 44px;
+    height: 44px;
+    background: var(--white);
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.settings-top p{
+    color: var(--white);
+}
+
+/**/
+
+.language-buttons{
+    display: flex;
+}
+
+.language-button,
+.theme-button{
+    width: auto;
+    height: 44px;
+    padding: 0 20px;
+    gap: 10px;
+    background: rgba(255 255 255 / 0.75);
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: var(--t-100);
+}
+
+.language-button:hover,
+.language-button.active,
+.theme-button:hover,
+.theme-button.active{
+    background: var(--white);
+}
+
+.language-buttons > li > p,
+.themes-buttons > li > p{
+    color: var(--white);
+}
+
+.language-button img{
+    width: 20px;
+    height: auto;
+    object-fit: contain;
+}
+
+.language-button span,
+.theme-button span{
+    color: var(--black-4);
+    transition: var(--t-100);
+}
+
+.language-button:hover span,
+.language-button.active span,
+.theme-button:hover span,
+.theme-button.active span{
+    color: var(--black-0);
+}
+
+/**/
+
+.themes-buttons{
+    border-left: 2px solid var(--red);
+    padding-left: 20px;
 }
 
 /**/
@@ -1100,5 +1146,22 @@ footer{
 
     .blog-targets{
         flex-direction: column;
+    }
+
+    /**/
+
+    .settings-container.active{
+        top: calc(100% - 292px);
+    }
+
+    .settings > .d-flex.gap-20{
+        flex-direction: column;
+    }
+
+    .themes-buttons{
+        border-left: 0;
+        border-top: 2px solid var(--red);
+        padding-left: 0;
+        padding-top: 20px;
     }
 }

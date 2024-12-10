@@ -1,7 +1,11 @@
 import i18next from 'i18next';
+import { useTranslation } from 'react-i18next';
+
 import { useNavigate, useLocation } from 'react-router-dom';
 
 function LanguageSwitcher() {
+    const { t } = useTranslation('settings');
+
     const navigate = useNavigate();
     const location = useLocation();
 
@@ -34,19 +38,19 @@ function LanguageSwitcher() {
     return(
         <ul className='language-buttons'>
             <li className='d-flex-column gap-10'>
-                <p className='text'>Idioma:</p>
+                <p className='text'>{t('languages.0.title')}</p>
 
                 <ul className='d-flex gap-10'>
                     <li>
-                        <button type='button' className='language-button en' onClick={() => changeLanguage('es')}>
+                        <button type='button' className='language-button en active' onClick={() => changeLanguage('es')}>
                             <img src="/assets/images/icons/espanol-icono.png"></img>
-                            <p>Español</p>
+                            <span>Español</span>
                         </button>
                     </li>
                     <li>
                         <button type='button' className='language-button es' onClick={() => changeLanguage('en')}>
                             <img src="/assets/images/icons/ingles-icono.png"></img>
-                            <p>English</p>
+                            <span>English</span>
                         </button>
                     </li>
                 </ul>
