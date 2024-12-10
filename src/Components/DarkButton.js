@@ -39,13 +39,13 @@ const DarkButton = () => {
                     <li>
                         <button type='button' className='theme-button active'>
                             <span class="material-symbols-outlined">light_mode</span>
-                            <span className=''>Claro</span>
+                            <span className=''>{t('themes.0.theme.0.text')}</span>
                         </button>
                     </li>
                     <li>
                         <button type='button' className='theme-button'>
                             <span class="material-symbols-outlined">bedtime</span>
-                            <span className=''>Oscuro</span>
+                            <span className=''>{t('themes.0.theme.1.text')}</span>
                         </button>
                     </li>
                 </ul>
