@@ -5,7 +5,7 @@ import { useTranslation } from 'react-i18next';
 import Home from './Pages/Home';
 import Services from './Pages/Services';
 
-import i18next from 'i18next';
+// import i18next from 'i18next';
 import './i18n';
 
 function App(){

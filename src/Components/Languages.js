@@ -43,13 +43,13 @@ function LanguageSwitcher() {
                 <ul className='d-flex gap-10'>
                     <li>
                         <button type='button' className='language-button en active' onClick={() => changeLanguage('es')}>
-                            <img src="/assets/images/icons/espanol-icono.png"></img>
+                            <img src="/assets/images/icons/espanol-icono.png" alt='bandera española'></img>
                             <span>Español</span>
                         </button>
                     </li>
                     <li>
                         <button type='button' className='language-button es' onClick={() => changeLanguage('en')}>
-                            <img src="/assets/images/icons/ingles-icono.png"></img>
+                            <img src="/assets/images/icons/ingles-icono.png" alt='bandera estados unidos'></img>
                             <span>English</span>
                         </button>
                     </li>
