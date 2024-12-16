@@ -778,8 +778,8 @@ header.active{
 }
 
 .settings-button{
-    width: 48px;
-    height: 24px;
+    width: 56px;
+    height: 32px;
     position: absolute;
     right: 0;
     bottom: calc(100% + 20px);
@@ -1170,6 +1170,15 @@ footer{
 
     /**/
 
+    .settings-button{
+        width: 48px;
+        height: 32px;
+    }
+
+    .settings-container{
+        padding: 20px 10px;
+    }
+
     .settings-container.active{
         top: calc(100% - 292px);
     }
@@ -1183,5 +1192,11 @@ footer{
         border-top: 2px solid var(--white);
         padding-left: 0;
         padding-top: 20px;
+    }
+    
+    /**/
+
+    footer{
+        padding: 20px 10px;
     }
 }
