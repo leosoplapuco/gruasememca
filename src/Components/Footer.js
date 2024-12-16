@@ -5,7 +5,9 @@ function Footer(){
     // const { t } = useTranslation('footer');
 
     return(
-        <footer>www.gruasememca.vercel.app - leosoplapuco | Diseño y desarrollo web | www.leosoplapuco.com</footer>
+        <footer>
+            <div className="footer">asdadasdasdasda</div>
+        </footer>
     );
 }
 

@@ -23,7 +23,7 @@ body::-webkit-scrollbar{
     --body: #F5F5F5;
     
     --header: #FFFFFF;
-    --footer: #111111;
+    --footer: #000000;
 
     --red: #DA131F;
     --check: rgb(108 247 108);
@@ -685,15 +685,37 @@ header.active{
 
 /**/
 
-.home-services-container{
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-    gap: 20px;
+.home-block-services{
+    background: var(--black-0);
+    padding: 40px 20px;
 }
 
-.home-services-container div{
-    padding: 30px;
-    background: orange;
+.home-services{
+    width: 100%;
+    display: flex;
+    gap: 10px;
+}
+
+.home-services li{
+    width: 100%;
+    max-width: 160px;
+    height: 450px;
+    padding: 20px;
+    /* background: var(--white); */
+    background: var(--white);
+    background: linear-gradient(0deg, rgba(255,255,255,0.1) 0%, rgba(255,255,255,0) 100%);
+    border: 2px solid var(--black-3);
+    transition: var(--t-100);
+    border-radius: 16px;
+    overflow: hidden;
+}
+
+.home-services li:hover{
+    border: 2px solid var(--white);
+}
+
+.home-service-1.active{
+    max-width: none;
 }
 
 /**/
@@ -854,6 +876,13 @@ header.active{
 footer{
     background: var(--footer);
     padding: 20px;
+}
+
+.footer{
+    margin: auto;
+    width: 100%;
+    max-width: 1440px;
+    color: var(--white);
 }
 
 /**/
