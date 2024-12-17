@@ -79,9 +79,9 @@ const Home = () => {
                 </div>
 
                 <div className="block-container home-block-services">
-                    <section className="block-content">
+                    <section className="block-content d-flex-column gap-20">
                         <div className="block-title-container">
-                            <h3>{t('services.0.titleH3')}</h3>
+                            <h3 className="color-red">{t('services.0.titleH3')}</h3>
                         </div>
 
                         <div className="home-services-container">

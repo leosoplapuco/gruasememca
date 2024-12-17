@@ -244,6 +244,10 @@ body{
     color: var(--text);
 }
 
+.color-red{
+    color: var(--red) !important;
+}
+
 /**/
 
 .mx-width-500{
