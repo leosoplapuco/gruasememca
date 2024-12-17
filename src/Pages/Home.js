@@ -95,10 +95,10 @@ const Home = () => {
 
                         <ul className="home-services-buttons d-flex">
                             <li>
-                                <span class="material-symbols-outlined">arrow_back</span>
+                                <span className="material-symbols-outlined">arrow_back</span>
                             </li>
                             <li>
-                                <span class="material-symbols-outlined">arrow_forward</span>
+                                <span className="material-symbols-outlined">arrow_forward</span>
                             </li>
                         </ul>
                     </section>
