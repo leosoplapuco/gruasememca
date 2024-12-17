@@ -4,7 +4,7 @@ import { useTranslation } from 'react-i18next';
 
 import HeroVideo from '../Components/heroVideo';
 import Header from '../Components/Header';
-// import BlogTargets from '../Components/BlogTargets';
+import BlogTargets from '../Components/BlogTargets';
 import Settings from '../Components/Settings';
 import Footer from '../Components/Footer';
 
@@ -143,6 +143,8 @@ const Home = () => {
                         </div>
                     </section>
                 </div>
+
+                <BlogTargets/>
 
                 <Settings/>
             </main>
