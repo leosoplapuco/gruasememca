@@ -11,25 +11,40 @@ function BlogTargets() {
                     <h3>{t('title')}</h3>
                 </div>
 
-                <ul className="blog-targets">
-                    {t('list', { returnObjects: true }).map((item) => (
-                        <li key={item.id} className="blog-item">
-                            <a href={item.href || '#'} className="hover-target">
-                                {item.imgSrc && (
-                                    <img src={item.imgSrc} alt={item.imgAlt}/>
-                                )}
-                                <div className="d-flex">
-                                    {item.content.map(({ id, title, text }) => (
-                                        <div key={id} className="content-block">
-                                            <h4 className='text-title'>{title}</h4>
-                                            <p className='text'>{text}</p>
-                                        </div>
-                                    ))}
+                <div className='blog-targets-container'>
+                    <ul className="blog-targets">
+                        <li className='blog-target blog-target-1'>
+                            <a href={t('list.0.href')}>
+                                <img src={t('list.0.imgSrc')} alt={t('list.0.imgAlt')} />
+
+                                <div className='d-flex-column'>
+                                    <p className='text-title'>{t('list.0.content.0.title')}</p>
+                                    <p className='text'>{t('list.0.content.0.text')}</p>
                                 </div>
                             </a>
                         </li>
-                    ))}
-                </ul>
+                        <li className='blog-target blog-target-2'>
+                            <a href={t('list.1.href')}>
+                                <img src={t('list.1.imgSrc')} alt={t('list.1.imgAlt')} />
+
+                                <div className='d-flex-column'>
+                                    <p className='text-title'>{t('list.1.content.0.title')}</p>
+                                    <p className='text'>{t('list.1.content.0.text')}</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li className='blog-target blog-target-3'>
+                            <a href={t('list.2.href')}>
+                                <img src={t('list.2.imgSrc')} alt={t('list.2.imgAlt')} />
+
+                                <div className='d-flex-column'>
+                                    <p className='text-title'>{t('list.2.content.0.title')}</p>
+                                    <p className='text'>{t('list.2.content.0.text')}</p>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
             </section>
         </div>
     );
