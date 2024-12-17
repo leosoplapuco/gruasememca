@@ -2,7 +2,7 @@ import React from 'react';
 import { useTranslation } from 'react-i18next';
 
 function BlogTargets() {
-    const { t } = useTranslation('blogtargets');
+    const { t } = useTranslation('blogTargets');
 
     return (
         <div className='block-container'>
