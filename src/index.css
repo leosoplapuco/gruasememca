@@ -1158,6 +1158,18 @@ footer{
     .blog-targets-container{
         width: 100%;
         overflow-x: auto;
+        padding-bottom: 20px;
+    }
+
+    .blog-targets-container::-webkit-scrollbar{
+        background: rgba(0 0 0 / 0.1);
+        height: 3px;
+        border-radius: 3px;
+    }
+
+    .blog-targets-container::-webkit-scrollbar-thumb{
+        background: var(--red);
+        border-radius: 3px;
     }
 
     .blog-targets{
