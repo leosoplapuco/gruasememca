@@ -36,7 +36,7 @@ const Home = () => {
 
                 <div className="home-hero-container">
                     <section className="home-hero">
-                        <h2 className="name">{t('hero.0.name.0.nameOne')} <span>{t('hero.0.name.0.nameTwo')}</span></h2>
+                        {/* <h2 className="name">{t('hero.0.name.0.nameOne')} <span>{t('hero.0.name.0.nameTwo')}</span></h2> */}
 
                         <div className="d-grid-2-1 gap-20">
                             <div className="home-hero-content d-flex-column gap-20">
@@ -79,50 +79,57 @@ const Home = () => {
                 </div>
 
                 <div className="block-container home-block-services">
-                    <section className="block-content d-flex-column gap-20">
+                    <section className="block-content d-flex-column">
                         <div className="block-title-container">
                             <h3 className="color-red">{t('services.0.titleH3')}</h3>
                         </div>
 
                         <div className="home-services-container">
-                            <ul className="home-services">
-                                <li className="home-service home-service-1 active">
-                                    <img src="https://images.unsplash.com/photo-1516470047996-b6dde636095f?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"/>
+                            <div className="home-service-target home-service-target-1 d-flex-column gap-10">
+                                <p className="text-title font-anton">{t('services.0.phrase')}</p>
+                                <p className="text">{t('services.0.text')}</p>
 
-                                    <div className="home-service-content">
-                                        <p className="font-anton">{t('services.0.list.0.title')} leosoplapuco</p>
-                                        
-                                        <div className="d-grid-2-1 gap-10">
-                                            <div className="d-flex-column gap-10">
-                                                <p className="text">{t('services.0.list.0.description')}</p>
+                                <div className="d-flex gap-10">
+                                    <a href="" className="button-link button-link-1">
+                                        <p className="button-link-text">Link 1</p>
+                                    </a>
+                                </div>
+                            </div>
+                            
+                            <div className="home-service-target home-service-target-2"></div>
 
-                                                <a href="" className="button-link button-link-1 margin-left">
-                                                    <p className="button-link-text">leosoplapuco</p>
-                                                </a>
-                                            </div>
-
-                                            <img src=""/>
+                            <ul className="home-service-target home-service-target-3">
+                                <li>
+                                    <a href="" className="">
+                                        <img src="https://images.unsplash.com/photo-1498661694102-0a3793edbe74?q=80&w=1404&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" className="" />
+                                        <div className="d-flex-colmun"> 
+                                            <p className="text-title">Beneficio 1</p>
+                                            <p className="text">Breve resumen texto del beneficio 1</p>
                                         </div>
-                                    </div>
+                                    </a>
                                 </li>
-                                <li className="home-service home-service-2"></li>
-                                <li className="home-service home-service-3"></li>
-                                <li className="home-service home-service-4"></li>
+
+                                <li>
+                                    <a href="" className="">
+                                        <img src="https://images.unsplash.com/photo-1498661694102-0a3793edbe74?q=80&w=1404&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" className="" />
+                                        <div className="d-flex-colmun"> 
+                                            <p className="text-title">Beneficio 1</p>
+                                            <p className="text">Breve resumen texto del beneficio 1</p>
+                                        </div>
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="" className="">
+                                        <img src="https://images.unsplash.com/photo-1498661694102-0a3793edbe74?q=80&w=1404&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" className="" />
+                                        <div className="d-flex-colmun"> 
+                                            <p className="text-title">Beneficio 1</p>
+                                            <p className="text">Breve resumen texto del beneficio 1</p>
+                                        </div>
+                                    </a>
+                                </li>
                             </ul>
                         </div>
-
-                        <ul className="home-services-buttons d-flex">
-                            <li>
-                                <button className="">
-                                    <span className="material-symbols-outlined">arrow_back</span>
-                                </button>
-                            </li>
-                            <li>
-                                <button className="">
-                                    <span className="material-symbols-outlined">arrow_forward</span>
-                                </button>
-                            </li>
-                        </ul>
                     </section>
                 </div>
 
@@ -163,8 +170,9 @@ const Home = () => {
                                 ))}
                             </ul>
 
-                            <a href="" className="button-link button-link-1 margin-left">
-                                <p className="button-link-text">leosoplapuco</p>
+                            <a href={t('clients.1.href')} className="button-link button-link-1 margin-left">
+                                <p className="button-link-text">{t('clients.1.text')}</p>
+                                <span className="material-symbols-outlined">arrow_forward</span>
                             </a>
                         </div>
                     </section>
