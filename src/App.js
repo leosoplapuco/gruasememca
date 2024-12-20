@@ -3,9 +3,8 @@ import { BrowserRouter as Router, Routes, Route, Navigate, useLocation } from 'r
 import { useTranslation } from 'react-i18next';
 
 import Home from './Pages/Home';
-import Services from './Pages/Services';
+import Services from './Pages/services/Home';
 
-// import i18next from 'i18next';
 import './i18n';
 
 function App(){
@@ -34,6 +33,8 @@ function App(){
 
                 <Route path="/es/servicios/" element={<Services/>}/>
                 <Route path="/en/services/" element={<Services/>}/>
+
+                <Route path="/es/servicios/alquiler-de-gruas-telescopicas" element={<Services/>}/>
             </Routes>
         </>
     );

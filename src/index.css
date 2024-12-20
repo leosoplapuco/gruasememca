@@ -547,7 +547,7 @@ header.active{
     pointer-events: unset;
     user-select: unset;
 
-    box-shadow: 0 0 5px rgba(0 0 0 / 0.5);
+    box-shadow: 0 0 5px rgba(0 0 0 / 0.2);
 }
 
 .sub-header{
@@ -663,6 +663,12 @@ header.active{
 
 /**/
 
+.home-clients-container{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
 .home-clients{
     border: 1px solid var(--black-9);
     padding: 40px;
@@ -701,6 +707,7 @@ header.active{
 }
 
 .home-services li{
+    position: relative;
     width: 100%;
     max-width: 160px;
     height: 450px;
@@ -708,18 +715,71 @@ header.active{
     /* background: var(--white); */
     background: var(--white);
     background: linear-gradient(0deg, rgba(255,255,255,0.1) 0%, rgba(255,255,255,0) 100%);
-    border: 2px solid var(--black-3);
+    border: 1px solid transparent;
     transition: var(--t-100);
     border-radius: 16px;
     overflow: hidden;
 }
 
-.home-services li:hover{
-    border: 2px solid var(--white);
-}
+/* .home-services li:hover{
+    border: 1px solid var(--white);
+} */
 
 .home-service-1.active{
     max-width: none;
+}
+
+.home-service > img{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+}
+
+.home-service::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0 0 0 / 0.45);
+    transition: var(--t-100);
+    z-index: 1;
+}
+
+.home-service:hover::before{
+    background: rgba(0 0 0 / 0.75);
+}
+
+.home-service-content{
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 2;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.home-service-content .font-anton{
+    font-size: 40px;
+    color: var(--white);
+}
+
+.home-service-content .text{
+    color: var(--white);
+}
+
+.home-services-buttons{
+    margin-left: auto;
+}
+
+.home-services-buttons li button span{
+    color: var(--white);
 }
 
 /**/
@@ -735,8 +795,13 @@ header.active{
     grid-template-columns: auto 1fr;
     overflow: hidden;
     border-radius: 10px;
-    border: 1px solid #DADADA;
+    /* border: 1px solid #DADADA; */
     background: var(--header);
+    transition: var(--t-100);
+}
+
+.blog-target a:hover{
+    box-shadow: 0 0 10px rgba(0 0 0 / 0.075);
 }
 
 .blog-target a img{
@@ -746,6 +811,55 @@ header.active{
 
 .blog-target a div{
     padding: 10px;
+}
+
+/**/
+
+.comments{
+    width: 100%;
+    display: flex;
+    gap: 10px;
+}
+
+.comments li{
+    flex: 1 1 clamp(200px, calc(calc(100% / 4) - calc(40px / 3)), 100%);
+}
+
+.comment{
+    padding: 20px 10px;
+    background: var(--white);
+    border-radius: 10px;
+}
+
+.comment-top{
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    gap: 10px;
+}
+
+.comment-top img{
+    width: 80px;
+    height: 80px;
+    border-radius: 100%;
+    object-fit: cover;
+}
+
+.comment-info{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.comment-stars{
+    display: flex;
+    align-items: center;
+    justify-content: left;
+}
+
+.comment-stars span{
+    color: var(--red);
+    font-size: 16px;
 }
 
 /**/
@@ -1183,6 +1297,16 @@ footer{
     .blog-target a img{
         width: 100px;
         height: 160px;
+    }
+
+    /**/
+
+    .comments{
+        flex-direction: column;
+    }
+    
+    .comments li{
+        flex: unset;
     }
 
     /**/
