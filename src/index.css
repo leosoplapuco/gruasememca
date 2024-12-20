@@ -700,85 +700,48 @@ header.active{
     padding: 40px 20px;
 }
 
-.home-services{
-    width: 100%;
+.home-services-container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+}
+
+.home-service-target .text-title.font-anton{
+    font-size: 48px;
+    color: var(--white);
+}
+
+.home-service-target-3{
+    grid-column: 1/-1;
     display: flex;
     gap: 10px;
 }
 
-.home-services li{
-    position: relative;
+.home-service-target-3 li{
+    flex: 1 1 clamp(200px, calc(calc(100% / 4) - calc(40px / 3)), 100%);
+}
+
+.home-service-target-3 li a{
     width: 100%;
-    max-width: 160px;
-    height: 450px;
-    padding: 20px;
-    /* background: var(--white); */
-    background: var(--white);
-    background: linear-gradient(0deg, rgba(255,255,255,0.1) 0%, rgba(255,255,255,0) 100%);
-    border: 1px solid transparent;
-    transition: var(--t-100);
-    border-radius: 16px;
-    overflow: hidden;
-}
-
-/* .home-services li:hover{
-    border: 1px solid var(--white);
-} */
-
-.home-service-1.active{
-    max-width: none;
-}
-
-.home-service > img{
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 0;
-}
-
-.home-service::before{
-    content: '';
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0 0 0 / 0.45);
-    transition: var(--t-100);
-    z-index: 1;
-}
-
-.home-service:hover::before{
-    background: rgba(0 0 0 / 0.75);
-}
-
-.home-service-content{
-    position: absolute;
-    left: 0;
-    top: 0;
-    z-index: 2;
-    padding: 20px;
     display: flex;
     flex-direction: column;
     gap: 10px;
+    padding: 20px;
+    background: rgba(255 255 255 / 0.2);
+    transition: var(--t-100);
+    border-radius: 7.5px;
 }
 
-.home-service-content .font-anton{
-    font-size: 40px;
-    color: var(--white);
+.home-service-target-3 li a:hover{
+    background: rgba(255 255 255 / 0.35);
 }
 
-.home-service-content .text{
-    color: var(--white);
+.home-service-target-3 li a img{
+    width: 50px;
+    height: 60px;
 }
 
-.home-services-buttons{
-    margin-left: auto;
-}
-
-.home-services-buttons li button span{
+.home-service-target-3 li a div p{
     color: var(--white);
 }
 

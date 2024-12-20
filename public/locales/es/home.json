@@ -103,12 +103,19 @@
                     "imgAlt": "LEPSA"
                 }
             ]
+        },
+        {
+            "id": 2,
+            "href": "https://gruasememca.vercel.app/es/nosotros/clientes",
+            "text": "Ver más"
         }
     ],
     "services":[
         {
             "id": 1,
             "titleH3": "Servicios",
+            "phrase": "Más de 15 años de experiencia garantizando seguridad en sus proyectos",
+            "text": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.",
             "list":[
                 {
                     "id": 1,
