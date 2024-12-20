@@ -1065,7 +1065,7 @@ footer{
 
     .header-logo p,
     .header-logo p span{
-        font-size: 28px;
+        font-size: 36px;
         transition: var(--t-100);
     }
 
@@ -1124,7 +1124,7 @@ footer{
 
     .menu-link{
         width: 100%;
-        height: 48px;
+        height: 56px;
         padding: 0 20px;
         justify-content: left;
         gap: 10px;
@@ -1295,8 +1295,8 @@ footer{
     }
 
     .blog-target a img{
-        width: 100px;
-        height: 160px;
+        width: 120px;
+        height: 180px;
     }
 
     /**/
