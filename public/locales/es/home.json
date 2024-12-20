@@ -115,8 +115,9 @@
                     "imgSrc": "https://www.gruasememca.com/media/img/gallery-1.webp",
                     "imgAlt": "Alquiler de gruas telescopicas | Grúas Ememca",
                     "href": "/es/servicios/alquiler-de-gruas-telescopicas",
+                    "title": "Alquiler de grúas telescópicas",
                     "text": "Alquiler de grúas telescópicas",
-                    "description": "Contamos con nuestra flota de grúas telescópicas con capacidades de carga de hasta 220 toneladas."
+                    "description": "Contamos con nuestra flota de grúas telescópicas con capacidades de carga de hasta 220 toneladas. Contamos con nuestra flota de grúas telescópicas con capacidades de carga de hasta 220 toneladas. Contamos con nuestra flota de grúas telescópicas con capacidades de carga de hasta 220 toneladas."
                 },
                 {
                     "id": 2,
@@ -141,6 +142,22 @@
                     "href": "/es/servicios/eliminacion-de-tierra",
                     "text": "Eliminación de tierra",
                     "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+                }
+            ]
+        }
+    ],
+    "comments":[
+        {
+            "id": 1,
+            "titleH3": "Clientes",
+            "list":[
+                {
+                    "id": 1,
+                    "img": "",
+                    "stars": 5,
+                    "name": "Juan",
+                    "company": "Gruas Ememca",
+                    "text": "leosoplapuco leosoplapuco leosoplapuco"
                 }
             ]
         }

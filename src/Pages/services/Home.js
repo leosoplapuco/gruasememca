@@ -2,9 +2,9 @@ import React from "react";
 import { Helmet } from "react-helmet";
 import { useTranslation } from 'react-i18next';
 
-import Header from '../Components/Header';
-import Hero from '../Components/Hero';
-import ChatBot from '../Components/ChatBot'
+import Header from '../../Components/Header';
+import Hero from '../../Components/Hero';
+import ChatBot from '../../Components/ChatBot'
 
 const Home = () => {
     const { t } = useTranslation('services');

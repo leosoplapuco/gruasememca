@@ -10,12 +10,17 @@ function LanguageSwitcher() {
     const location = useLocation();
 
     const routeMap = {
-        '/es': '/en',
-        '/es/servicios/': '/en/services/',
-        '/es/maquinaria/': '/en/machinery/',
-        '/es/nosotros/': '/en/about-us/',
-        '/en': '/es',
-        '/en/services/': '/es/servicios/',
+        '/es' : '/en',
+        '/es/servicios/' : '/en/services/',
+        '/es/servicios/alquiler-de-gruas-telescopicas' : '/en/services/telescopic-crane-rental',
+
+        '/es/maquinaria/' : '/en/machinery/',
+        '/es/nosotros/' : '/en/about-us/',
+
+        '/en' : '/es',
+        '/en/services/' : '/es/servicios/',
+        '/en/services/telescopic-crane-rental' : '/es/servicios/alquiler-de-gruas-telescopicas',
+
         '/en/machinery/': '/es/maquinaria/',
         '/en/about-us/': '/es/nosotros/'
     };

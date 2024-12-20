@@ -86,7 +86,25 @@ const Home = () => {
 
                         <div className="home-services-container">
                             <ul className="home-services">
-                                <li className="home-service home-service-1 active"></li>
+                                <li className="home-service home-service-1 active">
+                                    <img src="https://images.unsplash.com/photo-1516470047996-b6dde636095f?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"/>
+
+                                    <div className="home-service-content">
+                                        <p className="font-anton">{t('services.0.list.0.title')} leosoplapuco</p>
+                                        
+                                        <div className="d-grid-2-1 gap-10">
+                                            <div className="d-flex-column gap-10">
+                                                <p className="text">{t('services.0.list.0.description')}</p>
+
+                                                <a href="" className="button-link button-link-1 margin-left">
+                                                    <p className="button-link-text">leosoplapuco</p>
+                                                </a>
+                                            </div>
+
+                                            <img src=""/>
+                                        </div>
+                                    </div>
+                                </li>
                                 <li className="home-service home-service-2"></li>
                                 <li className="home-service home-service-3"></li>
                                 <li className="home-service home-service-4"></li>
@@ -95,10 +113,14 @@ const Home = () => {
 
                         <ul className="home-services-buttons d-flex">
                             <li>
-                                <span className="material-symbols-outlined">arrow_back</span>
+                                <button className="">
+                                    <span className="material-symbols-outlined">arrow_back</span>
+                                </button>
                             </li>
                             <li>
-                                <span className="material-symbols-outlined">arrow_forward</span>
+                                <button className="">
+                                    <span className="material-symbols-outlined">arrow_forward</span>
+                                </button>
                             </li>
                         </ul>
                     </section>
@@ -140,11 +162,135 @@ const Home = () => {
                                     </li>
                                 ))}
                             </ul>
+
+                            <a href="" className="button-link button-link-1 margin-left">
+                                <p className="button-link-text">leosoplapuco</p>
+                            </a>
                         </div>
                     </section>
                 </div>
 
                 <BlogTargets/>
+
+                <div className="block-container">
+                    <section className="block-content">
+                        <div className="block-title-container">
+                            <h3>{t('comments.0.titleH3')}</h3>
+
+                            <ul className="comments">
+                                <li>
+                                    <div className="comment comment-1 d-flex-column gap-10">
+                                        <div className="comment-top">
+                                            <img src="https://turkeyanaclinic.com/wp-content/uploads/2023/05/Baby-Face-02.jpg" alt="" />
+                                            <div className="comment-info">
+                                                <div className="d-flex-column">
+                                                    <p className="text-title">Luz García</p>
+                                                    <p className="text">REPSOL</p>
+                                                </div>
+
+                                                <div className="comment-stars">
+                                                    <span className="material-symbols-outlined">star</span>
+                                                    <span className="material-symbols-outlined">star</span>
+                                                    <span className="material-symbols-outlined">star</span>
+                                                    <span className="material-symbols-outlined">star</span>
+                                                    <span className="material-symbols-outlined">star</span>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div className="comment-bottom">
+                                            <p className="text">Texto - comentario</p>
+                                        </div>
+                                    </div>
+                                </li>
+
+                                <li>
+                                    <div className="comment comment-1 d-flex-column gap-10">
+                                        <div className="comment-top">
+                                            <img src="https://turkeyanaclinic.com/wp-content/uploads/2023/05/Baby-Face-02.jpg" alt="" />
+                                            <div className="comment-info">
+                                                <div className="d-flex-column">
+                                                    <p className="">Luz García</p>
+                                                    <p className="">REPSOL</p>
+                                                </div>
+
+                                                <div className="comment-stars">
+                                                    <span className="material-symbols-outlined">star</span>
+                                                    <span className="material-symbols-outlined">star</span>
+                                                    <span className="material-symbols-outlined">star</span>
+                                                    <span className="material-symbols-outlined">star</span>
+                                                    <span className="material-symbols-outlined">star</span>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div className="comment-bottom">
+                                            <p className="">Texto - comentario</p>
+                                        </div>
+                                    </div>
+                                </li>
+
+                                <li>
+                                    <div className="comment comment-1 d-flex-column gap-10">
+                                        <div className="comment-top">
+                                            <img src="https://turkeyanaclinic.com/wp-content/uploads/2023/05/Baby-Face-02.jpg" alt="" />
+                                            <div className="comment-info">
+                                                <div className="d-flex-column">
+                                                    <p className="">Luz García</p>
+                                                    <p className="">REPSOL</p>
+                                                </div>
+
+                                                <div className="comment-stars">
+                                                    <span className="material-symbols-outlined">star</span>
+                                                    <span className="material-symbols-outlined">star</span>
+                                                    <span className="material-symbols-outlined">star</span>
+                                                    <span className="material-symbols-outlined">star</span>
+                                                    <span className="material-symbols-outlined">star</span>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div className="comment-bottom">
+                                            <p className="">Texto - comentario</p>
+                                        </div>
+                                    </div>
+                                </li>
+
+                                <li>
+                                    <div className="comment comment-1 d-flex-column gap-10">
+                                        <div className="comment-top">
+                                            <img src="https://turkeyanaclinic.com/wp-content/uploads/2023/05/Baby-Face-02.jpg" alt="" />
+                                            <div className="comment-info">
+                                                <div className="d-flex-column">
+                                                    <p className="">Luz García</p>
+                                                    <p className="">REPSOL</p>
+                                                </div>
+
+                                                <div className="comment-stars">
+                                                    <span className="material-symbols-outlined">star</span>
+                                                    <span className="material-symbols-outlined">star</span>
+                                                    <span className="material-symbols-outlined">star</span>
+                                                    <span className="material-symbols-outlined">star</span>
+                                                    <span className="material-symbols-outlined">star</span>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div className="comment-bottom">
+                                            <p className="">Texto - comentario</p>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </section>
+                </div>
+
+                <div className="block-container">
+                    <section className="block-content">
+                        <p>Fomulario de contacto</p>
+                    </section>
+                </div>
 
                 <Settings/>
             </main>
