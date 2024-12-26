@@ -100,33 +100,31 @@ const Home = () => {
 
                             <ul className="home-service-target home-service-target-3">
                                 <li>
-                                    <a href="" className="">
-                                        <img src="https://images.unsplash.com/photo-1498661694102-0a3793edbe74?q=80&w=1404&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" className="" />
+                                    <div>
+                                        <img src={t('services.0.targets.0.imgSrc')} alt={t('services.0.targets.0.imgAlt')}/>
                                         <div className="d-flex-colmun"> 
-                                            <p className="text-title">Beneficio 1</p>
-                                            <p className="text">Breve resumen texto del beneficio 1</p>
+                                            <p className="text-title">{t('services.0.targets.0.title')}</p>
+                                            <p className="text">{t('services.0.targets.0.text')}</p>
                                         </div>
-                                    </a>
+                                    </div>
                                 </li>
-
                                 <li>
-                                    <a href="" className="">
-                                        <img src="https://images.unsplash.com/photo-1498661694102-0a3793edbe74?q=80&w=1404&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" className="" />
+                                    <div>
+                                        <img src={t('services.0.targets.1.imgSrc')} alt={t('services.0.targets.1.imgAlt')}/>
                                         <div className="d-flex-colmun"> 
-                                            <p className="text-title">Beneficio 1</p>
-                                            <p className="text">Breve resumen texto del beneficio 1</p>
+                                            <p className="text-title">{t('services.0.targets.1.title')}</p>
+                                            <p className="text">{t('services.0.targets.1.text')}</p>
                                         </div>
-                                    </a>
+                                    </div>
                                 </li>
-
                                 <li>
-                                    <a href="" className="">
-                                        <img src="https://images.unsplash.com/photo-1498661694102-0a3793edbe74?q=80&w=1404&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" className="" />
+                                    <div>
+                                        <img src={t('services.0.targets.2.imgSrc')} alt={t('services.0.targets.2.imgAlt')}/>
                                         <div className="d-flex-colmun"> 
-                                            <p className="text-title">Beneficio 1</p>
-                                            <p className="text">Breve resumen texto del beneficio 1</p>
+                                            <p className="text-title">{t('services.0.targets.2.title')}</p>
+                                            <p className="text">{t('services.0.targets.2.text')}</p>
                                         </div>
-                                    </a>
+                                    </div>
                                 </li>
                             </ul>
                         </div>

@@ -150,6 +150,29 @@
                     "text": "Eliminación de tierra",
                     "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry."
                 }
+            ],
+            "targets":[
+                {
+                    "id": 1,
+                    "imgSrc": "https://images.unsplash.com/photo-1498661694102-0a3793edbe74?q=80&w=1404&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+                    "imgAlt": "Grúas Ememca",
+                    "title": "Beneficio 1",
+                    "text": "Breve texto del beneficio 1"
+                },
+                {
+                    "id": 2,
+                    "imgSrc": "https://images.unsplash.com/photo-1498661694102-0a3793edbe74?q=80&w=1404&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+                    "imgAlt": "Grúas Ememca",
+                    "title": "Beneficio 2",
+                    "text": "Breve texto del beneficio 2"
+                },
+                {
+                    "id": 1,
+                    "imgSrc": "https://images.unsplash.com/photo-1498661694102-0a3793edbe74?q=80&w=1404&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+                    "imgAlt": "Grúas Ememca",
+                    "title": "Beneficio 3",
+                    "text": "Breve texto del beneficio 3"
+                }
             ]
         }
     ],
