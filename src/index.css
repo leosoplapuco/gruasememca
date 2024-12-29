@@ -20,7 +20,7 @@ body::-webkit-scrollbar{
 }
 
 :root{
-    --body: #F5F5F5;
+    --body: #EDEDED;
     
     --header: #FFFFFF;
     --footer: #000000;
@@ -380,6 +380,20 @@ button{
     color: var(--red);
 }
 
+.button-link-3{
+    background: var(--white);
+}
+
+.button-link-3 span,
+.button-link-3 .button-link-text{
+    color: var(--black-6);
+}
+
+.button-link-3:hover span,
+.button-link-3:hover .button-link-text{
+    color: var(--red);
+}
+
 /**/
 
 .margin-auto{
@@ -703,7 +717,7 @@ header.active{
 .home-services-container{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 10px;
+    gap: 20px;
 }
 
 .home-service-target .text-title.font-anton{
@@ -711,35 +725,51 @@ header.active{
     color: var(--white);
 }
 
+.home-service-target-1 ul{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.home-service-target-1 p.text{
+    color: var(--black-9);
+}
+
 .home-service-target-3{
     grid-column: 1/-1;
-    display: flex;
+}
+
+.home-service-target-3{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
     gap: 10px;
 }
 
 .home-service-target-3 li{
-    flex: 1 1 clamp(200px, calc(calc(100% / 4) - calc(40px / 3)), 100%);
+    padding: 10px 15px;
+    background: #3e3e3e;
+    border-radius: 7.5px;
+    overflow: hidden;
 }
 
-.home-service-target-3 li > div{
-    width: 100%;
+.home-service-target-3 li div{
     display: flex;
     flex-direction: column;
-    gap: 10px;
-    padding: 20px;
-    background: rgba(255 255 255 / 0.15);
-    transition: var(--t-100);
-    border-radius: 7.5px;
 }
 
-.home-service-target-3 li > div img{
-    width: 50px;
-    height: 60px;
-    object-fit: contain;
-}
-
-.home-service-target-3 li > div div p{
+.home-service-target-3 li div .text-title{
     color: var(--white);
+}
+
+.home-service-target-3 li div .text{
+    color: var(--black-9);
+}
+
+.home-service-target-3 li div img{
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
 }
 
 /**/
@@ -755,7 +785,7 @@ header.active{
     grid-template-columns: auto 1fr;
     overflow: hidden;
     border-radius: 10px;
-    /* border: 1px solid #DADADA; */
+    border: 1px solid #DADADA;
     background: var(--header);
     transition: var(--t-100);
 }
@@ -957,7 +987,6 @@ footer{
 /**/
 
 @media screen and (max-width:600px){
-
     *{
         font-size: 16px;
     }
@@ -977,7 +1006,6 @@ footer{
     /**/
 
     .home-hero-container{
-        padding: 20px 10px;
         height: auto;
         min-height: 100vh;
         max-height: unset;
@@ -1013,10 +1041,6 @@ footer{
     }
 
     /**/
-
-    header{
-        padding: 0 10px;
-    }
 
     .header{
         justify-content: unset;
@@ -1198,7 +1222,7 @@ footer{
     /**/
 
     .block-container{
-        padding: 20px 10px;
+        padding: 20px;
     }
 
     /**/
@@ -1210,6 +1234,17 @@ footer{
     /**/
 
     .d-grid-2-1{
+        grid-template-columns: 1fr;
+    }
+
+    /**/
+
+    .home-services-container{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .home-service-target-3{
         grid-template-columns: 1fr;
     }
 

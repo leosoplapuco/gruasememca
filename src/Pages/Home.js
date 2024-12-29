@@ -89,20 +89,42 @@ const Home = () => {
                                 <p className="text-title font-anton">{t('services.0.phrase')}</p>
                                 <p className="text">{t('services.0.text')}</p>
 
-                                <div className="d-flex gap-10">
-                                    <a href="" className="button-link button-link-1">
-                                        <p className="button-link-text">Link 1</p>
-                                    </a>
+                                <div className="home-service-target-list">
+                                    <ul>
+                                        <li>
+                                            <button type="button" className="button-link button-link-3">
+                                                <p className="button-link-text">Servicios de izaje</p>
+                                            </button>
+                                        </li>
+                                        <li>
+                                            <button type="button" className="button-link button-link-3">
+                                                <p className="button-link-text">Montaje y desmontaje</p>
+                                            </button>
+                                        </li>
+                                        <li>
+                                            <button type="button" className="button-link button-link-3">
+                                                <p className="button-link-text">Eliminación de tierra</p>
+                                            </button>
+                                        </li>
+                                    </ul>
                                 </div>
                             </div>
                             
-                            <div className="home-service-target home-service-target-2"></div>
+                            <div className="home-service-target home-service-target-2">
+                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                            </div>
 
                             <ul className="home-service-target home-service-target-3">
                                 <li>
                                     <div>
                                         <img src={t('services.0.targets.0.imgSrc')} alt={t('services.0.targets.0.imgAlt')}/>
-                                        <div className="d-flex-colmun"> 
+                                        <div className="d-flex-colmun">
                                             <p className="text-title">{t('services.0.targets.0.title')}</p>
                                             <p className="text">{t('services.0.targets.0.text')}</p>
                                         </div>
