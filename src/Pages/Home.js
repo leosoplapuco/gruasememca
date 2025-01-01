@@ -118,8 +118,6 @@ const Home = () => {
                             <div className="home-service-target home-service-target-2">
                                 <div className="home-service-target-content">
                                     <p className="font-anton text-title">Alquiler de grúas telescópicas</p>
-
-                                    -----
                                     
                                     <img src="https://images.unsplash.com/photo-1498661694102-0a3793edbe74?q=80&w=1404&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" className="img-simple" alt="" />
 

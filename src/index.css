@@ -735,6 +735,17 @@ header.active{
     color: var(--black-9);
 }
 
+.home-service-target-content{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.home-service-target-content p.font-anton.text-title{
+    padding-bottom: 10px;
+    border-bottom: 1px solid var(--white)
+}
+
 .home-service-target-3{
     grid-column: 1/-1;
 }
@@ -1242,6 +1253,7 @@ footer{
     .home-services-container{
         display: flex;
         flex-direction: column;
+        gap: 10px;
     }
 
     .home-service-target-list{
@@ -1251,8 +1263,16 @@ footer{
     }
 
     .home-service-target-list ul{
-        width: 571.9px;
-        display: flex;
+        flex-wrap: nowrap;
+    }
+
+    .home-service-target-list ul li{
+        width: 100%
+    }
+
+    .home-service-target-list ul li button{
+        width: 100%;
+        min-width: 270px;
     }
 
     .home-service-target-3{
