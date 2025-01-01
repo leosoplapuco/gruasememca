@@ -20,7 +20,7 @@ body::-webkit-scrollbar{
 }
 
 :root{
-    --body: #EDEDED;
+    --body: #F9f9f9;
     
     --header: #FFFFFF;
     --footer: #000000;
@@ -1242,6 +1242,17 @@ footer{
     .home-services-container{
         display: flex;
         flex-direction: column;
+    }
+
+    .home-service-target-list{
+        width: 100%;
+        overflow-x: auto;
+        padding-bottom: 10px;
+    }
+
+    .home-service-target-list ul{
+        width: 571.9px;
+        display: flex;
     }
 
     .home-service-target-3{
