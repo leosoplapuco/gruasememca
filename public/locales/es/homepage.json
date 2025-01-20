@@ -1,0 +1,36 @@
+{
+    "head":[
+        {
+            "title": "Alquiler de grúas telescópicas | Grúas Ememca",
+            "cannonical": "https://www.gruasememca.vercel.app/es/",
+            "description": "Descripción de la página principal",
+            
+            "ogTitle": "Alquiler de grúas telescópicas | Grúas Ememca",
+            "ogDescription": "Descripción para card en redes sociales",
+            "ogImage": "url-imagen",
+            "ogUrl": "https://www.gruasememca.vercel.app/es/",
+
+            "twitterCard": "url-imagen",
+            "twitterTitle": "Alquiler de grúas telescópicas | Grúas Ememca",
+            "twitterDescription": "Descripción para card de Twitter",
+            "twitterImage": "url-icono"
+        }
+    ],
+    "welcome":[
+        {
+            "text": "Bienvenidos a Grúas Ememca"
+        }
+    ],
+    "h1":[
+        {
+            "spanOne": "Alquiler de",
+            "spanTwo": "grúas telescópicas"
+        }
+    ],
+    "resumeTexts":[
+        {
+            "textOne": "Contamos con grúas telescópicas con capacidad de carga de hasta las 200 toneladas.",
+            "textTwo": "También ofrecemos servicios de izaje para contenedores, maquinaria pesada, estructuras y más"
+        }
+    ]
+}

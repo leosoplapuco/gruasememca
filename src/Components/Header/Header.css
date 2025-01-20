@@ -1,0 +1,156 @@
+/* Font's family */
+
+@font-face{
+    font-family: 'Anton';
+    src: url('../../../public/assets/fonts/AntonSC-Regular.ttf') format('truetype');
+}
+
+/**/
+
+header{
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: auto;
+    background: var(--header);
+    box-shadow: 0 0 5px rgba(0 0 0 / 0.25);
+    transition: var(--t-200ms)
+}
+
+.header{
+    width: 100%;
+}
+
+.header-top-container{
+    width: 100%;
+    height: 40px;
+    padding: 0 20px;
+    display: flex;
+    background: var(--header-top);
+}
+
+.header-top{
+    margin: auto;
+    width: 100%;
+    max-width: 2000px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.social-networks{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+
+.social-networks li a i{
+    color: var(--white);
+    font-size: 16px;
+}
+
+.header-contact{
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.header-contact li a{
+    display: flex;
+    gap: 5px;
+}
+
+.header-contact li a span,
+.header-contact li a p{
+    color: var(--white);
+    transition: var(--t-100ms);
+}
+
+.header-contact li a:hover p{
+    text-decoration: underline;
+}
+
+/**/
+
+.header-bottom-container{
+    width: 100%;
+    height: 80px;
+    padding: 0 20px;
+}
+
+.header-bottom{
+    margin: auto;
+    width: 100%;
+    height: 100%;
+    max-width: 2000px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.header-logo p{
+    display: flex;
+    gap: 3px;
+}
+
+.header-logo p,
+.header-logo p span{
+    font-family: 'Anton';
+    text-transform: uppercase;
+    font-weight: normal;
+    font-size: 32px;
+    transition: var(--t-200ms);
+}
+
+.header-logo p{
+    color: var(--black-0);
+}
+
+.header-logo p span{
+    color: var(--red);
+}
+
+.menu-container{
+    margin-left: auto;
+}
+
+.menu{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.menu-link{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.menu-link h2{
+    color: var(--black-5);
+}
+
+.menu-link span{
+    font-size: 22px;
+}
+
+.menu-link h2,
+.menu-link span{
+    color: var(--black-5);
+}
+
+.menu-link:hover h2,
+.menu-link:hover span{
+    color: var(--black-0);
+}
+
+.menu-button{
+    display: none;
+}
+
+/**/
