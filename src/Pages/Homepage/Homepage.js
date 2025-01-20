@@ -51,12 +51,12 @@ const Homepage = () => {
                             <ul className="d-flex gap-10">
                                 <li>
                                     <a href="" className="link link-1">
-                                        <p>asdasdas</p>
+                                        <p>Saber más</p>
                                     </a>
                                 </li>
                                 <li>
                                     <a href="" className="link link-2">
-                                        <p>121212</p>
+                                        <p>Cotizar ahora</p>
                                     </a>
                                 </li>
                             </ul>
