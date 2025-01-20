@@ -3,6 +3,8 @@ import { useTranslation } from 'react-i18next';
 
 import { useNavigate, useLocation } from 'react-router-dom';
 
+import './Languages.css'
+
 function LanguageSwitcher() {
     const { t } = useTranslation('settings');
 
@@ -42,23 +44,18 @@ function LanguageSwitcher() {
 
     return(
         <ul className='language-buttons'>
-            <li className='d-flex-column gap-10'>
-                <p className='text'>{t('languages.0.title')}</p>
-
-                <ul className='d-flex gap-10'>
-                    <li>
-                        <button type='button' className='language-button en active' onClick={() => changeLanguage('es')}>
-                            <img src="/assets/images/icons/espanol-icono.png" alt='bandera española'></img>
-                            <span>Español</span>
-                        </button>
-                    </li>
-                    <li>
-                        <button type='button' className='language-button es' onClick={() => changeLanguage('en')}>
-                            <img src="/assets/images/icons/ingles-icono.png" alt='bandera estados unidos'></img>
-                            <span>English</span>
-                        </button>
-                    </li>
-                </ul>
+            <li>
+                <button type='button' className='language-button en active' onClick={() => changeLanguage('es')}>
+                    <span>ES</span>
+                </button>
+            </li>
+            <li>
+                <span>-</span>
+            </li>
+            <li>
+                <button type='button' className='language-button es' onClick={() => changeLanguage('en')}>
+                    <span>EN</span>
+                </button>
             </li>
         </ul>
     );

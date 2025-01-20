@@ -1,81 +1,37 @@
 .dark-mode{
-    --body: #111111;
-
-    --header: #222222;
-
-    --red: #F13232;
-
-    --text: #C7C4C4;
+    --body: #000000;
+    --header: #333333;
+    --header-top: #222222;
 }
 
-/**/
+/* Text's style */
 
-.dark-mode .dark-button:hover,
-.dark-mode .language-button:hover{
-    background: rgba(235 235 235 / 0.25);
+.dark-mode .text{
+    color: var(--white);
 }
 
-/**/
+/* Header's styles */
 
 .dark-mode .menu-link h2,
 .dark-mode .menu-link span{
-    color: var(--text);
+    color: var(--white);
 }
 
 .dark-mode .menu-link:hover h2,
-.dark-mode .menu-link.active h2,
-.dark-mode .menu-link:hover span,
-.dark-mode .menu-link.active span{
+.dark-mode .menu-link:hover span{
+    color: var(--black-9);
+}
+
+.dark-mode .header-logo p{
     color: var(--white);
 }
 
-/**/
+/* Button's link style */
 
-.dark-mode .menu-icon{
-    background: rgba(235 235 235 / 0.075);
+.dark-mode .link-1:hover{
+    background: rgba(255 255 255 / 0.15);
 }
 
-.dark-mode .menu-icon span{
+.dark-mode .link-1 p{
     color: var(--white);
-}
-
-/**/
-
-.dark-mode .block-title-container h3{
-    color: var(--white);
-}
-
-/**/
-
-.dark-mode .text-title{
-    color: var(--white);
-}
-
-/**/
-
-.dark-mode .settings-container{
-    border-top: 2px solid var(--white);
-}
-
-.dark-mode .settings-button{
-    background: var(--white);
-}
-
-.dark-mode .settings-button span{
-    color: var(--red);
-}
-
-/**/
-
-.dark-mode footer{
-    background: var(--black-0);
-}
-
-/**/
-
-@media screen and (max-width: 600px){
-    .dark-mode .menu-link:hover,
-    .dark-mode .menu-link.active{
-        background: rgba(235 235 235 / 0.075);
-    }
 }

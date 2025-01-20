@@ -1,0 +1,15 @@
+.language-buttons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+
+.language-buttons li span{
+    color: var(--white);
+}
+
+.language-buttons li button span{
+    color: var(--white);
+    font-size: 14px;
+}

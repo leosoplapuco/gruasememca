@@ -1,0 +1,30 @@
+{
+    "head":[
+        {
+            "title": "Telescopic crane rental | Grúas Ememca",
+            "cannonical": "https://www.gruasememca.vercel.app/es/",
+            "description": "Descripción de la página principal",
+            
+            "ogTitle": "Telescopic crane rental | Grúas Ememca",
+            "ogDescription": "Descripción para card en redes sociales",
+            "ogImage": "url-imagen",
+            "ogUrl": "https://www.gruasememca.vercel.app/es/",
+
+            "twitterCard": "url-imagen",
+            "twitterTitle": "Telescopic crane rental | Grúas Ememca",
+            "twitterDescription": "Descripción para card de Twitter",
+            "twitterImage": "url-icono"
+        }
+    ],
+    "welcome":[
+        {
+            "text": "Welcome to Grúas Ememca"
+        }
+    ],
+    "h1":[
+        {
+            "spanOne": "Telescopic",
+            "spanTwo": "crane rental"
+        }
+    ]
+}

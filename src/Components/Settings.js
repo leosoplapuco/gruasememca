@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import { useTranslation } from 'react-i18next';
 
 import Languages from './Languages';
-import DarkButton from './DarkButton';
 
 function Settings() {
     const { t } = useTranslation('settings');
@@ -26,7 +25,6 @@ function Settings() {
 
                 <div className='d-flex gap-20'>
                     <Languages/>
-                    <DarkButton/>
                 </div>
             </div>
         </div>

@@ -1,0 +1,15 @@
+.dark-button{
+    /* background: orange; */
+    /* height: 32px; */
+    width: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+    padding: 0 5px;
+}
+
+.dark-button span{
+    font-size: 20px;
+    color: var(--white);
+}

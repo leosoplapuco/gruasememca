@@ -1,0 +1,45 @@
+@media screen and (max-width: 600px){
+
+    .call-button{
+        width: 48px !important;
+        height: 48px !important;
+        padding: 0 0;
+    }
+
+    .call-button p{
+        display: none;
+    }
+
+    /* Header's style */
+
+    .header-contact li a p{
+        display: none;
+    }
+
+    .header-bottom{
+        gap: 10px;
+    }
+
+    .menu-button{
+        display: flex;
+        position: relative;
+        width: 48px;
+        height: 48px;
+        background: var(--white);
+    }
+
+    .menu-button span{
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        translate: -50% -50%;
+    }
+    
+    .menu-container{
+        display: none;
+    }
+
+    .header-bottom .call-button{
+        margin-left: auto;
+    }
+}

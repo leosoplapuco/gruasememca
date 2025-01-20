@@ -10,119 +10,18 @@
             "icon": "phone_in_talk",
             "text": "LLamar ahora",
             "href": "tel: +51989361291"
-        }
-    ],
-    "menuLinks":[
-        {
-            "id": 1,
-            "icon": "handshake",
-            "text": "Servicios",
-            "subHeader":[
-                {
-                    "id": 1,
-                    "title": "Nuestros servicios",
-                    "text": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text",
-                    "linkHref": "/es/servicios/",
-                    "link": "Saber más"
-                },
-                {
-                    "links":[
-                        {
-                            "id": 1,
-                            "imgSrc": "/assets/images/icons/grua.png",
-                            "imgAlt": "gruas ememca",
-                            "href": "/es/servicios/alquiler-de-gruas-telescopicas",
-                            "text": "Alquiler de grúas telescópicas",
-                            "description": "Contamos con nuestra flota de grúas telescópicas con capacidades de carga de hasta 220 toneladas."
-                        },
-                        {
-                            "id": 2,
-                            "imgSrc": "/assets/images/icons/izaje.png",
-                            "imgAlt": "gruas ememca",
-                            "href": "/es/servicios/izaje",
-                            "text": "Izaje",
-                            "description": "Servicios generales de izaje, para contenedores, estructuras metálicas, postes, maquinaria, y más."
-                        },
-                        {
-                            "id": 3,
-                            "imgSrc": "/assets/images/icons/grua.png",
-                            "imgAlt": "gruas ememca",
-                            "href": "/es/servicios/montaje-y-desmontaje",
-                            "text": "Montaje y desmontaje",
-                            "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry."
-                        },
-                        {
-                            "id": 4,
-                            "imgSrc": "/assets/images/icons/eliminacion-de-tierra.png",
-                            "imgAlt": "gruas ememca",
-                            "href": "/es/servicios/eliminacion-de-tierra",
-                            "text": "Eliminación de tierra",
-                            "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry."
-                        }
-                    ]
-                }
-            ]
         },
         {
             "id": 2,
-            "icon": "auto_towing",
-            "text": "Maquinaria",
-            "href": "/es/maquinaria/"
-        },
+            "href": "mailto: contacto@gruasememca.com",
+            "title": "Escribenos a nuestro correo",
+            "text": "contacto@gruasememca.com"
+        }
+    ],
+    "DarkButton":[
         {
-            "id": 3,
-            "icon": "diversity_3",
-            "text": "Nosotros",
-            "href": "/es/nosotros/",
-            "subHeader":[
-                {
-                    "id": 1,
-                    "title": "Sobre nosotros",
-                    "text": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text",
-                    "linkHref": "/es/nosotros/",
-                    "link": "Saber más"
-                },
-                {
-                    "links":[
-                        {
-                            "id": 1,
-                            "imgSrc": "/assets/images/icons/grua.png",
-                            "imgAlt": "gruas ememca",
-                            "href": "/es/nosotros/",
-                            "text": "Sobre nosotros",
-                            "description": "Somos una empresa con más de 15 años de experiencia especialistas en el alquiler de grúas telescópicas."
-                        },
-                        {
-                            "id": 2,
-                            "imgSrc": "/assets/images/icons/grua.png",
-                            "imgAlt": "gruas ememca",
-                            "href": "/es/nosotros/nuestro-equipo",
-                            "text": "Nuestro equipo",
-                            "description": "Operadores altamente calificados y capacitados con más de 5000 horas en maniobras."
-                        },
-                        {
-                            "id": 3,
-                            "imgSrc": "/assets/images/icons/grua.png",
-                            "imgAlt": "gruas ememca",
-                            "href": "/es/nosotros/certificaciones",
-                            "text": "Nuestras certificaciones",
-                            "description": "Nuestros operadores y pasar por constantes capacitaciones."
-                        }
-                    ]
-                }
-            ]
-        },
-        {
-            "id": 4,
-            "icon": "mail",
-            "text": "Clientes",
-            "href": "/es/nosotros/clientes"
-        },
-        {
-            "id": 5,
-            "icon": "newspaper",
-            "text": "Blog",
-            "href": ""
+            "id": 1,
+            "title": "Tema"
         }
     ]
 }
