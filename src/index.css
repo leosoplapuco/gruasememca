@@ -167,6 +167,12 @@ button{
     padding: 0 20px;
     border-radius: 4px;
     gap: 10px;
+    transition: var(--t-200ms);
+}
+
+.link p,
+.link span{
+    transition: var(--t-200ms);
 }
 
 .link-1:hover{

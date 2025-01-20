@@ -51,12 +51,12 @@ const Homepage = () => {
                             <ul className="d-flex gap-10">
                                 <li>
                                     <a href="" className="link link-1">
-                                        <p>asdasdas</p>
+                                        <p>Saber más</p>
                                     </a>
                                 </li>
                                 <li>
                                     <a href="" className="link link-2">
-                                        <p>121212</p>
+                                        <p>Cotizar ahora</p>
                                     </a>
                                 </li>
                             </ul>
@@ -64,7 +64,8 @@ const Homepage = () => {
 
                         <div className="hero-target hero-target-2">
                             <div className="hero-target-video-container">
-                                <iframe src="https://www.youtube.com/embed/L0AuNQEh5DM?si=jWNI9k355_dlTj_w" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQWKHDEwDsYLHEsR-c9FEm-nRp6L9n6vW8I7g&s"></img>
+                                {/* <iframe src="https://www.youtube.com/embed/L0AuNQEh5DM?si=jWNI9k355_dlTj_w" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> */}
                             </div>
                         </div>
                     </section>
