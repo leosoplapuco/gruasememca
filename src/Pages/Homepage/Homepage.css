@@ -9,7 +9,7 @@
 .hero-content{
     margin: auto;
     width: 100%;
-    max-width: 2000px;
+    max-width: 1600px;
     height: 100%;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -41,7 +41,7 @@
     font-family: 'Anton', sans-serif;
     font-weight: unset;
     text-transform: uppercase;
-    font-size: 48px;
+    font-size: 56px;
 }
 
 .hero-target-1 h1{
@@ -58,15 +58,15 @@
     display: flex;
 }
 
-.hero-target-video-container iframe{
+.hero-target-video-container img{
     margin: auto;
     width: 100%;
     max-width: 480px;
-    height: 480px;
+    /* height: 480px; */
     border-radius: 25px;
-    aspect-ratio: 1/1;
+    /* aspect-ratio: 1/1; */
     object-fit: contain;
-    border: 3px solid var(--red);
+    /* border: 3px solid var(--red); */
     transition: var(--t-200ms);
 }
 
@@ -84,4 +84,14 @@
 
 .dark-mode .hero-target-video-container iframe{
     border: 3px solid var(--white);
+}
+
+@media screen and (max-width: 600px){
+    .hero-container{
+        height: auto;
+        max-height: none;
+    }
+    .hero-content{
+        grid-template-columns: 1fr;
+    }
 }
