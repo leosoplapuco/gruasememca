@@ -12,6 +12,10 @@
     list-style: none;
 }
 
+body::-webkit-scrollbar{
+    display: none;
+}
+
 /* Root's style */
 
 :root{
@@ -192,5 +196,17 @@ button{
 }
 
 /*  */
+
+@media screen and (max-width: 600px){
+    *{
+        font-size: 14px;
+    }
+
+    /* Link's style */
+
+    .link{
+        height: 48px;
+    }
+}
 
 @import url('./Responsive.css');

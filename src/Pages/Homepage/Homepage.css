@@ -30,10 +30,11 @@
 }
 
 .hero-target-welcome{
-    border: 1px solid var(--red);
-    padding: 10px;
+    padding: 10px 15px;
     border-radius: 4px;
     color: var(--red);
+    background: rgb(218 19 31 / 0.1);
+    transition: var(--t-200ms);
 }
 
 .hero-target-1 h1,
@@ -41,7 +42,8 @@
     font-family: 'Anton', sans-serif;
     font-weight: unset;
     text-transform: uppercase;
-    font-size: 56px;
+    font-size: 72px;
+    transition: var(--t-200ms);
 }
 
 .hero-target-1 h1{
@@ -74,7 +76,6 @@
 
 .dark-mode .hero-target-welcome{
     color: var(--white);
-    border: 1px solid var(--white);
     background: rgba(255 255 255 / 0.15);
 }
 
@@ -86,6 +87,8 @@
     border: 3px solid var(--white);
 }
 
+/* Responsive */
+
 @media screen and (max-width: 600px){
     .hero-container{
         height: auto;
@@ -93,5 +96,9 @@
     }
     .hero-content{
         grid-template-columns: 1fr;
+    }
+    .hero-target-1 h1,
+    .hero-target-1 h1 span{
+        font-size: 56px;
     }
 }
