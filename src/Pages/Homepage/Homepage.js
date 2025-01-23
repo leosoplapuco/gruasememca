@@ -5,7 +5,7 @@ import { useTranslation } from 'react-i18next';
 import Header from '../../Components/Header/Header';
 // import BlogTargets from '../../Components/BlogTargets';
 // import Settings from '../../Components/Settings';
-import Footer from '../../Components/Footer';
+import Footer from '../../Components/Footer/Footer';
 
 import './Homepage.css';
 
@@ -66,12 +66,6 @@ const Homepage = () => {
                             <div className="hero-target-video-container">
                                 <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQWKHDEwDsYLHEsR-c9FEm-nRp6L9n6vW8I7g&s"></img>
                             </div>
-{/* 
-                            <div className="target-video-layer">
-                                <div className="target-video-container">
-                                    <iframe src="https://www.youtube.com/embed/L0AuNQEh5DM?si=jWNI9k355_dlTj_w" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                                </div>
-                            </div> */}
                         </div>
                     </section>
                 </div>
