@@ -146,7 +146,7 @@ function Header(){
                         </a>
 
                         <button type='button' className='menu-button'>
-                            <span class="material-icons">menu</span>
+                            <span className="material-icons">menu</span>
                         </button>
                     </div>
                 </div>
