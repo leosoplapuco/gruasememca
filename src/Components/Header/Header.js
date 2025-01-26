@@ -89,11 +89,11 @@ function Header(){
 
                         <p className='color-white'>|</p>
 
-                        <DarkButton/>
+                        <Languages/>
 
                         <p className='color-white'>|</p>
 
-                        <Languages/>
+                        <DarkButton/>
                     </div>
                 </div>
 

@@ -26,5 +26,24 @@
             "spanOne": "Telescopic",
             "spanTwo": "crane rental"
         }
+    ],
+    "resumeTexts":[
+        {
+            "textOne": "We have telescopic cranes with a load capacity of up to 200 tons. We have telescopic cranes with a load capacity of up to 200 tons.",
+            "textTwo": "We also offer lifting services for containers, heavy machinery, structures and more. We also offer lifting services for containers, heavy machinery, structures and more."
+        }
+    ],
+    "heroLinks":[
+        {
+            "linkOne": "More about us",
+            "linkTwo": "Call us now"
+        }
+    ],
+    "targetVideo":[
+        {
+            "description": "Brief description of the video...",
+            "linkText": "See more",
+            "linkHref": "#"
+        }
     ]
 }
