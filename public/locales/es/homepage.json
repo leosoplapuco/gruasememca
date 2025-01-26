@@ -32,5 +32,18 @@
             "textOne": "Contamos con grúas telescópicas con capacidad de carga de hasta las 200 toneladas. Contamos con grúas telescópicas con capacidad de carga de hasta las 200 toneladas.",
             "textTwo": "También ofrecemos servicios de izaje para contenedores, maquinaria pesada, estructuras y más. También ofrecemos servicios de izaje para contenedores, maquinaria pesada, estructuras y más."
         }
+    ],
+    "heroLinks":[
+        {
+            "linkOne": "Sobre nosotros",
+            "linkTwo": "Llamar ahora"
+        }
+    ],
+    "targetVideo":[
+        {
+            "description": "Breve descripción del video...",
+            "linkText": "Conocer más",
+            "linkHref": "#"
+        }
     ]
 }
