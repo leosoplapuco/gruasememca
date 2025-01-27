@@ -100,7 +100,7 @@ const Homepage = () => {
                         <p className="text">{t('targetVideo.0.description')}</p>
 
                         <a className="link link-2 margin-left" href={t('targetVideo.0.linkHref')} title={t('targetVideo.0.linkText')}>
-                            <p>{t('targetVideo.0.linkText')}</p>
+                            <p>{t('targetVideo.0.linkText')} + texto de prueba</p>
                             <span class="material-icons">arrow_forward</span>
                         </a>
                     </div>
