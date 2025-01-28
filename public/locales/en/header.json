@@ -1,9 +1,4 @@
 {
-    "logo":[
-        {
-            "href": "/en/"
-        }
-    ],
     "headerTopContactLinks":[
         {
             "id": 1,
@@ -22,6 +17,68 @@
         {
             "id": 1,
             "title": "Theme"
+        }
+    ],
+    "logo":[
+        {
+            "href": "/en/"
+        }
+    ],
+    "menuLinks":[
+        {
+            "id": 1,
+            "href": "/en/",
+            "title": "Home",
+            "h2": "Home"
+        },
+        {
+            "id": 2,
+            "title": "Services | Grúas Ememca",
+            "h2": "Services",
+            "subMenu":[
+                {
+                    "id": 1,
+                    "columnOne":[
+                        {
+                            "id": 1,
+                            "title": "Our services",
+                            "resume": "In this section there will be a short text explaining the advantages of the company's services...",
+                            "linkHref": "https://gruasememca.com/",
+                            "linkText": "Learn more"
+                        }
+                    ],
+                    "columnTwo":[
+                        {
+                            "id": 1,
+                            "imgSrc": "",
+                            "imgAlt": "",
+                            "title": "Telescopic crane rental",
+                            "text": "We have our own fleet of telescopic cranes with load capacities of up to 220 tons."
+                        },
+                        {
+                            "id": 2,
+                            "imgSrc": "",
+                            "imgAlt": "",
+                            "title": "Lifting",
+                            "text": "General lifting services for containers, metal structures, poles, machinery and more."
+                        },
+                        {
+                            "id": 3,
+                            "imgSrc": "",
+                            "imgAlt": "",
+                            "title": "Assembly and disassembly",
+                            "text": "We have our own fleet of telescopic cranes with load capacities of up to 220 tons."
+                        },
+                        {
+                            "id": 4,
+                            "imgSrc": "",
+                            "imgAlt": "",
+                            "title": "Removal of soil",
+                            "text": "We have our own fleet of telescopic cranes with load capacities of up to 220 tons."
+                        }
+                    ]
+                }
+            ]
         }
     ]
 }
