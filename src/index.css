@@ -294,7 +294,7 @@ button{
     background: var(--header-top);
 }
 
-.hero-target-content iframe{
+.hero-target-content video{
     width: 100%;
     height: 450px;
     border-radius: 12px;

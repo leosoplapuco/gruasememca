@@ -28,65 +28,86 @@
         {
             "id": 1,
             "href": "/es/",
-            "title": "Inicio",
             "h2": "Inicio"
         },
         {
             "id": 2,
-            "title": "Servicios | Grúas Ememca",
+            "href": "/es/servicios/",
             "h2": "Servicios",
             "subMenu":[
                 {
                     "id": 1,
-                    "columnOne":[
+                    "title": "Nuestros servicios",
+                    "resume": "Contamos con flota propia de grúas telescópicas con capacidades de carga de hasta las 200 toneladas.",
+                    "links":[
                         {
                             "id": 1,
-                            "title": "Nuestros servicios",
-                            "resume": "En esta sección habrá un breve texto explicando las ventajas de los servicios de la empresa...",
-                            "linkHref": "https://gruasememca.com/",
-                            "linkText": "Saber más"
-                        }
-                    ],
-                    "columnTwo":[
-                        {
-                            "id": 1,
+                            "href": "/es/servicios/alquiler-de-gruas-telescopicas",
+                            "title": "Alquiler de grúas telescópicas | Grúas Ememca",
                             "imgSrc": "",
                             "imgAlt": "",
-                            "title": "Alquiler de grúas telescópicas",
-                            "text": "Contamos con nuestra propia flota de grúas telescópicas con capacidades de carga de hasta las 220 toneladas."
+                            "h3": "Alquiler de grúas telescópicas",
+                            "text": "Contamos con flota propia de grúas telescópicas con capacidades de carga de hasta las 200 toneladas."
                         },
                         {
                             "id": 2,
+                            "href": "/es/servicios/izaje/",
+                            "title": "Izaje | Grúas Ememca",
                             "imgSrc": "",
                             "imgAlt": "",
-                            "title": "Izaje",
-                            "text": "Servicios generales de izaje para contenedores, estructuras metállicas, postes, maquinaria y más."
-                        },
-                        {
-                            "id": 3,
-                            "imgSrc": "",
-                            "imgAlt": "",
-                            "title": "Montaje y desmontaje",
-                            "text": "Contamos con nuestra propia flota de grúas telescópicas con capacidades de carga de hasta las 220 toneladas."
-                        },
-                        {
-                            "id": 4,
-                            "imgSrc": "",
-                            "imgAlt": "",
-                            "title": "Eliminación de tierra",
-                            "text": "Contamos con nuestra propia flota de grúas telescópicas con capacidades de carga de hasta las 220 toneladas."
+                            "h3": "Izaje",  
+                            "text": "Contamos con flota propia de grúas telescópicas con capacidades de carga de hasta las 200 toneladas."
                         }
                     ]
                 }
             ]
-        }
-    ],
-    "socialNetworks":[
+        },
         {
-            "id": 1,
-            "href": "https://www.facebook.com/gruasememcasac08",
-            "title": "Facebook",
-            "img": "https://gruasememca.vercel.app/"
+            "id": 3,
+            "href": "/es/nosotros/",
+            "h2": "Nosotros",
+            "subMenu":[
+                {
+                    "id": 1,
+                    "title": "Acerca de nosotros",
+                    "resume": "Contamos con flota propia de grúas telescópicas con capacidades de carga de hasta las 200 toneladas.",
+                    "links":[
+                        {
+                            "id": 1,
+                            "href": "/es/servicios/alquiler-de-gruas-telescopicas",
+                            "title": "Alquiler de grúas telescópicas | Grúas Ememca",
+                            "imgSrc": "",
+                            "imgAlt": "",
+                            "h3": "Alquiler de grúas telescópicas",
+                            "text": "Contamos con flota propia de grúas telescópicas con capacidades de carga de hasta las 200 toneladas."
+                        },
+                        {
+                            "id": 2,
+                            "href": "/es/servicios/izaje/",
+                            "title": "Izaje | Grúas Ememca",
+                            "imgSrc": "",
+                            "imgAlt": "",
+                            "h3": "Izaje",  
+                            "text": "Contamos con flota propia de grúas telescópicas con capacidades de carga de hasta las 200 toneladas."
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": 4,
+            "href": "/es/maquinaria/",
+            "h2": "Maquinaria"
+        },
+        {
+            "id": 5,
+            "href": "/es/contacto",
+            "h2": "Contacto"
+        },
+        {
+            "id": 6,
+            "href": "https://blog.gruasememca.com",
+            "h2": "Blog"
         }
     ]
 }
