@@ -3,52 +3,11 @@ import './Header.css';
 import DarkButton from '../DarkButton/DarkButton';
 import Languages from '../Languages/Languages';
 
-import React, { useState, useEffect } from 'react';
+// import React, { useState, useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
 
 function Header(){
     const { t } = useTranslation('header');
-
-    // const [isActive, setIsActive] = useState(false);
-    // const [activeMenu, setActiveMenu] = useState(null);
-    // const [menuOpen, setMenuOpen] = useState(false);
-
-    // useEffect(() => {
-    //     const handleScroll = () => {
-    //         if (window.scrollY > 100) {
-    //             setIsActive(true);
-    //         } else {
-    //             setIsActive(false);
-    //         }
-    //     };
-
-    //     window.addEventListener('scroll', handleScroll);
-    //     return () => {
-    //         window.removeEventListener('scroll', handleScroll);
-    //     };
-    // }, []);
-
-    // const handleMenuClick = (menu) => {
-    //     if (menu === 'menu-3') {
-    //         document.querySelector('.menu-link-3').classList.add('active');
-    //         document.querySelector('.sub-header-container-2').classList.add('active');
-
-    //         document.querySelector('.menu-link-1').classList.remove('active');
-    //         document.querySelector('.sub-header-container-1').classList.remove('active');
-    //     } else if (menu === 'menu-1') {
-    //         document.querySelector('.menu-link-1').classList.add('active');
-    //         document.querySelector('.sub-header-container-1').classList.add('active');
-
-    //         document.querySelector('.menu-link-3').classList.remove('active');
-    //         document.querySelector('.sub-header-container-2').classList.remove('active');
-    //     }
-
-    //     setActiveMenu(menu === activeMenu ? null : menu);
-    // };
-
-    // const toggleMenu = () => {
-    //     setMenuOpen(!menuOpen);
-    // };
 
     return(
         <header>
@@ -57,8 +16,8 @@ function Header(){
                     <div className='header-top'>
                         <ul className='social-networks'>
                             <li>
-                                <a href="https://www.facebook.com/gruasememcasac08" title="Nuestro perfil de Facebook" target='_blank'>
-                                    <i className="fa-brands fa-facebook"></i>
+                                <a href={t('socialNetworks.0.href')} title={t('socialNetworks.0.title')} target='_blank'>
+                                    <img src={t('socialNetworks.0.img')} alt={t('socialNetworks.0.title')} width={16} height={16} />
                                 </a>
                             </li>
                             <li>
@@ -99,7 +58,7 @@ function Header(){
 
                 <div className='header-bottom-container'>
                     <div className='header-bottom'>
-                        <a href='' title='' className='header-logo'>
+                        <a href='/' title='' className='header-logo'>
                             <p>Grúas<span>Ememca</span></p>
                         </a>
 
