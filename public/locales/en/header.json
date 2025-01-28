@@ -38,47 +38,77 @@
             "subMenu":[
                 {
                     "id": 1,
-                    "columnOne":[
+                    "title": "Nuestros servicios",
+                    "resume": "Contamos con flota propia de grúas telescópicas con capacidades de carga de hasta las 200 toneladas.",
+                    "links":[
                         {
                             "id": 1,
-                            "title": "Our services",
-                            "resume": "In this section there will be a short text explaining the advantages of the company's services...",
-                            "linkHref": "https://gruasememca.com/",
-                            "linkText": "Learn more"
-                        }
-                    ],
-                    "columnTwo":[
-                        {
-                            "id": 1,
+                            "href": "/es/servicios/alquiler-de-gruas-telescopicas",
+                            "title": "Alquiler de grúas telescópicas | Grúas Ememca",
                             "imgSrc": "",
                             "imgAlt": "",
-                            "title": "Telescopic crane rental",
-                            "text": "We have our own fleet of telescopic cranes with load capacities of up to 220 tons."
+                            "h3": "Alquiler de grúas telescópicas",
+                            "text": "Contamos con flota propia de grúas telescópicas con capacidades de carga de hasta las 200 toneladas."
                         },
                         {
                             "id": 2,
+                            "href": "/es/servicios/izaje/",
+                            "title": "Izaje | Grúas Ememca",
                             "imgSrc": "",
                             "imgAlt": "",
-                            "title": "Lifting",
-                            "text": "General lifting services for containers, metal structures, poles, machinery and more."
-                        },
-                        {
-                            "id": 3,
-                            "imgSrc": "",
-                            "imgAlt": "",
-                            "title": "Assembly and disassembly",
-                            "text": "We have our own fleet of telescopic cranes with load capacities of up to 220 tons."
-                        },
-                        {
-                            "id": 4,
-                            "imgSrc": "",
-                            "imgAlt": "",
-                            "title": "Removal of soil",
-                            "text": "We have our own fleet of telescopic cranes with load capacities of up to 220 tons."
+                            "h3": "Izaje",  
+                            "text": "Contamos con flota propia de grúas telescópicas con capacidades de carga de hasta las 200 toneladas."
                         }
                     ]
                 }
             ]
+        },
+        {
+            "id": 3,
+            "href": "/en/about-us/",
+            "h2": "About us",
+            "subMenu":[
+                {
+                    "id": 1,
+                    "title": "Acerca de nosotros",
+                    "resume": "Contamos con flota propia de grúas telescópicas con capacidades de carga de hasta las 200 toneladas.",
+                    "links":[
+                        {
+                            "id": 1,
+                            "href": "/es/servicios/alquiler-de-gruas-telescopicas",
+                            "title": "Alquiler de grúas telescópicas | Grúas Ememca",
+                            "imgSrc": "",
+                            "imgAlt": "",
+                            "h3": "Alquiler de grúas telescópicas",
+                            "text": "Contamos con flota propia de grúas telescópicas con capacidades de carga de hasta las 200 toneladas."
+                        },
+                        {
+                            "id": 2,
+                            "href": "/es/servicios/izaje/",
+                            "title": "Izaje | Grúas Ememca",
+                            "imgSrc": "",
+                            "imgAlt": "",
+                            "h3": "Izaje",  
+                            "text": "Contamos con flota propia de grúas telescópicas con capacidades de carga de hasta las 200 toneladas."
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": 4,
+            "href": "/en/machinery/",
+            "h2": "Machinery"
+        },
+        {
+            "id": 5,
+            "href": "/en/contact",
+            "h2": "Contact"
+        },
+        {
+            "id": 6,
+            "href": "https://blog.gruasememca.com",
+            "h2": "Blog"
         }
     ]
 }

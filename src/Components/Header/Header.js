@@ -17,22 +17,22 @@ function Header(){
                         <ul className='social-networks'>
                             <li>
                                 <a href={t('socialNetworks.0.href')} title={t('socialNetworks.0.title')} target='_blank'>
-                                    <img src={t('socialNetworks.0.img')} alt={t('socialNetworks.0.title')} width={16} height={16} />
+                                    <img src="https://gruasememca.vercel.app/assets/images/icons/social-networks/facebook.svg" alt={t('socialNetworks.0.title')} width={16} height={16} />
                                 </a>
                             </li>
                             <li>
                                 <a href="https://www.facebook.com/gruasememcasac08" title="Nuestro perfil de Instagram" target='_blank'>
-                                    <i className="fa-brands fa-instagram"></i>
+                                    <img src="https://gruasememca.vercel.app/assets/images/icons/social-networks/instagram.svg" alt={t('socialNetworks.0.title')} width={16} height={16} />
                                 </a>
                             </li>
                             <li>
                                 <a href="https://www.facebook.com/gruasememcasac08" title="Nuestro canal de YouTube" target='_blank'>
-                                    <i className="fa-brands fa-youtube"></i>
+                                    <img src="https://gruasememca.vercel.app/assets/images/icons/social-networks/youtube.svg" alt={t('socialNetworks.0.title')} width={16} height={16} />
                                 </a>
                             </li>
                             <li>
                                 <a href="https://www.facebook.com/gruasememcasac08" title="Nuestro perfil en LinkedIn" target='_blank'>
-                                    <i className="fa-brands fa-linkedin"></i>
+                                    <img src="https://gruasememca.vercel.app/assets/images/icons/social-networks/linkedin.svg" alt={t('socialNetworks.0.title')} width={16} height={16} />
                                 </a>
                             </li>
                         </ul>
@@ -63,39 +63,32 @@ function Header(){
                         </a>
 
                         <nav className='menu-container'>
-                            <ul className='menu'>
-                                <li>
-                                    <a href='' className='menu-link menu-link-1'>
-                                        <h2>Inicio</h2>
-                                    </a>
-                                </li>
-                                <li>
-                                    <button type='button' className='menu-link menu-link-2'>
-                                        <h2>Servicios</h2>
-                                        <span className="material-icons">keyboard_arrow_down</span>
-                                    </button>
-                                </li>
-                                <li>
-                                    <button type='button' className='menu-link menu-link-3'>
-                                        <h2>Nosotros</h2>
-                                        <span className="material-icons">keyboard_arrow_down</span>
-                                    </button>
-                                </li>
-                                <li>
-                                    <a href='' className='menu-link menu-link-4'>
-                                        <h2>Maquinaria</h2>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href='' className='menu-link menu-link-5'>
-                                        <h2>Contacto</h2>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href='' className='menu-link menu-link-6'>
-                                        <h2>Blog</h2>
-                                    </a>
-                                </li>
+                            <ul className="menu">
+                                {t('menuLinks', { returnObjects: true }).map((menuLink) => (
+                                    <li key={menuLink.id}>
+                                        {menuLink.id === 2 || menuLink.id === 3 ? (
+                                            <button className={`menu-link menu-link-${menuLink.id}`}>
+                                                <h2>{menuLink.h2}</h2>
+                                                <span className="material-icons">keyboard_arrow_down</span>
+                                            </button>
+                                        ) : (
+                                            <a href={menuLink.href} className={`menu-link menu-link-${menuLink.id}`}>
+                                                <h2>{menuLink.h2}</h2>
+                                            </a>
+                                        )}
+                                        {menuLink.subMenu && (
+                                            <div className="sub-menu-container">
+                                                <ul className="sub-menu">
+                                                    {menuLink.subMenu.map((subLink) => (
+                                                        <li key={subLink.id}>
+                                                            <p>{subLink.title}</p>
+                                                        </li>
+                                                    ))}
+                                                </ul>
+                                            </div>
+                                        )}
+                                    </li>
+                                ))}
                             </ul>
                         </nav>
 

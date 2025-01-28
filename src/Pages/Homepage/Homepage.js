@@ -95,13 +95,17 @@ const Homepage = () => {
                             <span className="material-icons text">close</span>
                         </button>
 
-                        <iframe src="https://www.youtube.com/embed/2lXYBChl3Lc?si=RYOaJC2SSlpOYEfF" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        <video controls>
+                            <source src="https://gruasememca.vercel.app/assets/videos/video.1.webm" />
+                        </video>
+
+                        {/* <iframe src="https://www.youtube.com/embed/2lXYBChl3Lc?si=RYOaJC2SSlpOYEfF" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> */}
                         
                         <p className="text">{t('targetVideo.0.description')}</p>
 
                         <a className="link link-2 margin-left" href={t('targetVideo.0.linkHref')} title={t('targetVideo.0.linkText')}>
                             <p>{t('targetVideo.0.linkText')}</p>
-                            <span class="material-icons">arrow_forward</span>
+                            <span className="material-icons">arrow_forward</span>
                         </a>
                     </div>
                 </div>
