@@ -110,5 +110,35 @@
             "href": "https://blog.gruasememca.com",
             "h2": "Blog"
         }
+    ],
+    "socialNetworks":[
+        {
+            "id": 1,
+            "href": "https://www.facebook.com/gruasememcasac08",
+            "title": "Facebook",
+            "imgSrc": "https://gruasememca.vercel.app/assets/images/icons/social-networks/facebook.svg",
+            "imgAlt": "Icono del logo de Facebook"
+        },
+        {
+            "id": 2,
+            "href": "https://www.facebook.com/gruasememcasac08",
+            "title": "Instagram",
+            "imgSrc": "https://gruasememca.vercel.app/assets/images/icons/social-networks/instagram.svg",
+            "imgAlt": "Icono del logo de Instagram"
+        },
+        {
+            "id": 3,
+            "href": "https://www.facebook.com/gruasememcasac08",
+            "title": "Youtube",
+            "imgSrc": "https://gruasememca.vercel.app/assets/images/icons/social-networks/youtube.svg",
+            "imgAlt": "Icono del logo de Youtube"
+        },
+        {
+            "id": 4,
+            "href": "https://www.facebook.com/gruasememcasac08",
+            "title": "LinkedIn",
+            "imgSrc": "https://gruasememca.vercel.app/assets/images/icons/social-networks/linkedin.svg",
+            "imgAlt": "Icono del logo de LinkedIn"
+        }
     ]
 }

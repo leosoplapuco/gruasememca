@@ -14,7 +14,7 @@ function Header(){
             <div className='header'>
                 <div className='header-top-container'>
                     <div className='header-top'>
-                        <ul className='social-networks'>
+                        {/* <ul className='social-networks'>
                             <li>
                                 <a href={t('socialNetworks.0.href')} title={t('socialNetworks.0.title')} target='_blank'>
                                     <img src="https://gruasememca.vercel.app/assets/images/icons/social-networks/facebook.svg" alt={t('socialNetworks.0.title')} width={16} height={16} />
@@ -35,6 +35,16 @@ function Header(){
                                     <img src="https://gruasememca.vercel.app/assets/images/icons/social-networks/linkedin.svg" alt={t('socialNetworks.0.title')} width={16} height={16} />
                                 </a>
                             </li>
+                        </ul> */}
+
+                        <ul className="social-networks">
+                            {t('socialNetworks', { returnObjects: true }).map((socialNetwork) => (
+                                <li key={socialNetwork.id}>
+                                    <a href={socialNetwork.href}>
+                                        <img src={socialNetwork.imgSrc} width={20} height={20} />
+                                    </a>
+                                </li>
+                            ))}
                         </ul>
 
                         <ul className='header-contact'>
