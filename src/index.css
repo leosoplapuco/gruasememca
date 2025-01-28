@@ -296,7 +296,8 @@ button{
 
 .hero-target-content video{
     width: 100%;
-    height: 450px;
+    height: auto;
+    max-height: 450px;
     border-radius: 12px;
 }
 

@@ -79,7 +79,7 @@ const Homepage = () => {
 
                         <div className="hero-target hero-target-2">
                             <div className="target-video target-video-1">
-                                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQWKHDEwDsYLHEsR-c9FEm-nRp6L9n6vW8I7g&s"></img>
+                                <img src="https://gruasememca.vercel.app/assets/images/Components/Hero/gruas-ememca-repsol-2024.webp" width={540} height={303} alt="Servicios de izaje para REPSOL - Grúas Ememca 2024"></img>
 
                                 <button type="button" className="target-video-button target-video-button-1" onClick={handlePlayButtonClick}>
                                     <span className="material-icons">play_arrow</span>
@@ -98,8 +98,6 @@ const Homepage = () => {
                         <video controls>
                             <source src="https://gruasememca.vercel.app/assets/videos/video-1.webm" type="video/webm" />
                         </video>
-
-                        {/* <iframe src="https://www.youtube.com/embed/2lXYBChl3Lc?si=RYOaJC2SSlpOYEfF" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> */}
                         
                         <p className="text">{t('targetVideo.0.description')}</p>
 
