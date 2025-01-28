@@ -96,7 +96,7 @@ const Homepage = () => {
                         </button>
 
                         <video controls>
-                            <source src="https://gruasememca.vercel.app/assets/videos/video.1.webm" />
+                            <source src="https://gruasememca.vercel.app/assets/videos/video-1.webm" type="video/webm" />
                         </video>
 
                         {/* <iframe src="https://www.youtube.com/embed/2lXYBChl3Lc?si=RYOaJC2SSlpOYEfF" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> */}
