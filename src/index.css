@@ -228,7 +228,8 @@ button{
     width: 100%;
     max-width: 540px;
     border-radius: 32px;
-    object-fit: contain;
+    object-fit: cover;
+    aspect-ratio: 4/2;
     transition: var(--t-200ms);
 }
 
@@ -298,14 +299,21 @@ button{
     width: 100%;
     height: auto;
     max-height: 450px;
-    border-radius: 12px;
+    border-radius: 24px;
 }
 
 /* Responsive */
 
+@media screen and (max-width: 800px){
+    *{
+        cursor: none;
+    }
+}
+
 @media screen and (max-width: 600px){
-    .hero-target-content iframe{
-        height: 280px;
+    .target-video img{
+        aspect-ratio: unset;
+        max-height: 240px;
     }
 }
 

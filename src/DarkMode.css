@@ -29,7 +29,7 @@
 /* Button's link style */
 
 .dark-mode .link-1:hover{
-    background: rgba(255 255 255 / 0.15);
+    background: rgba(255 255 255 / 0.25);
     border: 1px solid var(--white);
 }
 
