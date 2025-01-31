@@ -177,6 +177,10 @@ header{
     background: rgba(0 0 0 / 0.075);
     backdrop-filter: blur(2.5px);
     padding: 20px;
+
+    opacity: 0;
+    pointer-events: none;
+    user-select: none;
 }
 
 .sub-menu{

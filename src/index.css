@@ -302,6 +302,20 @@ button{
     border-radius: 24px;
 }
 
+/* Content */
+
+.block-container{
+    width: 100%;
+    display: flex;
+    padding: 20px;
+}
+
+.block-content{
+    margin: auto;
+    width: 100%;
+    max-width: 1600px;
+}
+
 /* Responsive */
 
 @media screen and (max-width: 800px){

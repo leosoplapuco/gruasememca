@@ -2,10 +2,9 @@ import React, { useEffect } from 'react';
 import { BrowserRouter as Router, Routes, Route, Navigate, useLocation } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 
-import Home from './Pages/Homepage/Homepage';
-// import Services from './Pages/services/Home';
-
 import './i18n';
+
+import Home from './Pages/Homepage/Homepage';
 
 function App(){
     const { i18n } = useTranslation();
@@ -30,11 +29,6 @@ function App(){
                 <Route path="/" element={<Navigate replace to="/es/" />}/>
                 <Route path="/es/" element={<Home/>}/>
                 <Route path="/en/" element={<Home/>}/>
-
-                {/* <Route path="/es/servicios/" element={<Services/>}/>
-                <Route path="/en/services/" element={<Services/>}/> */}
-
-                {/* <Route path="/es/servicios/alquiler-de-gruas-telescopicas" element={<Services/>}/> */}
             </Routes>
         </>
     );
@@ -43,7 +37,7 @@ function App(){
 export default function AppWrapper(){
     return(
         <Router>
-            <App />
+            <App/>
         </Router>
     );
 }

@@ -1,11 +1,13 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
 
+import './BlogTargets.css';
+
 function BlogTargets() {
     const { t } = useTranslation('blogTargets');
 
     return (
-        <div className='block-container'>
+        <div className='block-container block-container-blog-targets'>
             <section className='block-content'>
                 <div className='block-title-container'>
                     <h3>{t('title')}</h3>

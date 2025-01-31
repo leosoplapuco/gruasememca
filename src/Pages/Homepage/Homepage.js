@@ -1,11 +1,9 @@
-// import React from "react";
 import { Helmet } from "react-helmet";
 import { useTranslation } from 'react-i18next';
 import React, { useState } from "react";
 
 import Header from '../../Components/Header/Header';
-// import BlogTargets from '../../Components/BlogTargets';
-// import Settings from '../../Components/Settings';
+import BlogTargets from "../../Components/BlogTargets/BlogTargets";
 import Footer from '../../Components/Footer/Footer';
 
 import './Homepage.css';
@@ -107,6 +105,8 @@ const Homepage = () => {
                         </a>
                     </div>
                 </div>
+
+                <BlogTargets/>
             </main>
 
             <Footer/>

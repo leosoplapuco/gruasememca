@@ -1,16 +1,14 @@
-import './Header.css';
+import { useTranslation } from 'react-i18next';
+
 import DarkButton from '../DarkButton/DarkButton';
 import Languages from '../Languages/Languages';
-import { useState } from 'react';
-import { useTranslation } from 'react-i18next';
+
+// import GlobalVariables from '../GlobalVariables.json';
+
+import './Header.css';
 
 function Header() {
     const { t } = useTranslation('header');
-    const [openMenu, setOpenMenu] = useState(null);
-
-    const toggleSubMenu = (id) => {
-        setOpenMenu(openMenu === id ? null : id);
-    };
 
     return (
         <header>
@@ -43,6 +41,8 @@ function Header() {
                         <p className='color-white'>|</p>
 
                         <DarkButton />
+
+                        {/* <p>{GlobalVariables.NumberPhoneOne}</p> */}
                     </div>
                 </div>
 
@@ -58,36 +58,30 @@ function Header() {
                                     <li key={menuLink.id} className="menu-item">
                                         {menuLink.subMenu ? (
                                             <>
-                                                <button className={`menu-link menu-link-${menuLink.id}`} onClick={() => toggleSubMenu(menuLink.id)}>
+                                                <button className={`menu-link menu-link-${menuLink.id}`}>
                                                     <h2>{menuLink.h2}</h2>
-
-                                                    <span className="material-icons">
-                                                        {openMenu === menuLink.id ? "keyboard_arrow_up" : "keyboard_arrow_down"}
-                                                    </span>
+                                                    <span className="material-icons">keyboard_arrow_down</span>
                                                 </button>
-
-                                                {openMenu === menuLink.id && (
-                                                    <div className="sub-menu-container">
-                                                        {menuLink.subMenu.map((sub) => (
-                                                            <div key={sub.id} className="sub-menu">
-                                                                <div className="sub-menu-header">
-                                                                    <p className="sub-menu-title">{sub.title}</p>
-                                                                    <p className="sub-menu-resume text">{sub.resume}</p>
-                                                                </div>
-                                                                <ul className="sub-menu-links">
-                                                                    {sub.links.map((link) => (
-                                                                        <li key={link.id} className="sub-menu-item">
-                                                                            <a href={link.href} className="sub-menu-link">
-                                                                                <h3>{link.h3}</h3>
-                                                                                <p className='text'>{link.text}</p>
-                                                                            </a>
-                                                                        </li>
-                                                                    ))}
-                                                                </ul>
+                                                <div className="sub-menu-container">
+                                                    {menuLink.subMenu.map((sub) => (
+                                                        <div key={sub.id} className="sub-menu">
+                                                            <div className="sub-menu-header">
+                                                                <p className="sub-menu-title">{sub.title}</p>
+                                                                <p className="sub-menu-resume text">{sub.resume}</p>
                                                             </div>
-                                                        ))}
-                                                    </div>
-                                                )}
+                                                            <ul className="sub-menu-links">
+                                                                {sub.links.map((link) => (
+                                                                    <li key={link.id} className="sub-menu-item">
+                                                                        <a href={link.href} className="sub-menu-link">
+                                                                            <h3>{link.h3}</h3>
+                                                                            <p className='text'>{link.text}</p>
+                                                                        </a>
+                                                                    </li>
+                                                                ))}
+                                                            </ul>
+                                                        </div>
+                                                    ))}
+                                                </div>
                                             </>
                                         ) : (
                                             <a href={menuLink.href} className={`menu-link menu-link-${menuLink.id}`}>
