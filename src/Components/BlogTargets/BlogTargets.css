@@ -28,7 +28,11 @@
 }
 
 .blog-target:hover{
-    border: 1px solid rgba(0 0 0 / 0.15);
+    border: 1px solid rgba(0 0 0 / 0.25);
+}
+
+.dark-mode .blog-target:hover{
+    border: 1px solid rgba(255 255 255 / 0.5);
 }
 
 .blog-target a{
@@ -49,7 +53,7 @@
 
 @media screen and (max-width: 600px){
     .blog-target a img{
-        width: 100px;
-        height: 140px;
+        width: 130px;
+        height: 180px;
     }
 }

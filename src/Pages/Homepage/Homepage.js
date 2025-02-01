@@ -107,6 +107,14 @@ const Homepage = () => {
                 </div>
 
                 <BlogTargets/>
+
+                <div className="block-container">
+                    <section className="block-content">
+                        <div className="block-title-container">
+                            <h2>Sobre <span>nosotros</span></h2>
+                        </div>
+                    </section>
+                </div>
             </main>
 
             <Footer/>
