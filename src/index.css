@@ -112,6 +112,15 @@ body{
 
 /* Text's style */
 
+.text-title{
+    color: var(--black-0);
+    font-size: 20px;
+}
+
+.dark-mode .text-title{
+    color: var(--black-9);
+}
+
 .text{
     color: var(--text);
     transition: var(--t-200ms);
@@ -314,6 +323,32 @@ button{
     margin: auto;
     width: 100%;
     max-width: 1600px;
+}
+
+.block-title-container{
+    margin-bottom: 20px;
+}
+
+.block-title-container h2{
+    display: flex;
+    gap: 8px;
+}
+
+.block-title-container h2,
+.block-title-container h2 span{
+    font-family: 'Anton';
+    font-size: 40px;
+    font-weight: normal;
+    color: var(--black-0);
+    transition: var(--t-200ms);
+}
+
+.dark-mode .block-title-container h2{
+    color: var(--white);
+}
+
+.block-title-container h2 span{
+    color: var(--red);
 }
 
 /* Responsive */

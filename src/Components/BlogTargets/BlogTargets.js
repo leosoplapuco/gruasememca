@@ -10,7 +10,7 @@ function BlogTargets() {
         <div className='block-container block-container-blog-targets'>
             <section className='block-content'>
                 <div className='block-title-container'>
-                    <h3>{t('title')}</h3>
+                    <h2>{t('title.0.title')} <span>{t('title.0.titleSpan')}</span></h2>
                 </div>
 
                 <div className='blog-targets-container'>

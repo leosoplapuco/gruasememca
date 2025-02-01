@@ -1,5 +1,10 @@
 {
-    "title": "Últimas novedades",
+    "title":[
+        {
+            "title": "Últimas",
+            "titleSpan": "novedades"
+        }
+    ],
     "list":[
         {
             "id": 1,
@@ -9,7 +14,7 @@
             "content":[
                 {
                     "id": 1,
-                    "title": "Construcción",
+                    "title": "Categoría de la noticia",
                     "text": "Breve resumen de la noticia"
                 }
             ]
