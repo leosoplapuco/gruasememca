@@ -61,13 +61,13 @@ const Homepage = () => {
 
                             <ul className="d-flex hero-links">
                                 <li>
-                                    <a href="" className="link link-1">
+                                    <a href="/" className="link link-1">
                                         <p>{t('heroLinks.0.linkOne')}</p>
                                         <span className="material-icons">arrow_forward</span>
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="" className="link link-2">
+                                    <a href="/" className="link link-2">
                                         <span className="material-icons">phone_in_talk</span>
                                         <p>{t('heroLinks.0.linkTwo')}</p>
                                     </a>
@@ -111,7 +111,7 @@ const Homepage = () => {
                 <div className="block-container">
                     <section className="block-content">
                         <div className="block-title-container">
-                            <h2>Sobre <span>nosotros</span></h2>
+                            <h2>Sobre nosotros</h2>
                         </div>
                     </section>
                 </div>

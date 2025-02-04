@@ -330,16 +330,10 @@ button{
 }
 
 .block-title-container h2{
-    display: flex;
-    gap: 8px;
-}
-
-.block-title-container h2,
-.block-title-container h2 span{
     font-family: 'Anton';
     font-size: 40px;
     font-weight: normal;
-    color: var(--black-0);
+    color: var(--red);
     transition: var(--t-200ms);
 }
 
@@ -347,17 +341,13 @@ button{
     color: var(--white);
 }
 
-.block-title-container h2 span{
-    color: var(--red);
-}
-
 /* Responsive */
 
-@media screen and (max-width: 800px){
+/* @media screen and (max-width: 800px){
     *{
         cursor: none;
     }
-}
+} */
 
 @media screen and (max-width: 600px){
     .target-video img{

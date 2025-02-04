@@ -45,5 +45,10 @@
             "linkText": "Conocer más",
             "linkHref": "#"
         }
+    ],
+    "AboutUs":[
+        {
+            "title": "Sobre nosotros"
+        }
     ]
 }

@@ -33,7 +33,7 @@
     padding: 10px 15px;
     border-radius: 4px;
     color: var(--red);
-    background: rgb(218 19 31 / 0.05);
+    background: rgb(255 0 0 / 0.15);
     transition: var(--t-200ms);
 }
 

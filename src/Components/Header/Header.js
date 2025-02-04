@@ -1,14 +1,22 @@
 import { useTranslation } from 'react-i18next';
+import { useState } from 'react';
 
 import DarkButton from '../DarkButton/DarkButton';
 import Languages from '../Languages/Languages';
-
-// import GlobalVariables from '../GlobalVariables.json';
-
 import './Header.css';
 
 function Header() {
     const { t } = useTranslation('header');
+    const [activeMenu, setActiveMenu] = useState(null);
+    const [menuActive, setMenuActive] = useState(false);
+
+    const handleMenuClick = (id) => {
+        setActiveMenu(activeMenu === id ? null : id);
+    };
+
+    const handleMenuButtonClick = () => {
+        setMenuActive(!menuActive);
+    };
 
     return (
         <header>
@@ -35,34 +43,33 @@ function Header() {
                         </ul>
 
                         <p className='color-white'>|</p>
-
                         <Languages />
-
                         <p className='color-white'>|</p>
-
                         <DarkButton />
-
-                        {/* <p>{GlobalVariables.NumberPhoneOne}</p> */}
                     </div>
                 </div>
 
                 <div className='header-bottom-container'>
                     <div className='header-bottom'>
-                        <a href='/' title='' className='header-logo'>
+                        <a href='/' className='header-logo'>
                             <p>Grúas<span>Ememca</span></p>
                         </a>
 
-                        <nav className='menu-container'>
+                        <nav className={`menu-container ${menuActive ? 'active' : ''}`}>
                             <ul className="menu">
                                 {t("menuLinks", { returnObjects: true }).map((menuLink) => (
                                     <li key={menuLink.id} className="menu-item">
                                         {menuLink.subMenu ? (
                                             <>
-                                                <button className={`menu-link menu-link-${menuLink.id}`}>
+                                                <button 
+                                                    className={`menu-link menu-link-${menuLink.id} ${activeMenu === menuLink.id ? 'active' : ''}`} 
+                                                    onClick={() => handleMenuClick(menuLink.id)}
+                                                >
                                                     <h2>{menuLink.h2}</h2>
                                                     <span className="material-icons">keyboard_arrow_down</span>
                                                 </button>
-                                                <div className="sub-menu-container">
+
+                                                <div className={`sub-menu-container sub-menu-container-${menuLink.id} ${activeMenu === menuLink.id ? 'active' : ''}`}>
                                                     {menuLink.subMenu.map((sub) => (
                                                         <div key={sub.id} className="sub-menu">
                                                             <div className="sub-menu-header">
@@ -98,7 +105,7 @@ function Header() {
                             <p>{t('headerTopContactLinks.0.text')}</p>
                         </a>
 
-                        <button type='button' className='menu-button'>
+                        <button type='button' className={`menu-button ${menuActive ? 'active' : ''}`} onClick={handleMenuButtonClick}>
                             <span className="material-icons">menu</span>
                         </button>
                     </div>

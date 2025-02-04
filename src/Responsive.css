@@ -19,10 +19,6 @@
     .header-bottom{
         gap: 10px;
     }
-    
-    .menu-container{
-        display: none;
-    }
 
     .header-bottom .call-button{
         margin-left: auto;

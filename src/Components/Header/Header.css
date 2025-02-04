@@ -121,9 +121,9 @@ header{
     color: var(--red);
 }
 
-/* .menu-container{
-    margin-left: auto;
-} */
+.menu-container{
+    transition: var(--t-200ms);
+}
 
 .menu{
     display: flex;
@@ -136,10 +136,17 @@ header{
     display: flex;
     align-items: center;
     justify-content: center;
+    transition: var(--t-200ms);
 }
 
-.menu-link h2{
-    color: var(--black-5);
+.menu-link:hover h2,
+.menu-link:hover span{
+    color: var(--red);
+}
+
+.menu-link.active{
+    padding: 6px 10px;
+    background: var(--red);
 }
 
 .menu-link span{
@@ -149,18 +156,20 @@ header{
 .menu-link h2,
 .menu-link span{
     color: var(--black-5);
+    transition: var(--t-200ms);
 }
 
-.menu-link:hover h2,
-.menu-link:hover span{
-    color: var(--black-0);
+.menu-link.active h2,
+.menu-link.active span{
+    color: var(--white);
+}
+
+.dark-mode .menu-link.active:hover h2,
+.dark-mode .menu-link.active:hover span{
+    color: var(--white);
 }
 
 /**/
-
-/* .header-bottom .call-button{
-    margin-left: auto;
-} */
 
 .menu-button{
     display: none;
@@ -176,11 +185,18 @@ header{
     height: calc(100vh - 128px);
     background: rgba(0 0 0 / 0.075);
     backdrop-filter: blur(2.5px);
+    transition: var(--t-200ms);
     padding: 20px;
 
     opacity: 0;
     pointer-events: none;
     user-select: none;
+}
+
+.sub-menu-container.active{
+    opacity: 1;
+    pointer-events: unset;
+    user-select: unset;
 }
 
 .sub-menu{
@@ -267,6 +283,27 @@ header{
     .dark-mode .menu-button{
         background: rgba(255 255 255 / 0.25);
         border: 1px solid var(--white);
+    }
+
+    .menu-container{
+        position: fixed;
+        left: 100%;
+        top: 128px;
+        width: 100%;
+        height: calc(100vh - 128px);
+        background: var(--black-2);
+    }
+
+    .menu-container.active{
+        left: 0;
+    }
+
+    .menu{
+        flex-direction: column;
+    }
+
+    .sub-menu-container{
+        display: none;
     }
 
     .menu-button span{
