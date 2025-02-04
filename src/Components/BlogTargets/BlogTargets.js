@@ -10,7 +10,7 @@ function BlogTargets() {
         <div className='block-container block-container-blog-targets'>
             <section className='block-content'>
                 <div className='block-title-container'>
-                    <h2>{t('title.0.title')} <span>{t('title.0.titleSpan')}</span></h2>
+                    <h2>{t('title.0.title')}</h2>
                 </div>
 
                 <div className='blog-targets-container'>
@@ -20,7 +20,7 @@ function BlogTargets() {
                                 <img src={t('list.0.imgSrc')} alt={t('list.0.imgAlt')} />
 
                                 <div className='d-flex-column'>
-                                    <p className='text-title'>{t('list.0.content.0.title')}</p>
+                                    <p className='blog-target-tag category-1'>{t('list.0.content.0.title')}</p>
                                     <p className='text'>{t('list.0.content.0.text')}</p>
                                 </div>
                             </a>
@@ -30,7 +30,7 @@ function BlogTargets() {
                                 <img src={t('list.1.imgSrc')} alt={t('list.1.imgAlt')} />
 
                                 <div className='d-flex-column'>
-                                    <p className='text-title'>{t('list.1.content.0.title')}</p>
+                                    <p className='blog-target-tag category-2'>{t('list.0.content.0.title')}</p>
                                     <p className='text'>{t('list.1.content.0.text')}</p>
                                 </div>
                             </a>
@@ -40,7 +40,7 @@ function BlogTargets() {
                                 <img src={t('list.2.imgSrc')} alt={t('list.2.imgAlt')} />
 
                                 <div className='d-flex-column'>
-                                    <p className='text-title'>{t('list.2.content.0.title')}</p>
+                                    <p className='blog-target-tag category-3'>{t('list.0.content.0.title')}</p>
                                     <p className='text'>{t('list.2.content.0.text')}</p>
                                 </div>
                             </a>
