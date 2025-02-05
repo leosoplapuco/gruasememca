@@ -43,8 +43,10 @@ function Header() {
                         </ul>
 
                         <p className='color-white'>|</p>
+
                         <Languages />
                         <p className='color-white'>|</p>
+
                         <DarkButton />
                     </div>
                 </div>
