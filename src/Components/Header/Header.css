@@ -298,6 +298,7 @@ header{
         height: calc(100vh - 128px);
         background: var(--header);
         overflow-y: auto;
+        padding-bottom: 20px;
     }
 
     .menu-container.active{
