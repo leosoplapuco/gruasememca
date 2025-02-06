@@ -9,7 +9,7 @@
 .hero-content{
     margin: auto;
     width: 100%;
-    max-width: 1600px;
+    max-width: 1440px;
     height: 100%;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -70,6 +70,29 @@
 }
 
 .dark-mode .hero-target-1 h1{
+    color: var(--white);
+}
+
+/* About us */
+
+.homepage-about-us-container{
+    margin: auto;
+    max-width: 2000px;
+    background: var(--black-0);
+}
+
+.homepage-about-us-container .block-content .block-title-container h2{
+    color: var(--white);
+}
+
+.homepage-about-us-top{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.homepage-about-us-top-target-1 p{
+    font-size: 56px;
     color: var(--white);
 }
 

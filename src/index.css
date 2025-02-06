@@ -24,7 +24,7 @@ body::-webkit-scrollbar{
     --white: #FFFFFF;
     --red: #DA131F;
 
-    --text: #333333;
+    --text: #555555;
 
     --black-0: #000000;
     --black-1: #111111;
@@ -86,6 +86,11 @@ body{
 @font-face{
     font-family: 'Anton';
     src: url('../public/assets/fonts/AntonSC-Regular.ttf') format('truetype');
+}
+
+.font-anton{
+    font-family: 'Anton';
+    font-weight: normal;
 }
 
 @font-face{
@@ -322,7 +327,7 @@ button{
 .block-content{
     margin: auto;
     width: 100%;
-    max-width: 1600px;
+    max-width: 1440px;
 }
 
 .block-title-container{

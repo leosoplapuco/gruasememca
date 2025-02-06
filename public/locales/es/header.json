@@ -74,7 +74,7 @@
                             "id": 1,
                             "href": "/es/servicios/alquiler-de-gruas-telescopicas",
                             "title": "Alquiler de grúas telescópicas | Grúas Ememca",
-                            "imgSrc": "",
+                            "imgSrc": "https://gruasememca.vercel.app/assets/images/icons/alquiler-de-gruas-telescopicas-icono.png",
                             "imgAlt": "",
                             "h3": "Alquiler de grúas telescópicas",
                             "text": "Contamos con flota propia de grúas telescópicas con capacidades de carga de hasta las 200 toneladas."
@@ -83,7 +83,7 @@
                             "id": 2,
                             "href": "/es/servicios/izaje/",
                             "title": "Izaje | Grúas Ememca",
-                            "imgSrc": "",
+                            "imgSrc": "https://gruasememca.vercel.app/assets/images/icons/izaje.png",
                             "imgAlt": "",
                             "h3": "Izaje",  
                             "text": "Contamos con flota propia de grúas telescópicas con capacidades de carga de hasta las 200 toneladas."
@@ -92,7 +92,7 @@
                             "id": 3,
                             "href": "/es/servicios/montaje-y-desmontaje/",
                             "title": "Montaje y desmontaje | Grúas Ememca",
-                            "imgSrc": "",
+                            "imgSrc": "https://gruasememca.vercel.app/assets/images/icons/alquiler-de-gruas-telescopicas-icono.png",
                             "imgAlt": "",
                             "h3": "Montaje y desmontaje",  
                             "text": "Contamos con flota propia de grúas telescópicas con capacidades de carga de hasta las 200 toneladas."
@@ -101,7 +101,7 @@
                             "id": 4,
                             "href": "/es/servicios/eliminacion-de-tierra/",
                             "title": "Eliminación de tierra | Grúas Ememca",
-                            "imgSrc": "",
+                            "imgSrc": "https://gruasememca.vercel.app/assets/images/icons/alquiler-de-gruas-telescopicas-icono.png",
                             "imgAlt": "",
                             "h3": "Eliminación de tierra",  
                             "text": "Contamos con flota propia de grúas telescópicas con capacidades de carga de hasta las 200 toneladas."
