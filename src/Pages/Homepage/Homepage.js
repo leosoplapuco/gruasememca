@@ -117,11 +117,16 @@ const Homepage = () => {
                         <div className="homepage-about-us">
                             <div className="homepage-about-us-top">
                                 <div className="homepage-about-us-top-target homepage-about-us-top-target-1">
-                                    <p className="">Más de 15 años trabajando en tus proyectos</p>
+                                    <p>Más de 15 años izando el futuro de nuestro país.</p>
                                 </div>
                                 <div className="homepage-about-us-top-target homepage-about-us-top-target-2">
-                                    <p className="">Grúas Ememca</p>
+                                    <p>Realizamos <a href="" title="">servicios de izaje</a> con nuestra propia <a href="" title="">flota de grúas</a> con capacidad de carga de hasta las 220 toneladas.</p>
                                 </div>
+                            </div>
+
+                            <div className="homepage-about-us-bottom">
+                                <div className="homepage-about-us-bottom-target homepage-about-us-bottom-target-1"></div>
+                                <div className="homepage-about-us-bottom-target homepage-about-us-bottom-target-2"></div>
                             </div>
                         </div>
                     </section>

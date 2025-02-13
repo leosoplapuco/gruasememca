@@ -94,6 +94,25 @@
 .homepage-about-us-top-target-1 p{
     font-size: 56px;
     color: var(--white);
+    text-align: center;
+}
+
+.homepage-about-us-top-target-2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+
+.homepage-about-us-top-target-2 p{
+    color: var(--white);
+    font-size: 20px;
+}
+
+.homepage-about-us-top-target-2 p a{
+    color: var(--red);
+    font-size: 20px;
+    text-decoration: underline;
 }
 
 /* Responsive */
@@ -121,5 +140,15 @@
     .hero-links{
         width: 100%;
         flex-direction: column;
+    }
+
+    /**/
+
+    .homepage-about-us-top{
+        grid-template-columns: 1fr;
+    }
+
+    .homepage-about-us-top-target-2{
+        justify-content: center;
     }
 }
