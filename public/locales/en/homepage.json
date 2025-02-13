@@ -29,8 +29,8 @@
     ],
     "resumeTexts":[
         {
-            "textOne": "We have telescopic cranes with a load capacity of up to 200 tons. We have telescopic cranes with a load capacity of up to 200 tons.",
-            "textTwo": "We also offer lifting services for containers, heavy machinery, structures and more. We also offer lifting services for containers, heavy machinery, structures and more."
+            "textOne": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries",
+            "textTwo": "Lorem Ipsum is simply dummy text of the printing and typesetting rambled it to make a type specimen book. It has survived not only five centuries"
         }
     ],
     "heroLinks":[
@@ -44,6 +44,11 @@
             "description": "Brief description of the video...",
             "linkText": "See more",
             "linkHref": "#"
+        }
+    ],
+    "AboutUs":[
+        {
+            "title": "About us"
         }
     ]
 }

@@ -368,3 +368,10 @@ button{
 /* Responsive */
 
 @import url('./Responsive.css');
+
+@media screen and (max-width: 600px){
+    .block-title-container h2{
+        text-align: center;
+        font-size: 36px;
+    }
+}
