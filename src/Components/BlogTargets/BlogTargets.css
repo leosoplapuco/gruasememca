@@ -3,6 +3,7 @@
     margin: auto;
     max-width: 2000px;
     transition: var(--t-200ms);
+    padding: 80px 20px !important;
 }
 
 .dark-mode .block-container-blog-targets{

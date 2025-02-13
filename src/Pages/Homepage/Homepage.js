@@ -108,10 +108,21 @@ const Homepage = () => {
 
                 <BlogTargets/>
 
-                <div className="block-container">
+                <div className="block-container homepage-about-us-container">
                     <section className="block-content">
                         <div className="block-title-container">
-                            <h2>Sobre nosotros</h2>
+                            <h2>{t('AboutUs.0.title')}</h2>
+                        </div>
+
+                        <div className="homepage-about-us">
+                            <div className="homepage-about-us-top">
+                                <div className="homepage-about-us-top-target homepage-about-us-top-target-1">
+                                    <p className="">Más de 15 años trabajando en tus proyectos</p>
+                                </div>
+                                <div className="homepage-about-us-top-target homepage-about-us-top-target-2">
+                                    <p className="">Grúas Ememca</p>
+                                </div>
+                            </div>
                         </div>
                     </section>
                 </div>

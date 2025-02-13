@@ -82,6 +82,7 @@ function Header() {
                                                                 {sub.links.map((link) => (
                                                                     <li key={link.id} className="sub-menu-item">
                                                                         <a href={link.href} className="sub-menu-link">
+                                                                            <img src={link.imgSrc} alt={link.imgAlt} />
                                                                             <h3>{link.h3}</h3>
                                                                             <p className='text'>{link.text}</p>
                                                                         </a>

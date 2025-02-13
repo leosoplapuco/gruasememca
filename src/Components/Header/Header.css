@@ -34,7 +34,7 @@ header{
 .header-top{
     margin: auto;
     width: 100%;
-    max-width: 1600px;
+    max-width: 1440px;
     display: flex;
     align-items: center;
     gap: 10px;
@@ -92,7 +92,7 @@ header{
     margin: auto;
     width: 100%;
     height: 100%;
-    max-width: 1600px;
+    max-width: 1440px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -220,7 +220,7 @@ header{
 
 .sub-menu-title{
     color: var(--red);
-    font-size: 32px;
+    font-size: 40px;
     font-family: 'Anton';
     text-transform: uppercase;
 }
@@ -244,7 +244,7 @@ header{
     flex-direction: column;
     transition: var(--t-200ms);
     border-radius: 8px;
-    gap: 10px;
+    /* gap: 10px; */
 }
 
 .sub-menu-links li a:hover{
@@ -255,9 +255,15 @@ header{
     background: rgba(255 255 255 / 0.05);
 }
 
+.sub-menu-links li a img{
+    width: 48px;
+    height: 48px;
+    aspect-ratio: 1/1;
+}
+
 .sub-menu-links li a h3{
-    font-size: 24px;
-    color: var(--black-1);
+    font-size: 20px;
+    color: var(--black-0);
     transition: var(--t-200ms);
 }
 
