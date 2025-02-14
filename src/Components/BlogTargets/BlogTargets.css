@@ -37,7 +37,7 @@
 }
 
 .dark-mode .blog-target:hover{
-    border: 1px solid var(--black-4);
+    border: 1px solid var(--black-9);
 }
 
 .blog-target a{
@@ -66,36 +66,42 @@
     display: flex;
     width: auto;
     border-radius: 3px;
-    padding: 5px 10px;
-    font-size: 14.5px;
+    padding: 3px 6px;
+    font-size: 13px;
 }
 
-.category-1{
-    background: #90ee90;
+.blog-target-tag-services{
+    background: lightgreen;
     color: green;
 }
 
-.dark-mode .category-1{
-    background: rgba(145, 238, 145, 0.8);
+.blog-target-tag-blog{
+    /* background: rgba(255 0 0 / 0.2); */
+    background: crimson;
+    /* color: var(--red); */
+    color: var(--white);
 }
 
-.category-2{
-    background: rgba(255, 0, 0, 0.15);
-    color: red;
+.blog-target-tag-news{
+    background: lightblue;
+    color: blue;
 }
 
-.dark-mode .category-2{
-    background: rgba(255, 0, 0, 0.25);
+.dark-mode .blog-target a div .text-title{
+    color: var(--white);
 }
 
-.category-3{
-    background: rgba(255, 165, 0, 0.25);
-    color: orange;
+.dark-mode .blog-target a div .text{
+    color: var(--black-6);
 }
 
 @media screen and (max-width: 600px){
     .blog-target a img{
-        width: 130px;
-        height: 180px;
+        width: 120px;
+        height: 100%;
     }
+
+    .blog-target a div{
+        padding: 20px 10px;
+    }    
 }

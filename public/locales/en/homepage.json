@@ -48,7 +48,29 @@
     ],
     "AboutUs":[
         {
-            "title": "About us"
+            "title": "About us",
+            "firstPhrase": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+            "firstParagraph":[
+                {
+                    "textOne": "We provide",
+                    "linkOne":[
+                        {
+                            "href": "/en/services/lifting",
+                            "title": "Lifting | Grúas Ememca",
+                            "text": "lifting services"
+                        }
+                    ],
+                    "textTwo": "with our own",
+                    "linkTwo":[
+                        {
+                            "href": "/en/machinery/",
+                            "title": "Machinery | Grúas Ememca",
+                            "text": "flota de grúas"
+                        }
+                    ],
+                    "textThree": "with a load capacity of up to 220 tons."
+                }
+            ]
         }
     ]
 }

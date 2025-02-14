@@ -120,6 +120,7 @@ body{
 .text-title{
     color: var(--black-0);
     font-size: 20px;
+    transition: var(--t-200ms);
 }
 
 .dark-mode .text-title{
@@ -335,6 +336,7 @@ button{
 }
 
 .block-title-container h2{
+    text-align: center;
     font-family: 'Anton';
     font-size: 40px;
     font-weight: normal;
