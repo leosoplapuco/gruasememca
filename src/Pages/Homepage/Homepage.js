@@ -117,16 +117,57 @@ const Homepage = () => {
                         <div className="homepage-about-us">
                             <div className="homepage-about-us-top">
                                 <div className="homepage-about-us-top-target homepage-about-us-top-target-1">
-                                    <p>Más de 15 años izando el futuro de nuestro país.</p>
+                                    <p>{t('AboutUs.0.firstPhrase')}</p>
                                 </div>
                                 <div className="homepage-about-us-top-target homepage-about-us-top-target-2">
-                                    <p>Realizamos <a href="" title="">servicios de izaje</a> con nuestra propia <a href="" title="">flota de grúas</a> con capacidad de carga de hasta las 220 toneladas.</p>
+                                    <p>{t('AboutUs.0.firstParagraph.0.textOne')} <a href={t('AboutUs.0.firstParagraph.0.linkOne.0.href')} title={t('AboutUs.0.firstParagraph.0.linkOne.0.title')}>{t('AboutUs.0.firstParagraph.0.linkOne.0.text')}</a> {t('AboutUs.0.firstParagraph.0.textTwo')} <a href={t('AboutUs.0.firstParagraph.0.linkTwo.0.href')} title={t('AboutUs.0.firstParagraph.0.linkTwo.0.title')}>{t('AboutUs.0.firstParagraph.0.linkTwo.0.text')}</a> {t('AboutUs.0.firstParagraph.0.textThree')}</p>
                                 </div>
                             </div>
 
-                            <div className="homepage-about-us-bottom">
-                                <div className="homepage-about-us-bottom-target homepage-about-us-bottom-target-1"></div>
-                                <div className="homepage-about-us-bottom-target homepage-about-us-bottom-target-2"></div>
+                            <div className="homepage-about-us-center">
+                                <div className="homepage-about-us-center-target homepage-about-us-center-target-1">
+                                    <ul className="">
+                                        <li>
+                                            <button type="button" className="homepage-about-us-list-button homepage-about-us-list-button-1 active">
+                                                <p>Resumen</p>
+                                            </button>
+                                        </li>
+                                        <li>
+                                            <button type="button" className="homepage-about-us-list-button homepage-about-us-list-button-2">
+                                                <p>Nuestra historia</p>
+                                            </button>
+                                        </li>
+                                        <li>
+                                            <button type="button" className="homepage-about-us-list-button homepage-about-us-list-button-3">
+                                                <p>Certificaciones</p>
+                                            </button>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div className="homepage-about-us-center-target homepage-about-us-center-target-2">
+                                    <div className="">
+                                        <ul className="">
+                                            <li>
+                                                <video controls>
+                                                    <source src="https://gruasememca.vercel.app/assets/videos/video-1.webm" type="video/webm" />
+                                                </video>
+                                                <p>Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor (N. del T. persona que se dedica a la imprenta) desconocido usó una galería de textos y los mezcló de tal manera que logró hacer un libro de textos especimen. No sólo sobrevivió 500 años, sino que tambien ingresó como texto de relleno en documentos electrónicos, quedando esencialmente igual al original. Fue popularizado en los 60s con la creación de las hojas "Letraset", las cuales contenian pasajes de Lorem Ipsum, y más recientemente con software de autoedición, como por ejemplo Aldus PageMaker, el cual incluye versiones de Lorem Ipsum.</p>
+                                            </li>
+                                            <li>
+                                                <video controls>
+                                                    <source src="https://gruasememca.vercel.app/assets/videos/video-1.webm" type="video/webm" />
+                                                </video>
+                                                <p>Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor (N. del T. persona que se dedica a la imprenta) desconocido usó una galería de textos y los mezcló de tal manera que logró hacer un libro de textos especimen. No sólo sobrevivió 500 años, sino que tambien ingresó como texto de relleno en documentos electrónicos, quedando esencialmente igual al original. Fue popularizado en los 60s con la creación de las hojas "Letraset", las cuales contenian pasajes de Lorem Ipsum, y más recientemente con software de autoedición, como por ejemplo Aldus PageMaker, el cual incluye versiones de Lorem Ipsum.</p>
+                                            </li>
+                                            <li>
+                                                <video controls>
+                                                    <source src="https://gruasememca.vercel.app/assets/videos/video-1.webm" type="video/webm" />
+                                                </video>
+                                                <p>Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor (N. del T. persona que se dedica a la imprenta) desconocido usó una galería de textos y los mezcló de tal manera que logró hacer un libro de textos especimen. No sólo sobrevivió 500 años, sino que tambien ingresó como texto de relleno en documentos electrónicos, quedando esencialmente igual al original. Fue popularizado en los 60s con la creación de las hojas "Letraset", las cuales contenian pasajes de Lorem Ipsum, y más recientemente con software de autoedición, como por ejemplo Aldus PageMaker, el cual incluye versiones de Lorem Ipsum.</p>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </section>

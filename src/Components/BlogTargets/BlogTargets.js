@@ -20,7 +20,7 @@ function BlogTargets() {
                                 <img src={t('list.0.imgSrc')} alt={t('list.0.imgAlt')} />
 
                                 <div className='d-flex-column'>
-                                    <p className='blog-target-tag category-1'>{t('list.0.content.0.category')}</p>
+                                    <p className='blog-target-tag blog-target-tag-services'>{t('list.0.content.0.categoryName')}</p>
                                     <p className='text-title'>{t('list.0.content.0.title')}</p>
                                     <p className='text'>{t('list.0.content.0.text')}</p>
                                 </div>
@@ -31,7 +31,7 @@ function BlogTargets() {
                                 <img src={t('list.1.imgSrc')} alt={t('list.1.imgAlt')} />
 
                                 <div className='d-flex-column'>
-                                    <p className='blog-target-tag category-2'>{t('list.1.content.0.category')}</p>
+                                    <p className='blog-target-tag blog-target-tag-blog'>{t('list.1.content.0.categoryName')}</p>
                                     <p className='text-title'>{t('list.1.content.0.title')}</p>
                                     <p className='text'>{t('list.1.content.0.text')}</p>
                                 </div>
@@ -42,7 +42,7 @@ function BlogTargets() {
                                 <img src={t('list.2.imgSrc')} alt={t('list.2.imgAlt')} />
 
                                 <div className='d-flex-column'>
-                                    <p className='blog-target-tag category-3'>{t('list.2.content.0.category')}</p>
+                                    <p className='blog-target-tag blog-target-tag-news'>{t('list.2.content.0.categoryName')}</p>
                                     <p className='text-title'>{t('list.2.content.0.title')}</p>
                                     <p className='text'>{t('list.2.content.0.text')}</p>
                                 </div>

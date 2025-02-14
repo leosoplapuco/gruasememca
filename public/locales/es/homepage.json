@@ -48,7 +48,29 @@
     ],
     "AboutUs":[
         {
-            "title": "Sobre nosotros"
+            "title": "Sobre nosotros",
+            "firstPhrase": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+            "firstParagraph":[
+                {
+                    "textOne": "Realizamos",
+                    "linkOne":[
+                        {
+                            "href": "/es/servicios/izaje",
+                            "title": "Izaje | Grúas Ememca",
+                            "text": "servicios de izaje"
+                        }
+                    ],
+                    "textTwo": "con nuestra propia",
+                    "linkTwo":[
+                        {
+                            "href": "/es/maquinaria/",
+                            "title": "Maquinaria | Grúas Ememca",
+                            "text": "flota de grúas"
+                        }
+                    ],
+                    "textThree": "con capacidad de carga de hasta las 220 toneladas."
+                }
+            ]
         }
     ]
 }

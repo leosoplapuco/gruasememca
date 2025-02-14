@@ -13,7 +13,8 @@
             "content":[
                 {
                     "id": 1,
-                    "category": "Servicios",
+                    "categoryTag": "services",
+                    "categoryName": "Servicios",
                     "title": "Montaje de estructura metálica | REPSOL",
                     "text": "A la altura del kilometro 200 de la Antigua Panamericana SUR hemos contribuido a este proyecto..."
                 }
@@ -27,7 +28,7 @@
             "content":[
                 {
                     "id": 1,
-                    "category": "Blog",
+                    "categoryName": "Blog",
                     "title": "Conoce a XCA3000 de XCMG",
                     "text": "Una grúa con capacidades increibles de carga, permite mover hasta 3000 toneladas..."
                 }
@@ -41,7 +42,7 @@
             "content":[
                 {
                     "id": 1,
-                    "category": "Novedades",
+                    "categoryName": "Novedades",
                     "title": "Nuestra nueva excavadora CAT 333",
                     "text": "Hemos adquirido la nueva CAT 333, seguimos mejorando nuestras herramientas para un mejor servicio..."
                 }
