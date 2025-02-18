@@ -72,5 +72,10 @@
                 }
             ]
         }
+    ],
+    "Machinery":[
+        {
+            "title": "Nuestra maquinaria"
+        }
     ]
 }

@@ -74,6 +74,11 @@
 }
 
 @media screen and (max-width: 600px){
+    .homepage-machinery-target-1 img{
+        width: calc(100% - 40px);
+        max-width: none;
+    }
+
     .homepage-machinery-description{
         grid-template-columns: 1fr;
     }
