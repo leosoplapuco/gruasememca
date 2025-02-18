@@ -1,0 +1,76 @@
+.homepage-machinery-target{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.homepage-machinery-target-1 img{
+    margin: auto;
+    width: calc(80% - 40px);
+    max-width: 600px;
+    height: auto;
+    object-fit: contain;
+}
+
+.homepage-machinery-target-2 img{
+    width: 150px;
+    height: auto;
+    object-fit: contain;
+}
+
+.homepage-machinery-target-2{
+    flex-direction: column;
+    gap: 20px;
+}
+
+.homepage-machinery-name{
+    text-transform: uppercase;
+    font-size: 40px;
+    color: var(--black-0);
+}
+
+.dark-mode .homepage-machinery-name{
+    color: var(--white);
+}
+
+.homepage-machinery-miniatures-container{
+    width: 100%;
+    display: flex;
+    overflow: hidden;
+    overflow-x: auto;
+}
+
+.homepage-machinery-miniatures-container::-webkit-scrollbar{
+    display: none;
+}
+
+.homepage-machinery-miniatures{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+.homepage-machinery-miniatures li{
+    background: snow;
+    width: 100%;
+    padding: 10px;
+    border-radius: 8px;
+    display: flex;
+    border: 1px solid var(--black-9);
+    transition: var(--t-200ms);
+}
+
+.homepage-machinery-miniatures li:hover{
+    border: 1px solid var(--red);
+}
+
+.homepage-machinery-miniatures li img{
+    margin: auto;
+}
+
+@media screen and (max-width: 600px){
+    .homepage-machinery-description{
+        grid-template-columns: 1fr;
+    }
+}

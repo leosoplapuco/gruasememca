@@ -55,6 +55,10 @@ body{
     display: flex;
 }
 
+.d-flex-column{
+    flex-direction: column;
+}
+
 /* Grid */
 
 .d-grid-2-1{
@@ -120,6 +124,15 @@ body{
 
 .list-simple li span{
     color: lightgreen;
+}
+
+.list-simple li p{
+    transition: var(--t-200ms);
+    color: var(--text);
+}
+
+.dark-mode .list-simple li p{
+    color: var(--white);
 }
 
 /* Text's style */
