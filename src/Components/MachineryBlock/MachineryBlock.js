@@ -1,11 +1,17 @@
+import { useTranslation } from 'react-i18next';
+// import React, { useState } from "react";
+
 import './MachineryBlock.css';
 
 function MachineryBlock(){
+
+    const { t } = useTranslation('homepage');
+
     return(
         <section className="block-container homepage-machinery-block-container">
             <div className='block-content'>
                 <div className="block-title-container">
-                    <h2>Nuestra maquinaria</h2>
+                    <h2>{t('Machinery.0.title')}</h2>
                 </div>
 
                 <div className='homepage-machinery-targets d-grid-2-1 gap-20'>

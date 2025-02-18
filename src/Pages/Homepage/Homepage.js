@@ -125,7 +125,7 @@ const Homepage = () => {
                                 </div>
                             </div>
 
-                            {/* <div className="homepage-about-us-center">
+                            <div className="homepage-about-us-center">
                                 <div className="homepage-about-us-center-target homepage-about-us-center-target-1">
                                     <ul className="">
                                         <li>
@@ -169,7 +169,7 @@ const Homepage = () => {
                                         </ul>
                                     </div>
                                 </div>
-                            </div> */}
+                            </div>
                         </div>
                     </section>
                 </div>

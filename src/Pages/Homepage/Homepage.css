@@ -178,11 +178,18 @@
 
 .homepage-about-us-center-target-2 div ul li{
     width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 }
 
 .homepage-about-us-center-target-2 div ul li video{
     width: 100%;
     border-radius: 32px;
+}
+
+.homepage-about-us-center-target-2 div ul li p{
+    color: var(--white);
 }
 
 /* Responsive */
