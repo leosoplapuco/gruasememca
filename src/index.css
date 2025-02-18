@@ -55,6 +55,13 @@ body{
     display: flex;
 }
 
+/* Grid */
+
+.d-grid-2-1{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
 /* Margin */
 
 .margin-left{
@@ -375,5 +382,11 @@ button{
     .block-title-container h2{
         text-align: center;
         font-size: 36px;
+    }
+
+    /* Grid */
+
+    .d-grid-2-1{
+        grid-template-columns: 1fr;
     }
 }
