@@ -4,6 +4,7 @@ import React, { useState } from "react";
 
 import Header from '../../Components/Header/Header';
 import BlogTargets from "../../Components/BlogTargets/BlogTargets";
+import MachineryBlock from "../../Components/MachineryBlock/MachineryBlock";
 import Footer from '../../Components/Footer/Footer';
 
 import './Homepage.css';
@@ -124,7 +125,7 @@ const Homepage = () => {
                                 </div>
                             </div>
 
-                            <div className="homepage-about-us-center">
+                            {/* <div className="homepage-about-us-center">
                                 <div className="homepage-about-us-center-target homepage-about-us-center-target-1">
                                     <ul className="">
                                         <li>
@@ -168,10 +169,12 @@ const Homepage = () => {
                                         </ul>
                                     </div>
                                 </div>
-                            </div>
+                            </div> */}
                         </div>
                     </section>
                 </div>
+
+                <MachineryBlock/>
             </main>
 
             <Footer/>
