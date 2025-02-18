@@ -75,16 +75,17 @@
 
 /* About us */
 
-.homepage-about-us{
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-}
-
 .homepage-about-us-container{
     margin: auto;
     max-width: 2000px;
     background: var(--black-0);
+    padding-bottom: 40px !important;
+}
+
+.homepage-about-us{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 }
 
 .homepage-about-us-container .block-content .block-title-container h2{

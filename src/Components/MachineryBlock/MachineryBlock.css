@@ -45,9 +45,10 @@
 }
 
 .homepage-machinery-miniatures{
-    width: 100%;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    width: 200%;
+    display: flex;
+    align-items: center;
+    justify-content: left;
     gap: 10px;
 }
 
@@ -67,6 +68,9 @@
 
 .homepage-machinery-miniatures li img{
     margin: auto;
+    width: calc(100% - 20px);
+    height: auto;
+    object-fit: contain;
 }
 
 @media screen and (max-width: 600px){
