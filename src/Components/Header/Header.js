@@ -45,6 +45,7 @@ function Header() {
                         <p className='color-white'>|</p>
 
                         <Languages />
+
                         <p className='color-white'>|</p>
 
                         <DarkButton />
@@ -103,10 +104,21 @@ function Header() {
                             </ul>
                         </nav>
 
-                        <a href='tel: +51954132098' className='call-button call-button-1' title={t('headerTopContactLinks.0.text')}>
-                            <span className="material-icons">call</span>
-                            <p>{t('headerTopContactLinks.0.text')}</p>
-                        </a>
+                        <ul className='d-flex gap-10'>
+                            <li>
+                                <a href={t('headerTopContactLinks.2.href')} className='call-button call-button-2' title={t('headerTopContactLinks.0.text')}>
+                                    <span className="material-icons">mail</span>
+                                    <p>{t('headerTopContactLinks.2.text')}</p>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href={t('headerTopContactLinks.0.href')} className='call-button call-button-1 margin-left' title={t('headerTopContactLinks.0.text')}>
+                                    <span className="material-icons">call</span>
+                                    <p>{t('headerTopContactLinks.0.text')}</p>
+                                </a>
+                            </li>
+                        </ul>
 
                         <button type='button' className={`menu-button ${menuActive ? 'active' : ''}`} onClick={handleMenuButtonClick}>
                             <span className="material-icons">menu</span>

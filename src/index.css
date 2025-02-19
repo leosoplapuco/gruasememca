@@ -194,9 +194,19 @@ button{
     background: var(--red);
 }
 
-.call-button span,
+.call-button-1 span,
 .call-button-1 p{
     color: var(--white);
+}
+
+.call-button-2{
+    border: 1px solid var(--red);
+    /* background: var(--red); */
+}
+
+.call-button-2 span,
+.call-button-2 p{
+    color: var(--red);
 }
 
 /* Link's style */
