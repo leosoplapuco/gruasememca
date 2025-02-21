@@ -279,6 +279,16 @@ header{
         gap: 6px;
     }
 
+    .header-bottom{
+        display: flex;
+        align-items: center;
+        justify-content: unset;
+    }
+
+    .header-bottom > ul{
+        margin-left: auto;
+    }
+
     .menu-button{
         display: flex;
         position: relative;
