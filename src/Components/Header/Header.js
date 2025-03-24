@@ -98,7 +98,7 @@ function Header() {
 
                                         <ul className='sub-menu-target sub-menu-target-2'>
                                             <li>
-                                                <a href='/servicios/alquiler-de-gruas-telescopicas'>
+                                                <a href='/servicios/alquiler-de-gruas-telescopicas/'>
                                                     <img src="/assets/Img/icons/grua.png" alt="" className='' />
                                                     <h3>Alquiler de grúas telescópicas</h3>
                                                     <ul className='list-simple'>
@@ -110,7 +110,7 @@ function Header() {
                                                 </a>
                                             </li>
                                             <li>
-                                                <a href='/servicios/izaje'>
+                                                <a href='/servicios/izaje/'>
                                                     <img src="/assets/Img/icons/izaje.png" alt="" className='' />
                                                     <h3>Izaje</h3>
                                                     <ul className='list-simple'>
@@ -122,7 +122,7 @@ function Header() {
                                                 </a>
                                             </li>
                                             <li>
-                                                <a href='/servicios/montaje-y-desmontaje'>
+                                                <a href='/servicios/montaje-y-desmontaje/'>
                                                     <img src="/assets/Img/icons/montaje.png" alt="" className='' />
                                                     <h3>Montaje y desmontaje</h3>
                                                     <ul className='list-simple'>
@@ -134,7 +134,7 @@ function Header() {
                                                 </a>
                                             </li>
                                             <li>
-                                                <a href='/servicios/eliminacion-de-tierra'>
+                                                <a href='/servicios/eliminacion-de-tierra/'>
                                                     <img src="/assets/Img/icons/eliminacion.png" alt="" className='' />
                                                     <h3>Eliminación de tierra</h3>
                                                     <ul className='list-simple'>
@@ -223,7 +223,7 @@ function Header() {
                                     </a>
                                 </li>
                                 <li>
-                                    <a href='/contacto' className='menu-link menu-link-5'>
+                                    <a href='/contacto/' className='menu-link menu-link-5'>
                                         <h2>Contacto</h2>
                                     </a>
                                 </li>
@@ -237,7 +237,7 @@ function Header() {
 
                         <ul className='header-bottom-links d-flex gap-10'>
                             <li>
-                                <a href="/contacto" className='button-link button-link-2'>
+                                <a href="/contacto/" className='button-link button-link-2'>
                                     <span className="material-icons">mail</span>
                                     <p className='button-link-text'>Contáctanos</p>
                                 </a>
