@@ -99,7 +99,7 @@ function Header() {
                                         <ul className='sub-menu-target sub-menu-target-2'>
                                             <li>
                                                 <a href='/servicios/alquiler-de-gruas-telescopicas'>
-                                                    <img src="https://gruasememca.vercel.app/assets/images/icons/alquiler-de-gruas-telescopicas-icono.png" alt="" className='' />
+                                                    <img src="/assets/Img/icons/grua.png" alt="" className='' />
                                                     <h3>Alquiler de grúas telescópicas</h3>
                                                     <ul className='list-simple'>
                                                         <li>
@@ -111,7 +111,7 @@ function Header() {
                                             </li>
                                             <li>
                                                 <a href='/servicios/izaje'>
-                                                    <img src="https://gruasememca.vercel.app/assets/images/icons/alquiler-de-gruas-telescopicas-icono.png" alt="" className='' />
+                                                    <img src="/assets/Img/icons/izaje.png" alt="" className='' />
                                                     <h3>Izaje</h3>
                                                     <ul className='list-simple'>
                                                         <li>
@@ -123,7 +123,7 @@ function Header() {
                                             </li>
                                             <li>
                                                 <a href='/servicios/montaje-y-desmontaje'>
-                                                    <img src="https://gruasememca.vercel.app/assets/images/icons/alquiler-de-gruas-telescopicas-icono.png" alt="" className='' />
+                                                    <img src="/assets/Img/icons/montaje.png" alt="" className='' />
                                                     <h3>Montaje y desmontaje</h3>
                                                     <ul className='list-simple'>
                                                         <li>
@@ -135,7 +135,7 @@ function Header() {
                                             </li>
                                             <li>
                                                 <a href='/servicios/eliminacion-de-tierra'>
-                                                    <img src="https://gruasememca.vercel.app/assets/images/icons/alquiler-de-gruas-telescopicas-icono.png" alt="" className='' />
+                                                    <img src="/assets/Img/icons/eliminacion.png" alt="" className='' />
                                                     <h3>Eliminación de tierra</h3>
                                                     <ul className='list-simple'>
                                                         <li>
@@ -177,9 +177,11 @@ function Header() {
                                          </div>
                                          <ul className='sub-menu-target sub-menu-target-2'>
                                              <li>
-                                                 <a href='/nosotros/'>
-                                                    <img src="https://gruasememca.vercel.app/assets/images/icons/alquiler-de-gruas-telescopicas-icono.png" alt="" className='' />
-                                                    <h3>¿Quienes somos?</h3>
+                                                <a href='/nosotros/'>
+                                                    <div className='d-flex-center-left'>
+                                                        <img src="/assets/Img/icons/grupo.png" alt="" className='' />
+                                                        <h3>¿Quienes somos?</h3>
+                                                    </div>
                                                     <ul className='list-simple'>
                                                         <li>
                                                             <span className="material-icons">check</span>
@@ -190,7 +192,7 @@ function Header() {
                                             </li>
                                             <li>
                                                 <a href='/maquinaria/'>
-                                                    <img src="https://gruasememca.vercel.app/assets/images/icons/alquiler-de-gruas-telescopicas-icono.png" alt="" className='' />
+                                                    <img src="/assets/Img/icons/grua.png" alt="" className='' />
                                                     <h3>Nuestra maquinaria</h3>
                                                     <ul className='list-simple'>
                                                        <li>
@@ -202,7 +204,7 @@ function Header() {
                                             </li>
                                             <li>
                                                 <a href='/nosotros/certificaciones'>
-                                                    <img src="https://gruasememca.vercel.app/assets/images/icons/alquiler-de-gruas-telescopicas-icono.png" alt="" className='' />
+                                                    <img src="/assets/Img/icons/certificados.png" alt="" className='' />
                                                     <h3>Certificaciones</h3>
                                                     <ul className='list-simple'>
                                                         <li>
