@@ -1,8 +1,6 @@
 import { useState, useRef } from 'react';
 import { Helmet } from 'react-helmet-async';
 
-import './Homepage.css';
-
 import GlobalVariables from '../../Components/GlobalVariables.json';
 
 import Header from '../../Components/Header/Header';
@@ -10,6 +8,8 @@ import BlogTargets from '../../Components/BlogTargets/BlogTargets';
 import Machinery from '../../Components/Machinery/Machinery';
 import Map from '../../Components/Map/Map';
 import Footer from '../../Components/Footer/Footer';
+
+import './Homepage.css';
 
 const Homepage = () => {
     const [activeIndex, setActiveIndex] = useState(null);
@@ -36,7 +36,7 @@ const Homepage = () => {
         <>
             <Helmet>
                 <title>Alquiler de grúas telescópicas | Grúas Ememca SAC</title>
-                <meta name="description" content="Página de contacto de Grúas Ememca SAC" />
+                <meta name="description" content="Bienvenido a grúas ememca"/>
             </Helmet>
 
             <Header/>
@@ -63,7 +63,7 @@ const Homepage = () => {
                                 <li>
                                     <a href='/nosotros/' className='button-link button-link-2'>
                                         <span className="material-icons">groups</span>
-                                        <p className='button-link-text'>Más de nosotros</p>
+                                        <p className='button-link-text'>Sobre nosotros</p>
                                     </a>
                                 </li>
                                 <li>
@@ -77,7 +77,7 @@ const Homepage = () => {
 
                         <div className='hero-content-target hero-content-target-2'>
                             <div className='hero-content-target-img'>
-                                <img src="https://gruasememca.vercel.app/assets/images/Components/Hero/gruas-ememca-repsol-2024.webp" alt="" />
+                                <img src="https://www.gruasememca.com/media/img/gallery-5.webp" alt="Alquiler de grúas telescópicas | Grúas Ememca" />
 
                                 <button className='hero-content-target-button'>
                                     <span className="material-icons">play_arrow</span>
@@ -94,7 +94,7 @@ const Homepage = () => {
                         </button>
 
                         <video controls>
-                            <source src="https://gruasememca.vercel.app/assets/videos/video-1.webm" type="video/webm" />
+                            <source src="https://www.gruasememca.com/media/videos/video-1.webm" type="video/webm" />
                         </video>
 
                         <p className='text'>Breve descripción del video...</p>
@@ -146,19 +146,15 @@ const Homepage = () => {
                                             <ul className='list-simple'>
                                                 <li>
                                                     <span className="material-icons">check</span>
-                                                    <p className='text'>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries.</p>
+                                                    <p className='text'>Lorem Ipsum has been the industry, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries.</p>
                                                 </li>
                                                 <li>
                                                     <span className="material-icons">check</span>
-                                                    <p className='text'>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries.</p>
-                                                </li>
-                                                <li>
-                                                    <span className="material-icons">check</span>
-                                                    <p className='text'>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries.</p>
+                                                    <p className='text'>Lorem dummy text ever since the 1500s, when It has survived not only five centuries.</p>
                                                 </li>
                                             </ul>
 
-                                            <a href='/servicios/alquiler-de-gruas' title='' className='button-link button-link-1 margin-left'>
+                                            <a href='/servicios/alquiler-de-gruas/' title='' className='button-link button-link-1 margin-left'>
                                                 <p className='button-link-text'>Cotizar ahora</p>
                                                 <span className="material-icons">north_east</span>
                                             </a>
@@ -174,19 +170,15 @@ const Homepage = () => {
                                             <ul className='list-simple'>
                                                 <li>
                                                     <span className="material-icons">check</span>
-                                                    <p className='text'>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries.</p>
+                                                    <p className='text'>Lorem Ipsum has been the industry, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries.</p>
                                                 </li>
                                                 <li>
                                                     <span className="material-icons">check</span>
-                                                    <p className='text'>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries.</p>
-                                                </li>
-                                                <li>
-                                                    <span className="material-icons">check</span>
-                                                    <p className='text'>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries.</p>
+                                                    <p className='text'>Lorem dummy text ever since the 1500s, when It has survived not only five centuries.</p>
                                                 </li>
                                             </ul>
 
-                                            <a href='/servicios/izaje' title='' className='button-link button-link-1 margin-left'>
+                                            <a href='/servicios/izaje/' title='' className='button-link button-link-1 margin-left'>
                                                 <p className='button-link-text'>Cotizar ahora</p>
                                                 <span className="material-icons">north_east</span>
                                             </a>
@@ -202,19 +194,15 @@ const Homepage = () => {
                                             <ul className='list-simple'>
                                                 <li>
                                                     <span className="material-icons">check</span>
-                                                    <p className='text'>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries.</p>
+                                                    <p className='text'>Lorem Ipsum has been the industry, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries.</p>
                                                 </li>
                                                 <li>
                                                     <span className="material-icons">check</span>
-                                                    <p className='text'>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries.</p>
-                                                </li>
-                                                <li>
-                                                    <span className="material-icons">check</span>
-                                                    <p className='text'>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries.</p>
+                                                    <p className='text'>Lorem dummy text ever since the 1500s, when It has survived not only five centuries.</p>
                                                 </li>
                                             </ul>
 
-                                            <a href='/servicios/montaje-y-desmontaje' title='' className='button-link button-link-1 margin-left'>
+                                            <a href='/servicios/montaje-y-desmontaje/' title='' className='button-link button-link-1 margin-left'>
                                                 <p className='button-link-text'>Cotizar ahora</p>
                                                 <span className="material-icons">north_east</span>
                                             </a>
@@ -230,19 +218,15 @@ const Homepage = () => {
                                             <ul className='list-simple'>
                                                 <li>
                                                     <span className="material-icons">check</span>
-                                                    <p className='text'>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries.</p>
+                                                    <p className='text'>Lorem Ipsum has been the industry, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries.</p>
                                                 </li>
                                                 <li>
                                                     <span className="material-icons">check</span>
-                                                    <p className='text'>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries.</p>
-                                                </li>
-                                                <li>
-                                                    <span className="material-icons">check</span>
-                                                    <p className='text'>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries.</p>
+                                                    <p className='text'>Lorem dummy text ever since the 1500s, when It has survived not only five centuries.</p>
                                                 </li>
                                             </ul>
 
-                                            <a href='/servicios/eliminacion-de-tierra' title='' className='button-link button-link-1 margin-left'>
+                                            <a href='/servicios/eliminacion-de-tierra/' title='' className='button-link button-link-1 margin-left'>
                                                 <p className='button-link-text'>Cotizar ahora</p>
                                                 <span className="material-icons">north_east</span>
                                             </a>
@@ -277,20 +261,6 @@ const Homepage = () => {
 
                             <div className='about-us-target about-us-target-2'>
                                 <div className='timeline-container'>
-                                    <div className='timeline-butons'>
-                                        <button className='timeline-button timeline-button-1' onClick={scrollToStart}>
-                                            <span className="material-icons">keyboard_arrow_up</span>
-                                        </button>
-
-                                        <div className='timeline-scrollbar'>
-                                            <div className='timeline-scrollbar-thumb'></div>
-                                        </div>
-
-                                        <button className='timeline-button timeline-button-2' onClick={scrollToEnd}>
-                                            <span className="material-icons">keyboard_arrow_down</span>
-                                        </button>
-                                    </div>
-
                                     <div className='timeline-content' ref={timelineRef}>
                                         <div className='timeline-content-targets'>
                                             <div className='timeline-target'>
@@ -347,6 +317,20 @@ const Homepage = () => {
                                             </div>
                                         </div>
                                     </div>
+
+                                    <div className='timeline-butons'>
+                                        <button className='timeline-button timeline-button-1' onClick={scrollToStart}>
+                                            <span className="material-icons">keyboard_arrow_up</span>
+                                        </button>
+
+                                        <div className='timeline-scrollbar'>
+                                            <div className='timeline-scrollbar-thumb'></div>
+                                        </div>
+
+                                        <button className='timeline-button timeline-button-2' onClick={scrollToEnd}>
+                                            <span className="material-icons">keyboard_arrow_down</span>
+                                        </button>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -356,6 +340,51 @@ const Homepage = () => {
                 <Machinery/>
 
                 <Map/>
+
+                <div className='block-container'>
+                    <section className='block-content'>
+                        <div className='block-title-container'>
+                            <h2 className='block-title'>Trabajemos juntos</h2>
+                        </div>
+
+                        <div className='homepage-contact-form'>
+                            <form action="https://formspree.io/f/maygzoze" method='post' id='homepage-contact-form'>
+                                <fieldset>
+                                    <legend className='text'>Nombre completo:</legend>
+                                    <input type='text' placeholder="Nombre completo" name="Nombre completo"></input>
+                                </fieldset>
+
+                                <fieldset>
+                                    <legend className='text'>Empresa:</legend>
+                                    <input type='text' placeholder="Empresa" name="Empresa"></input>
+                                </fieldset>
+
+                                <fieldset>
+                                    <select>
+                                        <option name="No seleccionó">Servicio de interés:</option>
+                                        <option value="Alquiler de grúa telescópica">Alquiler de grúa telescópica</option>
+                                        <option value="Izaje">Izaje</option>
+                                        <option value="Montaje y desmontaje">Montaje y desmontaje</option>
+                                        <option value="Elimincación de tierra">Eliminación de tierra</option>
+                                    </select>
+                                </fieldset>
+
+                                <fieldset>
+                                    <legend className='text'>Describe lo que necesitas</legend>
+                                    <textarea placeholder='Describe lo que necesitas' name='Mensaje'></textarea>
+                                </fieldset>
+
+                                <button type='submit' className='button-link button-link-1 margin-left'>
+                                    <p className='button-link-text'>Enviar formulario</p>
+                                    <span className="material-icons">send</span>
+                                </button>
+                            </form>
+                            <div>
+                                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRsn6aHrSIiH9CHAA_ZW66t3OA8XaAX-ua5Jg&s" alt=""/>
+                            </div>
+                        </div>
+                    </section>
+                </div>
             </main>
 
             <Footer/>
