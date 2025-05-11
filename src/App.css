@@ -1,38 +1,157 @@
-.App {
-  text-align: center;
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Outfit';
+    font-size: 14px;
+    font-weight: 400;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/**/
+
+body::-webkit-scrollbar{
+    display: none;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/**/
+
+.material-symbols-outlined{
+    font-variation-settings: 'FILL' 1, 'wght' 400, 'GRAD' 0, 'opsz' 24
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+/**/
+
+@font-face{
+    font-family: 'Anton';
+    src: url('../public/assets/fonts/anton/Anton-Regular.ttf');
 }
 
-.App-link {
-  color: #61dafb;
+@font-face{
+    font-family: 'Outfit';
+    src: url('../public/assets/fonts/outfit/static/Outfit-Regular.ttf');
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/**/
+
+:root{
+    --body: #FFFFFF;
+
+    --principal: #DA111D;
+
+    --mx-w-content: 1440px;
+
+    --text: #333333;
+
+    --white: #FFFFFF;
+
+    --t-200ms: all 200ms linear;
+}
+
+/**/
+
+main{
+    width: 100vw;
+    min-height: 100vh;
+    background: var(--body);
+    display: flex;
+}
+
+/**/
+
+.block-container{
+    width: 100%;
+    padding: 20px;
+}
+
+.block-content{
+    margin: 0 auto;
+    width: 100%;
+    max-width: var(--mx-w-content);
+}
+
+/**/
+
+.d-flex-center-center{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.d-flex-column{
+    display: flex;
+    flex-direction: column;
+}
+
+/**/
+
+.font-anton{
+    font-family: 'Anton';
+    font-weight: normal;
+    text-transform: uppercase;
+}
+
+/**/
+
+.color-white{
+    color: var(--white);
+}
+
+/**/
+
+button{
+    cursor: pointer;
+    border: 0;
+    outline: 0;
+    background: none;
+}
+
+/**/
+
+.button-link{
+    cursor: pointer;
+}
+
+.button-link-1,
+.button-link-2{
+    width: auto;
+    min-height: 40px;
+    padding: 0 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 3px;
+    gap: 10px;
+}
+
+.button-link-1{
+    background: var(--principal);
+}
+
+.button-link-1 .button-link-text,
+.button-link-1 span{
+    color: var(--white);
+}
+
+.button-link-1 span,
+.button-link-2 span{
+    font-size: 20px;
+}
+
+.button-link-2{
+    background: var(--white);
+}
+
+.button-link-2 .button-link-text,
+.button-link-2 span{
+    color: var(--principal);
+}
+
+/**/
+
+@media screen and (max-width: 600px){
+    *{
+        font-size: 17px;
+    }
 }
