@@ -2,6 +2,8 @@ import { Helmet } from 'react-helmet-async';
 
 import Header from '../../Components/Header/Header';
 import Background from '../../Components/Background/Background';
+import InfoTargets from './Components/InfoTargets/InfoTargets';
+import AboutUs from './Components/AboutUs/AboutUs';
 
 import './Homepage.css';
 
@@ -49,6 +51,10 @@ function Homepage(){
             </div>
 
             <main>
+                <InfoTargets/>
+
+                <AboutUs/>
+
                 <div className='block-container homepage-first-block-container'>
                     <section className='block-content'>
                         <p>leosoplapuco desarrollando este sitio web</p>
