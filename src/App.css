@@ -56,6 +56,7 @@ main{
     min-height: 100vh;
     background: var(--body);
     display: flex;
+    flex-direction: column;
 }
 
 /**/
@@ -63,12 +64,23 @@ main{
 .block-container{
     width: 100%;
     padding: 20px;
+    display: flex;
 }
 
 .block-content{
     margin: 0 auto;
     width: 100%;
     max-width: var(--mx-w-content);
+}
+
+.block-title-container{
+    width: 100%;
+    grid-column: 1/-1;
+    display: flex;
+}
+
+.block-title{
+    font-size: 28px;
 }
 
 /**/
