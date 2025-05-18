@@ -45,5 +45,22 @@
     object-fit: contain;
 }
 
-/**/
+@media screen and (max-width: 600px){
+    .page-hero-container{
+        height: auto;
+        max-height: none;
+    }
 
+    .page-hero-content{
+        grid-template-columns: 1fr;
+    }
+
+    .page-hero-content-target-1 > div > h1,
+    .page-hero-content-target-1 > div > h2{
+        font-size: 60px;
+    }
+
+    .page-hero-content-target-2 img{
+        width: 100%;
+    }
+}

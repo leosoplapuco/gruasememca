@@ -2,6 +2,7 @@
     position: fixed;
     right: 20px;
     bottom: 20px;
+    z-index: 101;
 }
 
 .chatbot-button-content{
@@ -24,6 +25,7 @@
     display: flex;
     pointer-events: none;
     visibility: hidden;
+    z-index: 101;
 }
 
 .chatbot-button-content:hover::before{
@@ -78,6 +80,7 @@
     background: var(--body);
     border: 1px solid gray;
     border-radius: 6px;
+    z-index: 101;
 }
 
 .chat-content{
@@ -138,5 +141,7 @@
         bottom: 0;
         border: 0;
         border-radius: 0;
+
+        display: none;
     }
 }

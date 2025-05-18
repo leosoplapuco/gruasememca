@@ -29,11 +29,11 @@ function Homepage(){
 
                         <p className='color-white'>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
                     
-                        <ul>
+                        <ul className='list-buttons'>
                             <li>
                                 <a href='/' title='' className='button-link button-link-2'>
                                     <span className="material-symbols-outlined">grid_3x3</span>
-                                    <p className='button-link-text'>Cotizar</p>
+                                    <p className='button-link-text'>Cotizar servicio</p>
                                 </a>
                             </li>
                             <li>
@@ -44,6 +44,7 @@ function Homepage(){
                             </li>
                         </ul>
                     </div>
+
                     <div className='page-hero-content-target page-hero-content-target-2'>
                         <img src="/assets/media/images/homepage/grua-principal.png"  alt=""/>
                     </div>
