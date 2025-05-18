@@ -6,7 +6,7 @@ function ChaBot(){
             <div className='chatbot-button-container'>
                 <div className='chatbot-button-content'>
                     <button type='button' className='chatbot-button'>
-                        <span class="material-symbols-outlined">robot_2</span>
+                        <span className="material-symbols-outlined">robot_2</span>
                     </button>
 
                     <p>Asistencia en línea</p>
@@ -19,7 +19,7 @@ function ChaBot(){
                         <p>gruasememca</p>
 
                         <button type='button' className='chat-close'>
-                            <span class="material-symbols-outlined">close</span>
+                            <span className="material-symbols-outlined">close</span>
                         </button>
                     </div>
 

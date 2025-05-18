@@ -42,7 +42,7 @@ body::-webkit-scrollbar{
 
     --mx-w-content: 1440px;
 
-    --text: #333333;
+    --text: #444444;
 
     --white: #FFFFFF;
 
@@ -71,6 +71,9 @@ main{
     margin: 0 auto;
     width: 100%;
     max-width: var(--mx-w-content);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 }
 
 .block-title-container{
@@ -80,7 +83,9 @@ main{
 }
 
 .block-title{
-    font-size: 28px;
+    font-size: 32px;
+    color: #000000;
+    transition: var(--t-200ms);
 }
 
 /**/
@@ -94,6 +99,30 @@ main{
 .d-flex-column{
     display: flex;
     flex-direction: column;
+}
+
+/**/
+
+.gap-5{
+    gap: 5px;
+}
+
+.gap-10{
+    gap: 10px;
+}
+
+.gap-20{
+    gap: 20px;
+}
+
+/**/
+
+.margin-left{
+    margin-left: auto;
+}
+
+.margin-right{
+    margin-right: auto;
 }
 
 /**/
@@ -121,20 +150,34 @@ button{
 
 /**/
 
+.list-buttons{
+    display: flex;
+    gap: 10px;
+}
+
+/**/
+
 .button-link{
     cursor: pointer;
 }
 
 .button-link-1,
-.button-link-2{
+.button-link-2,
+.button-link-3{
     width: auto;
     min-height: 40px;
     padding: 0 16px;
     display: flex;
     align-items: center;
     justify-content: center;
+    transition: var(--t-200ms);
     border-radius: 3px;
     gap: 10px;
+}
+
+.button-link-text,
+.button-link span{
+    transition: var(--t-200ms);
 }
 
 .button-link-1{
@@ -160,10 +203,51 @@ button{
     color: var(--principal);
 }
 
+.button-link-3:hover{
+    background: rgba(218 17 29 / 0.15);
+}
+
+.button-link-3 .button-link-text,
+.button-link-3 span{
+    color: var(--text);
+}
+
+.button-link-3:hover .button-link-text,
+.button-link-3:hover span{
+    color: var(--principal);
+}
+
 /**/
 
 @media screen and (max-width: 600px){
     *{
         font-size: 17px;
+    }
+
+    /**/
+
+    .list-buttons{
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .list-buttons li{
+        width: 100%;
+    }
+
+    .list-buttons li a{
+        width: 100%;
+    }
+
+    /**/
+
+    .button-link span{
+        font-size: 28px;
+    }
+
+    .button-link-1,
+    .button-link-2,
+    .button-link-3{
+        height: 58px;
     }
 }
