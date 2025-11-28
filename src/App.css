@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: content-box;
+  list-style: none;
+  text-decoration: none;
+  font-family: 'Inter', sans-serif;
+  font-size: 15px;
+}
+
+:root {
+  --header: #FFFFFF;
+  --body: snow;
+
+  --color-1: #DA111D;
+
+  --mx-w-content: 2000px;
+}
+
+body {
+  background: var(--body);
+}
+
+main {
+  width: 100%;
+  margin-top: 80px;
+  padding: 10px 20px;
+}
