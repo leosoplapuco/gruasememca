@@ -3,7 +3,7 @@
 * {
   padding: 0;
   margin: 0;
-  box-sizing: content-box;
+  box-sizing: border-box;
   list-style: none;
   text-decoration: none;
   font-family: 'Inter', sans-serif;
@@ -16,6 +16,8 @@
 
   --color-1: #DA111D;
 
+  --white: #FFFFFF;
+
   --mx-w-content: 2000px;
 }
 
@@ -25,6 +27,35 @@ body {
 
 main {
   width: 100%;
-  margin-top: 80px;
-  padding: 10px 20px;
+  min-height: 50vh;
+  padding: unset !important;
+  margin: unset !important;
+}
+
+button {
+  cursor: pointer;
+  border: 0;
+  outline: 0;
+  background: none;
+}
+
+.button-link {
+  width: auto;
+  padding: 0 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.button-link-1 {
+  width: auto;
+  height: 44px;
+  background: var(--color-1);
+  border-radius: 4px;
+}
+
+.button-link-1 p,
+.button-link-1 span {
+  color: var(--white);
 }

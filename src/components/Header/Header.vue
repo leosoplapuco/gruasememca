@@ -14,11 +14,11 @@ const props = withDefaults(defineProps<Props>(), {
   <header>
     <div class="header">
       <a href="/" class="header-logo">
-        <h1>{{ title }}</h1>
+        <img src="https://www.gruasememca.com/media/img/logo-original-sin-fondo.webp" alt="" />
       </a>
 
-      <nav>
-        <ul>
+      <nav class="header-nav">
+        <ul class="header-nav-ul">
           <li>
             <a href="">
               <h2>Inicio</h2>
@@ -27,6 +27,7 @@ const props = withDefaults(defineProps<Props>(), {
           <li>
             <button type="button">
               <h2>Servicios</h2>
+              <span class="material-symbols-outlined">keyboard_arrow_down</span>
             </button>
 
             <ul>
@@ -55,6 +56,7 @@ const props = withDefaults(defineProps<Props>(), {
           <li>
             <button type="button">
               <h2>Maquinaria</h2>
+              <span class="material-symbols-outlined">keyboard_arrow_down</span>
             </button>
 
             <ul>
@@ -77,6 +79,11 @@ const props = withDefaults(defineProps<Props>(), {
           </li>
         </ul>
       </nav>
+
+      <a href="" class="button-link button-link-1">
+        <span class="material-symbols-outlined">call</span>
+        <p>Llamar ahora</p>
+      </a>
     </div>
   </header>
 </template>
