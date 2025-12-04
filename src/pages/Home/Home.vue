@@ -5,7 +5,7 @@ import './Home.css'
 
 <template>
   <section class="hero-container">
-    <img src="https://www.gruasememca.com/media/img/us-poster-video.webp" alt="" />
+    <!-- <img src="https://www.gruasememca.com/media/img/us-poster-video.webp" alt="" /> -->
     <div class="hero-content"></div>
   </section>
 

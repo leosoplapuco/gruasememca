@@ -13,10 +13,13 @@
 :root {
   --header: #FFFFFF;
   --body: snow;
+  --text: #444444;
 
   --color-1: #DA111D;
 
   --white: #FFFFFF;
+
+  --t-200ms-linear: all 200ms linear;
 
   --mx-w-content: 2000px;
 }
@@ -45,6 +48,8 @@ button {
   display: flex;
   align-items: center;
   justify-content: center;
+  position: relative;
+  overflow: hidden;
   gap: 10px;
 }
 
@@ -55,7 +60,29 @@ button {
   border-radius: 4px;
 }
 
+.button-link-1::before {
+  content: '';
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  translate: -50% -50%;
+  display: flex;
+  background: darkred;
+  width: auto;
+  height: 100%;
+  aspect-ratio: 1/1;
+  border-radius: 100%;
+  scale: 0;
+  transition: var(--t-200ms-linear);
+  z-index: 0;
+}
+
+.button-link-1:hover::before {
+  scale: 5;
+}
+
 .button-link-1 p,
 .button-link-1 span {
   color: var(--white);
+  z-index: 1;
 }
