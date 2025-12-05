@@ -1,4 +1,6 @@
 <script setup lang="ts">
+import { onMounted } from 'vue'
+
 import './Header.css'
 
 interface Props {
@@ -7,6 +9,24 @@ interface Props {
 
 const props = withDefaults(defineProps<Props>(), {
   title: 'Grúas ememca',
+})
+
+onMounted(() => {
+  const btnOpen = document.querySelector('.menu-button-open') as HTMLButtonElement
+  const btnClose = document.querySelector('.menu-button-close') as HTMLButtonElement
+  const nav = document.querySelector('.header-nav') as HTMLElement
+
+  if (btnOpen && btnClose && nav) {
+    btnOpen.addEventListener('click', () => {
+      nav.classList.add('active')
+      btnClose.classList.add('active')
+    })
+
+    btnClose.addEventListener('click', () => {
+      nav.classList.remove('active')
+      btnClose.classList.remove('active')
+    })
+  }
 })
 </script>
 
@@ -92,10 +112,14 @@ const props = withDefaults(defineProps<Props>(), {
         </ul>
       </nav>
 
-      <a href="" title="Llamar ahora" class="button-link button-link-1">
+      <a href="" title="Llamar ahora" class="button-link button-link-1 header-call-button">
         <span class="material-symbols-outlined">call</span>
         <p>Llamar ahora</p>
       </a>
+
+      <button type="button" class="menu-button-open">
+        <span class="material-symbols-outlined">menu</span>
+      </button>
     </div>
   </header>
 
