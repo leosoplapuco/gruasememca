@@ -10,6 +10,11 @@ header {
   z-index: 100;
 }
 
+header.active {
+  background: var(--header);
+  box-shadow: 0 1px 4px rgba(0 0 0 / 0.5);
+}
+
 .header {
   margin: auto;
   width: 100%;
@@ -72,6 +77,21 @@ header {
 .header-nav-ul>li>a span,
 .header-nav-ul>li>button h2,
 .header-nav-ul>li>button span {
+  color: var(--white);
+  transition: var(--t-200ms-linear);
+}
+
+header.active .header-nav-ul>li>a h2,
+header.active .header-nav-ul>li>a span,
+header.active .header-nav-ul>li>button h2,
+header.active .header-nav-ul>li>button span {
+  color: var(--text);
+}
+
+header.active .header-nav-ul>li>a:hover h2,
+header.active .header-nav-ul>li>a:hover span,
+header.active .header-nav-ul>li>button:hover h2,
+header.active .header-nav-ul>li>button:hover span {
   color: var(--white);
 }
 

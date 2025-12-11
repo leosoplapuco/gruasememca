@@ -25,7 +25,7 @@
 }
 
 body {
-  background: var(--body);
+  background: transparent;
 }
 
 main {
@@ -33,6 +33,10 @@ main {
   min-height: 50vh;
   padding: unset !important;
   margin: unset !important;
+}
+
+.d-flex {
+  display: flex;
 }
 
 button {
@@ -85,4 +89,19 @@ button {
 .button-link-1 span {
   color: var(--white);
   z-index: 1;
+}
+
+.block-container {
+  display: flex;
+  width: 100%;
+  height: auto;
+  padding: 20px;
+  background: var(--body);
+  z-index: 1;
+}
+
+.block-content {
+  margin: auto;
+  width: 100%;
+  max-width: var(--mx-w-content);
 }

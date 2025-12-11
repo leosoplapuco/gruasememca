@@ -1,6 +1,5 @@
 <script setup lang="ts">
 import { onMounted } from 'vue'
-
 import './Header.css'
 
 interface Props {
@@ -15,6 +14,7 @@ onMounted(() => {
   const btnOpen = document.querySelector('.menu-button-open') as HTMLButtonElement
   const btnClose = document.querySelector('.menu-button-close') as HTMLButtonElement
   const nav = document.querySelector('.header-nav') as HTMLElement
+  const header = document.querySelector('header')
 
   if (btnOpen && btnClose && nav) {
     btnOpen.addEventListener('click', () => {
@@ -27,6 +27,16 @@ onMounted(() => {
       btnClose.classList.remove('active')
     })
   }
+
+  const handleScroll = () => {
+    if (window.scrollY > 50) {
+      header?.classList.add('active')
+    } else {
+      header?.classList.remove('active')
+    }
+  }
+
+  window.addEventListener('scroll', handleScroll)
 })
 </script>
 
@@ -45,6 +55,7 @@ onMounted(() => {
               <h2>Inicio</h2>
             </a>
           </li>
+
           <li>
             <button type="button">
               <span class="material-symbols-outlined menu-sub-icon">home_work</span>
@@ -73,36 +84,21 @@ onMounted(() => {
               </li>
             </ul>
           </li>
+
           <li>
             <a href="/nosotros/" title="Nosotros | Grúas Ememca">
               <span class="material-symbols-outlined menu-sub-icon">diversity_3</span>
               <h2>Nosotros</h2>
             </a>
           </li>
-          <li>
-            <!-- <button type="button">
-              <span class="material-symbols-outlined">auto_towing</span>
-              <h2>Maquinaria</h2>
-              <span class="material-symbols-outlined">keyboard_arrow_down</span>
-            </button>
 
-            <ul>
-              <li>
-                <a href="/maquinaria/gruas-telescopicas/" title="Grúas telescópicas | Grúas Ememca">
-                  <h2>Grúas telescópicas</h2>
-                </a>
-              </li>
-              <li>
-                <a href="/maquinaria/excavadoras/" title="Excavadoras | Grúas Ememca">
-                  <h2>Excavadoras</h2>
-                </a>
-              </li>
-            </ul> -->
+          <li>
             <a href="/maquinaria/" title="Maquinaria | Grúas Ememca">
               <span class="material-symbols-outlined menu-sub-icon">auto_towing</span>
               <h2>Maquinaria</h2>
             </a>
           </li>
+
           <li>
             <a href="/proyectos/" title="Proyectos | Grúas Ememca">
               <span class="material-symbols-outlined menu-sub-icon">breaking_news</span>
@@ -124,6 +120,6 @@ onMounted(() => {
   </header>
 
   <button type="button" class="menu-button-close">
-    <span class="material-symbols-outlined"> close</span>
+    <span class="material-symbols-outlined">close</span>
   </button>
 </template>
