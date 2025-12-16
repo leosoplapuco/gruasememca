@@ -45,6 +45,7 @@ header.active {
   display: flex;
   width: auto;
   height: 100%;
+  gap: 5px;
 }
 
 .header-nav-ul>li {

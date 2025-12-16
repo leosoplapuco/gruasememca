@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
 
 * {
   padding: 0;
@@ -7,8 +8,19 @@
   list-style: none;
   text-decoration: none;
   font-family: 'Inter', sans-serif;
+  font-weight: 600;
   font-size: 15px;
 }
+
+.anton-regular,
+.block-title {
+  font-family: "Anton", sans-serif;
+  font-weight: unset;
+  font-style: normal;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
 
 :root {
   --header: #FFFFFF;
@@ -39,6 +51,22 @@ main {
   display: flex;
 }
 
+.gap-5 {
+  gap: 5px;
+}
+
+.gap-10 {
+  gap: 10px;
+}
+
+.gap-15 {
+  gap: 15px;
+}
+
+.gap-20 {
+  gap: 20px;
+}
+
 button {
   cursor: pointer;
   border: 0;
@@ -52,9 +80,15 @@ button {
   display: flex;
   align-items: center;
   justify-content: center;
+  transition: var(--t-200ms-linear);
   position: relative;
   overflow: hidden;
   gap: 10px;
+}
+
+.button-link span,
+.button-link-text {
+  transition: var(--t-200ms-linear);
 }
 
 .button-link-1 {
@@ -91,6 +125,27 @@ button {
   z-index: 1;
 }
 
+.button-link-2 {
+  width: auto;
+  height: 44px;
+  background: transparent;
+  border-radius: 4px;
+}
+
+.button-link-2:hover {
+  background: var(--white);
+}
+
+.button-link-2 span,
+.button-link-2 .button-link-text {
+  color: var(--white);
+}
+
+.button-link-2:hover span,
+.button-link-2:hover .button-link-text {
+  color: var(--color-1);
+}
+
 .block-container {
   display: flex;
   width: 100%;
@@ -104,4 +159,24 @@ button {
   margin: auto;
   width: 100%;
   max-width: var(--mx-w-content);
+}
+
+.block-title-container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.block-title-container>span {
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 14px;
+  color: var(--text);
+}
+
+.block-title {
+  font-size: 34px;
+  color: var(--black);
 }

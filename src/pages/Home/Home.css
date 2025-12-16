@@ -41,6 +41,19 @@
   height: calc(100% - 80px);
 }
 
+.hero-content>span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: var(--white);
+  background: var(--color-1);
+  padding: 5px 6px;
+  border-radius: 2px;
+}
+
 .hero-content h1 {
   text-align: center;
   font-size: 46px;
