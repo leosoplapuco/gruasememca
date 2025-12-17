@@ -25,7 +25,7 @@
 :root {
   --header: #FFFFFF;
   --body: snow;
-  --text: #444444;
+  --text: #333333;
 
   --color-1: #DA111D;
 
@@ -49,6 +49,11 @@ main {
 
 .d-flex {
   display: flex;
+}
+
+.d-flex-column {
+  display: flex;
+  flex-direction: column;
 }
 
 .gap-5 {

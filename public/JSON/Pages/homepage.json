@@ -1,0 +1,40 @@
+{
+  "services": [
+    {
+      "id": 1,
+      "title": "Alquiler de grúas",
+      "image": "https://www.gruasememca.com/media/img/gallery-2.webp",
+      "image-alt": "image description",
+      "slogan": "Grúas telescópicas con capacidad de hasta las 200 toneladas",
+      "description": ["mensaje 1", "mensaje 2"],
+      "link": "/servicios/alquiler-de-gruas/"
+    },
+    {
+      "id": 2,
+      "title": "Izaje",
+      "image": "https://www.gruasememca.com/media/img/gallery-2.webp",
+      "image-alt": "image description",
+      "slogan": "Grúas telescópicas con capacidad de hasta las 200 toneladas",
+      "description": ["mensaje 1", "mensaje 2"],
+      "link": "/servicios/izaje/"
+    },
+    {
+      "id": 3,
+      "title": "Montaje y desmontaje",
+      "image": "https://www.gruasememca.com/media/img/gallery-2.webp",
+      "image-alt": "image description",
+      "slogan": "Grúas telescópicas con capacidad de hasta las 200 toneladas",
+      "description": ["mensaje 1", "mensaje 2"],
+      "link": "/servicios/alquiler-de-gruas/"
+    },
+    {
+      "id": 4,
+      "title": "Eliminación de tierra",
+      "image": "https://www.gruasememca.com/media/img/gallery-2.webp",
+      "image-alt": "image description",
+      "slogan": "Grúas telescópicas con capacidad de hasta las 200 toneladas",
+      "description": ["mensaje 1", "mensaje 2"],
+      "link": "/servicios/alquiler-de-gruas/"
+    }
+  ]
+}
