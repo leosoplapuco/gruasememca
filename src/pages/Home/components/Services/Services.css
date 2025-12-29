@@ -4,7 +4,7 @@
   justify-content: left;
 }
 
-.homepage-services-buttons-container ul li button {
+.h-p-button {
   position: relative;
   width: auto;
   height: 48px;
@@ -37,11 +37,15 @@
   background: var(--color-1);
 }
 
+
+.h-p-button span,
 .h-p-button p {
   color: var(--text);
   transition: var(--t-200ms-linear);
 }
 
+.h-p-button.active span,
+.h-p-button:hover span,
 .h-p-button.active p,
 .h-p-button:hover p {
   color: var(--color-1);
@@ -51,13 +55,68 @@
   display: none;
 }
 
+.homepage-services-buttons-container {
+  margin-bottom: 20px;
+}
+
+.homepage-services-targets {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+}
+
 .homepage-services-target-1 img {
-  width: 200px;
-  height: auto;
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 4px;
+  display: flex;
 }
 
 .homepage-services-target-2 {
   display: flex;
   flex-direction: column;
   gap: 10px;
+}
+
+.homepage-services-target-2>span {
+  color: #777;
+}
+
+.homepage-services-target-2>p {
+  text-transform: uppercase;
+  color: var(--text);
+  font-size: 20px;
+}
+
+@media screen and (max-width: 600px) {
+  .h-p-button {
+    gap: 10px;
+  }
+
+  .h-p-button span {
+    display: unset;
+  }
+
+  .h-p-button p {
+    font-size: 0;
+    opacity: 0;
+  }
+
+  .h-p-button.active p {
+    opacity: 1;
+    font-size: 15px;
+  }
+
+  .homepage-services-buttons-container {
+    margin-bottom: 10px;
+  }
+
+  .homepage-services-targets {
+    grid-template-columns: 1fr;
+  }
+
+  .homepage-services-target-1 img {
+    height: 160px;
+  }
 }

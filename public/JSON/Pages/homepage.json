@@ -3,9 +3,9 @@
     {
       "id": 1,
       "title": "Alquiler de grúas",
-      "image": "https://www.gruasememca.com/media/img/gallery-2.webp",
+      "image": "https://www.gruasememca.com/media/img/gallery-1.webp",
       "image-alt": "image description",
-      "slogan": "Grúas telescópicas con capacidad de hasta las 200 toneladas",
+      "slogan": "Grúas telescópicas con capacidad de carga de hasta las 200 toneladas",
       "description": ["mensaje 1", "mensaje 2"],
       "link": "/servicios/alquiler-de-gruas/"
     },
@@ -14,25 +14,25 @@
       "title": "Izaje",
       "image": "https://www.gruasememca.com/media/img/gallery-2.webp",
       "image-alt": "image description",
-      "slogan": "Grúas telescópicas con capacidad de hasta las 200 toneladas",
+      "slogan": "Izaje seguros de tanques, postes, estructuras, maquinaria y más",
       "description": ["mensaje 1", "mensaje 2"],
       "link": "/servicios/izaje/"
     },
     {
       "id": 3,
       "title": "Montaje y desmontaje",
-      "image": "https://www.gruasememca.com/media/img/gallery-2.webp",
+      "image": "https://www.gruasememca.com/media/img/gallery-3.webp",
       "image-alt": "image description",
-      "slogan": "Grúas telescópicas con capacidad de hasta las 200 toneladas",
+      "slogan": "De estructuras metálicas, plantas concreteras y más",
       "description": ["mensaje 1", "mensaje 2"],
       "link": "/servicios/alquiler-de-gruas/"
     },
     {
       "id": 4,
       "title": "Eliminación de tierra",
-      "image": "https://www.gruasememca.com/media/img/gallery-2.webp",
+      "image": "https://www.gruasememca.com/media/img/gallery-4.webp",
       "image-alt": "image description",
-      "slogan": "Grúas telescópicas con capacidad de hasta las 200 toneladas",
+      "slogan": "Grúas excavadoras para la removición de escombros y tierra",
       "description": ["mensaje 1", "mensaje 2"],
       "link": "/servicios/alquiler-de-gruas/"
     }

@@ -33,7 +33,7 @@
 
   --t-200ms-linear: all 200ms linear;
 
-  --mx-w-content: 2000px;
+  --mx-w-content: 1600px;
 }
 
 body {
@@ -54,6 +54,22 @@ main {
 .d-flex-column {
   display: flex;
   flex-direction: column;
+}
+
+.margin-left {
+  margin-left: auto;
+}
+
+.margin-right {
+  margin-right: auto;
+}
+
+.margin-top {
+  margin-top: auto;
+}
+
+.margin-bottom {
+  margin-bottom: auto;
 }
 
 .gap-5 {
