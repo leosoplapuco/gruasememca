@@ -1,8 +1,9 @@
 <script setup lang="ts">
 import './Home.css'
-import type ServicesVue from './components/Services/Services.vue'
 
 import Services from './components/Services/Services.vue'
+import AboutUs from './components/AboutUs/AboutUs.vue'
+import Machinery from './components/Machinery/Machinery.vue'
 </script>
 
 <template>
@@ -38,4 +39,8 @@ import Services from './components/Services/Services.vue'
   </div>
 
   <Services />
+
+  <AboutUs />
+
+  <Machinery />
 </template>

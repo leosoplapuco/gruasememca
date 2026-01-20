@@ -6,7 +6,11 @@
       "image": "https://www.gruasememca.com/media/img/gallery-1.webp",
       "image-alt": "image description",
       "slogan": "Grúas telescópicas con capacidad de carga de hasta las 200 toneladas",
-      "description": ["mensaje 1", "mensaje 2"],
+      "description": [
+        "Grúas certificadas, operadores con más de 5000 horas en maniobras. Garantizan que nuestros sercicios sean 100% seguros.",
+        "Capacitamos a nuestro personal de manera constante para que estén aptos a responder a cualquier inconveniente en maniobra.",
+        "Nuestras grúas pasan por constantes y rigurosas revisiones técnicas."
+      ],
       "link": "/servicios/alquiler-de-gruas/"
     },
     {

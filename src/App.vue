@@ -6,7 +6,6 @@ import Header from '@/components/Header/Header.vue'
   <Header />
   <main class="main-container">
     <RouterView />
-    <!-- Aquí se mostrará Home.vue u otras páginas -->
   </main>
 </template>
 

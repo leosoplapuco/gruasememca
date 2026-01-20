@@ -68,8 +68,23 @@
   color: var(--white);
 }
 
+.h-p-us-content {
+  width: 100%;
+}
+
+.h-p-us-content ul li img {
+  display: flex;
+  width: auto;
+  height: 100px;
+}
+
 @media screen and (max-width: 600px) {
   .hero-content h1 {
     font-size: 38px;
+  }
+
+  .about-us-block-content .d-grid-2-to-1fr.gap-10 {
+    display: flex !important;
+    flex-direction: column-reverse !important;
   }
 }
