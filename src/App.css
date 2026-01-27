@@ -12,6 +12,11 @@
   font-size: 15px;
 }
 
+body::selection {
+  background: var(--color-1);
+  color: var(--white);
+}
+
 .anton-regular,
 .block-title {
   font-family: "Anton", sans-serif;
@@ -227,6 +232,10 @@ button {
 
 .button-link-3:hover {
   background: rgba(220 20 60 / 0.1);
+}
+
+.color-white {
+  color: var(--white);
 }
 
 .block-container {
