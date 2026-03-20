@@ -4,6 +4,7 @@ import './Home.css'
 import Services from './components/Services/Services.vue'
 import AboutUs from './components/AboutUs/AboutUs.vue'
 import Machinery from './components/Machinery/Machinery.vue'
+import Projects from './components/Proyects/Projects.vue'
 </script>
 
 <template>
@@ -43,4 +44,21 @@ import Machinery from './components/Machinery/Machinery.vue'
   <AboutUs />
 
   <Machinery />
+
+  <div class="block-container homepage-msg-1">
+    <section class="block-content homepage-msg-1-content">
+      <div class="d-flex-column">
+        <div class="d-flex-center-center">
+          <span class="material-symbols-outlined">add</span>
+          <span>15</span>
+        </div>
+        <p class="d-flex margin-left">Años</p>
+      </div>
+      <div class="d-flex">
+        <p class="hpg-msg-1-text">Garantizando seguridad y compromiso en tus proyectos</p>
+      </div>
+    </section>
+  </div>
+
+  <Projects />
 </template>

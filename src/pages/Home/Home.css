@@ -78,6 +78,40 @@
   height: 100px;
 }
 
+.block-container.homepage-msg-1 {
+  background: var(--color-1) !important;
+  color: var(--white);
+}
+
+.block-container.homepage-msg-1::selection {
+  background: var(--white);
+  color: var(--color-1);
+}
+
+.homepage-msg-1-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.homepage-msg-1-content>div>div span:nth-child(1) {
+  font-size: 45px;
+  font-weight: bold;
+}
+
+.homepage-msg-1-content>div>div span:nth-child(2) {
+  font-size: 60px;
+  font-weight: bold;
+}
+
+.hpg-msg-1-text {
+  font-size: 27px;
+  max-width: 570px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
 @media screen and (max-width: 600px) {
   .hero-content h1 {
     font-size: 38px;

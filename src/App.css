@@ -35,6 +35,7 @@ body::selection {
   --color-1: #DA111D;
 
   --white: #FFFFFF;
+  --black: #000000;
 
   --t-200ms-linear: all 200ms linear;
 
