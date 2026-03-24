@@ -14,6 +14,10 @@ import './Projects.css'
             </div>
 
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti, ut!</p>
+
+            <a href="" title="" className="homepage-project-tag-link">
+              <p>Ver más</p>
+            </a>
           </div>
           <div class="homepage-project-tag homepage-project-tag-2">
             <img
@@ -30,6 +34,10 @@ import './Projects.css'
             </div>
 
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti, ut!</p>
+
+            <a href="" title="" className="homepage-project-tag-link">
+              <p>Ver más</p>
+            </a>
           </div>
           <div class="homepage-project-tag homepage-project-tag-2">
             <img
@@ -38,7 +46,6 @@ import './Projects.css'
             />
           </div>
         </div>
-        <div class="homepage-project homepage-project-3"></div>
       </div>
     </section>
   </div>

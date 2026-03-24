@@ -112,6 +112,111 @@
   text-transform: uppercase;
 }
 
+.homepage-last-banner {
+  width: 100%;
+  position: relative !important;
+}
+
+.homepage-last-banner>img {
+  position: absolute !important;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: flex;
+  z-index: -1;
+}
+
+.homepage-last-banner .block-content {
+  margin: auto;
+  padding: 40px 20px;
+  display: flex;
+  z-index: 0;
+}
+
+.homepage-last-banner-text {
+  position: relative;
+  max-width: 350px;
+  margin-right: auto;
+  padding: 40px 20px 40px 40px;
+  background: var(--color-1);
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.homepage-last-banner-text::before {
+  content: '';
+  position: absolute;
+  left: 18.5px;
+  top: 50%;
+  translate: 0 -50%;
+  width: 3px;
+  height: calc(100% - 20px);
+  background: rgba(235 235 235 / 0.5);
+  border-radius: 10px;
+}
+
+.homepage-last-banner-text::selection {
+  background: var(--white);
+  color: var(--color-1);
+}
+
+.homepage-last-banner-text>p {
+  color: var(--white);
+}
+
+.homepage-last-banner-text .title {
+  font-weight: bold;
+  font-size: 28px;
+}
+
+.homepage-last-banner-text .sub-title {
+  position: relative;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.homepage-last-banner-text .sub-title::before {
+  content: '';
+  position: absolute;
+  right: 0;
+  bottom: -7.5px;
+  width: 100px;
+  height: 1px;
+  background: var(--white);
+}
+
+.homepage-last-banner-text .link {
+  padding: 10px 20px;
+  background: var(--color-1);
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 3px;
+  border: 2px solid var(--white);
+  transition: var(--t-200ms-linear);
+}
+
+.homepage-last-banner-text .link:hover {
+  background: var(--white);
+}
+
+.homepage-last-banner-text .link p,
+.homepage-last-banner-text .link span {
+  color: var(--white);
+  transition: var(--t-200ms-linear);
+}
+
+.homepage-last-banner-text .link:hover p,
+.homepage-last-banner-text .link:hover span {
+  color: var(--color-1);
+}
+
 @media screen and (max-width: 600px) {
   .hero-content h1 {
     font-size: 38px;

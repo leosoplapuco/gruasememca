@@ -61,4 +61,26 @@ import Projects from './components/Proyects/Projects.vue'
   </div>
 
   <Projects />
+
+  <div class="homepage-last-banner">
+    <img src="https://equipospesados.pe/wp-content/uploads/2025/06/EP-CamionesGrua.webp" alt="" />
+
+    <div class="block-content">
+      <div class="homepage-last-banner-text">
+        <p class="title">¿Por qué Grúas Ememca?</p>
+        <p class="sub-title">Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, in?</p>
+        <p class="text">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus quidem, maiores aperiam
+          veritatis inventore porro iusto voluptatem, delectus ut architecto iste odit explicabo
+          voluptas ab dolor officiis labore? Itaque quas inventore voluptatum, maxime atque minus
+          debitis commodi?
+        </p>
+
+        <a href="" class="link">
+          <p>Ver más</p>
+          <span class="material-symbols-outlined">chevron_right</span>
+        </a>
+      </div>
+    </div>
+  </div>
 </template>
