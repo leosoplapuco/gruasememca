@@ -78,7 +78,7 @@ import './Footer.css'
                 width="400"
                 height="150"
                 style="border: 0"
-                allowfullscreen=""
+                allowfullscreen
                 loading="lazy"
                 referrerpolicy="no-referrer-when-downgrade"
                 class="footer-map"
