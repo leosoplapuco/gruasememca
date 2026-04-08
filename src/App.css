@@ -31,6 +31,7 @@ body::selection {
   --header: #FFFFFF;
   --body: snow;
   --text: #333333;
+  --footer: #121212;
 
   --color-1: #DA111D;
 
@@ -222,8 +223,9 @@ button {
   color: var(--color-1);
 }
 
-.button-link-3 {
-  border-radius: 4px;
+.button-link-3,
+.button-link-4 {
+  padding: 8px 14px;
 }
 
 .button-link-3 span,
@@ -233,6 +235,15 @@ button {
 
 .button-link-3:hover {
   background: rgba(220 20 60 / 0.1);
+}
+
+.button-link-4 span,
+.button-link-4 p {
+  color: var(--white);
+}
+
+.button-link-4:hover {
+  background: rgba(235 235 235 / 0.075);
 }
 
 .color-white {

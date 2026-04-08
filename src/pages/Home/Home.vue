@@ -5,6 +5,7 @@ import Services from './components/Services/Services.vue'
 import AboutUs from './components/AboutUs/AboutUs.vue'
 import Machinery from './components/Machinery/Machinery.vue'
 import Projects from './components/Proyects/Projects.vue'
+import Testimonials from './components/Testimonials/Testimonials.vue'
 </script>
 
 <template>
@@ -83,4 +84,6 @@ import Projects from './components/Proyects/Projects.vue'
       </div>
     </div>
   </div>
+
+  <Testimonials />
 </template>

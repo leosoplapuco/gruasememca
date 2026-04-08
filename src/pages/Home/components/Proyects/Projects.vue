@@ -9,7 +9,7 @@ import './Projects.css'
         <div class="homepage-project homepage-project-1">
           <div class="homepage-project-tag homepage-project-tag-1">
             <div class="homepage-project-tag-title">
-              <span>01 .-</span>
+              <span>01.-</span>
               <p>Izaje techo REPSOL</p>
             </div>
 
@@ -29,7 +29,7 @@ import './Projects.css'
         <div class="homepage-project homepage-project-2">
           <div class="homepage-project-tag homepage-project-tag-1">
             <div class="homepage-project-tag-title">
-              <span>02 .-</span>
+              <span>02.-</span>
               <p>Izaje techo REPSOL</p>
             </div>
 

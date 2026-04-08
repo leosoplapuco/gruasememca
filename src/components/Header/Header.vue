@@ -108,7 +108,7 @@ onMounted(() => {
         </ul>
       </nav>
 
-      <a href="" title="Llamar ahora" class="button-link button-link-1 header-call-button">
+      <a href="/" title="Llamar ahora" class="button-link button-link-1 header-call-button">
         <span class="material-symbols-outlined">call</span>
         <p>Llamar ahora</p>
       </a>

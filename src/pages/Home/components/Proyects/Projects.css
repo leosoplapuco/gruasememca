@@ -3,20 +3,16 @@
 }
 
 .homepage-projects {
-  background: #DFDFDF;
-  border: 2px solid #DFDFDF;
   display: flex;
   flex-direction: column;
-  gap: 2px;
 }
 
 .homepage-project {
   display: flex;
-  gap: 2px;
 }
 
 .homepage-project>div {
-  width: calc(50% - 1px);
+  width: 50%;
   height: 100%;
 }
 
@@ -44,12 +40,13 @@
 .homepage-project-tag-title span {
   font-size: 45px;
   font-weight: bold;
-  color: var(--text);
+  color: var(--color-1);
 }
 
 .homepage-project-tag-title p {
   font-size: 24px;
   text-transform: uppercase;
+  font-weight: bold;
   color: var(--black);
 }
 
@@ -66,8 +63,8 @@
 }
 
 .homepage-project-tag>p {
-  /* margin: auto; */
   font-size: 22px;
+  color: #555;
 }
 
 .homepage-project-tag-link {
@@ -84,4 +81,44 @@
 
 .homepage-project-tag-link:hover p {
   text-decoration: underline;
+}
+
+@media screen and (max-width: 600px) {
+  :root {
+    --height-hp-project: auto;
+  }
+
+  .homepage-projects {
+    gap: 10px;
+  }
+
+  .homepage-project,
+  .homepage-project:nth-child(2n) {
+    flex-direction: column;
+  }
+
+  .homepage-project>div {
+    width: 100%;
+  }
+
+  .homepage-project:nth-child(2n - 1) .homepage-project-tag-1,
+  .homepage-project:nth-child(2n) .homepage-project-tag-1 {
+    padding: 0 0 10px 0;
+  }
+
+  .homepage-project-tag-title {
+    gap: 10px;
+  }
+
+  .homepage-project-tag-title span {
+    font-size: 32px;
+  }
+
+  .homepage-project-tag-title p {
+    font-size: 20px;
+  }
+
+  .homepage-project-tag>p {
+    font-size: 18px;
+  }
 }
