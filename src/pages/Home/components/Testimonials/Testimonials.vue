@@ -11,110 +11,65 @@ import './Testimonials.css'
       </div>
       <div class="homepage-testimonials">
         <ul class="homepage-testimonials-list">
-          <li>
-            <div class="homepage-testimonial-top">
-              <img
-                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTD4f_4-ivYZ7dAWlF5DMFOyz6O-tBydWXQ0g&s"
-                alt=""
-              />
-              <div class="d-flex-column">
-                <p class="homepage-testimonial-company">Sem Ingenieros</p>
-                <span class="homepage-testimonial-category">Metalmecánica</span>
+          <li class="homepage-testimonial homepage-testimonial-1">
+            <div class="homepage-testimonial-content d-flex gap-20">
+              <div class="d-flex-column gap-10">
+                <span class="hp-testimonial-service">Izaje</span>
+                <p class="title">Izaje a 30 metros de altura</p>
+                <p class="resume">
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolor, ad? Lorem ipsum
+                  dolor sit amet consectetur adipisicing elit. Ducimus minima aliquid,
+                  necessitatibus voluptate repellendus atque vel illum eaque ab iste.
+                </p>
+                <a href="" class="button-link button-link-1">
+                  <p class="button-link-text">Ver proyecto</p>
+                  <span class="material-symbols-outlined">arrow_outward</span>
+                </a>
+              </div>
+
+              <div class="hp-testimonial-gallery">
+                <ul>
+                  <li>
+                    <img src="https://www.gruasememca.com/media/img/gallery-2.webp" alt="" />
+                  </li>
+                </ul>
+
+                <div class="hp-testimonial-gallery-buttons">
+                  <span></span>
+                  <span></span>
+                </div>
               </div>
             </div>
-            <span class="homepage-testimonial-resume"
-              >Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque?</span
-            >
-            <p class="homepage-testimonial-text">
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Praesentium ullam quos ea
-              accusamus dicta necessitatibus adipisci neque deserunt corporis? Hic ad totam rerum
-              iusto ut. Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-            </p>
-          </li>
-          <li>
-            <div class="homepage-testimonial-top">
-              <img
-                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTD4f_4-ivYZ7dAWlF5DMFOyz6O-tBydWXQ0g&s"
-                alt=""
-              />
+
+            <div class="hp-testimonial-float-tag">
+              <a href="" title="">
+                <img src="" alt="" />
+              </a>
+              <p class="hp-testimonial-text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, sapiente
+                tempora minus tempore obcaecati quidem cumque facilis deserunt facere animi?
+              </p>
               <div class="d-flex-column">
-                <p class="homepage-testimonial-company">Sem Ingenieros</p>
-                <span class="homepage-testimonial-category">Metalmecánica</span>
+                <span class="person">Leonardo Soplapuco</span>
+                <span class="workstation">Supervisor</span>
               </div>
             </div>
-            <span class="homepage-testimonial-resume"
-              >Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque, exercitationem
-              recusandae nostrum sequi iste consequuntur?</span
-            >
-            <p class="homepage-testimonial-text">
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Praesentium ullam quos ea
-              accusamus dicta necessitatibus adipisci neque deserunt corporis? Hic ad totam rerum
-              iusto ut. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit labore
-              dicta vel illo accusantium distinctio?
-            </p>
-          </li>
-          <li>
-            <div class="homepage-testimonial-top">
-              <img
-                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTD4f_4-ivYZ7dAWlF5DMFOyz6O-tBydWXQ0g&s"
-                alt=""
-              />
-              <div class="d-flex-column">
-                <p class="homepage-testimonial-company">Sem Ingenieros</p>
-                <span class="homepage-testimonial-category">Metalmecánica</span>
+
+            <div class="hp-testimonial-buttons d-flex-center-center gap-10">
+              <button type="button">
+                <span class="material-symbols-outlined">arrow_back</span>
+              </button>
+
+              <div class="d-flex gap-5">
+                <span></span>
+                <span></span>
+                <span></span>
               </div>
+
+              <button type="button">
+                <span class="material-symbols-outlined">arrow_forward</span>
+              </button>
             </div>
-            <span class="homepage-testimonial-resume"
-              >Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque, exercitationem
-              recusandae nostrum sequi iste consequuntur?</span
-            >
-            <p class="homepage-testimonial-text">
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Praesentium ullam quos ea
-              accusamus dicta necessitatibus adipisci neque deserunt corporis? Hic ad totam rerum
-              iusto ut. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit labore
-              dicta vel illo accusantium distinctio?
-            </p>
-          </li>
-          <li>
-            <div class="homepage-testimonial-top">
-              <img
-                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTD4f_4-ivYZ7dAWlF5DMFOyz6O-tBydWXQ0g&s"
-                alt=""
-              />
-              <div class="d-flex-column">
-                <p class="homepage-testimonial-company">Sem Ingenieros</p>
-                <span class="homepage-testimonial-category">Metalmecánica</span>
-              </div>
-            </div>
-            <span class="homepage-testimonial-resume"
-              >Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque, exercitationem
-              recusandae nostrum sequi iste consequuntur?</span
-            >
-            <p class="homepage-testimonial-text">
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Praesentium ullam quos ea
-              accusamus dicta necessitatibus adipisci neque deserunt corporis? Hic ad totam rerum
-              iusto ut. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit labore
-              dicta vel illo accusantium distinctio?
-            </p>
-          </li>
-          <li>
-            <div class="homepage-testimonial-top">
-              <img
-                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTD4f_4-ivYZ7dAWlF5DMFOyz6O-tBydWXQ0g&s"
-                alt=""
-              />
-              <div class="d-flex-column">
-                <p class="homepage-testimonial-company">Sem Ingenieros</p>
-                <span class="homepage-testimonial-category">Metalmecánica</span>
-              </div>
-            </div>
-            <span class="homepage-testimonial-resume"
-              >Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque</span
-            >
-            <p class="homepage-testimonial-text">
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Praesentium ullam quos ea
-              accusamus dicta necessitatibus adipisci
-            </p>
           </li>
         </ul>
       </div>

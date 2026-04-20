@@ -1,0 +1,23 @@
+{
+  "testimonials": [
+    {
+      "id": 1,
+      "service": "Tipo de servicio",
+      "title": "Izaje a 30 metros de altura",
+      "resume": "Realizamos el izaje de componentes de construcción a una altura de 33 metros sobre el nivel de la superficie",
+      "link": "/ruta/para-ver-el-proyecto/",
+      "galery": [
+        {
+          "id": 1,
+          "type": "image",
+          "src": "/image/route",
+          "alt": ""
+        }
+      ],
+      "company-name": "Sem Ingenieros",
+      "testimonial": "Excelente trabajo, 100% recomendado, gracias a ellos terminas el proyecto antes de lo esperado.",
+      "person": "Leonardo Soplapuco",
+      "workstation": "Supervisor"
+    }
+  ]
+}

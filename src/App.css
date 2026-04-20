@@ -30,7 +30,7 @@ body::selection {
 :root {
   --header: #FFFFFF;
   --body: snow;
-  --text: #333333;
+  --text: #444444;
   --footer: #121212;
 
   --color-1: #DA111D;
@@ -78,6 +78,12 @@ main {
   display: flex;
   align-items: flex-start;
   justify-content: left;
+}
+
+.d-flex-end-right {
+  display: flex;
+  align-items: flex-end;
+  justify-content: right;
 }
 
 .d-flex-column {
@@ -182,7 +188,7 @@ button {
   top: 50%;
   translate: -50% -50%;
   display: flex;
-  background: darkred;
+  background: rgba(0 0 0 / 0.125);
   width: auto;
   height: 100%;
   aspect-ratio: 1/1;
