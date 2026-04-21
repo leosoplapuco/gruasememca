@@ -21,7 +21,7 @@ import './Testimonials.css'
                   dolor sit amet consectetur adipisicing elit. Ducimus minima aliquid,
                   necessitatibus voluptate repellendus atque vel illum eaque ab iste.
                 </p>
-                <a href="" class="button-link button-link-1">
+                <a href="" class="button-link button-link-1 margin-top-10">
                   <p class="button-link-text">Ver proyecto</p>
                   <span class="material-symbols-outlined">arrow_outward</span>
                 </a>
@@ -42,15 +42,19 @@ import './Testimonials.css'
             </div>
 
             <div class="hp-testimonial-float-tag">
-              <a href="" title="">
-                <img src="" alt="" />
+              <a href="" class="hp-testimonial-float-tag-link d-flex-center-center gap-5" title="">
+                <img
+                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTD4f_4-ivYZ7dAWlF5DMFOyz6O-tBydWXQ0g&s"
+                  alt=""
+                />
+                <p class="hp-testimonial-company">Sem Ingenieros SAC</p>
               </a>
               <p class="hp-testimonial-text">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, sapiente
                 tempora minus tempore obcaecati quidem cumque facilis deserunt facere animi?
               </p>
-              <div class="d-flex-column">
-                <span class="person">Leonardo Soplapuco</span>
+              <div class="d-flex-column gap-5">
+                <span class="person">Javier Soplapuco</span>
                 <span class="workstation">Supervisor</span>
               </div>
             </div>

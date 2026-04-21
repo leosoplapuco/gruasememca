@@ -113,6 +113,10 @@ main {
   margin-top: auto;
 }
 
+.margin-top-10 {
+  margin-top: 10px;
+}
+
 .margin-bottom {
   margin-bottom: auto;
 }

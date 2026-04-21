@@ -15,6 +15,8 @@
 }
 
 .hp-testimonial-service {
+  font-size: 20px;
+  text-decoration: underline;
   color: var(--text);
   font-weight: bold;
 }
@@ -22,7 +24,7 @@
 .homepage-testimonial-content p.title {
   text-transform: uppercase;
   color: var(--color-1);
-  font-size: 40px;
+  font-size: 48px;
   font-weight: bold;
 }
 
@@ -41,7 +43,7 @@
   background: var(--color-1);
   padding: 20px;
   width: auto;
-  max-width: 480px;
+  max-width: 460px;
   border-radius: 4px;
   display: flex;
   align-items: flex-start;
@@ -50,9 +52,41 @@
   gap: 20px;
 }
 
-.hp-testimonial-float-tag p,
-.hp-testimonial-float-tag span {
+.hp-testimonial-float-tag::selection {
+  background: var(--white);
+  color: var(--color-1);
+}
+
+.hp-testimonial-float-tag>a img {
+  border-radius: 100%;
+  width: 56px;
+  height: auto;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+}
+
+.hp-testimonial-float-tag-link:hover p {
+  text-decoration: underline;
+}
+
+.hp-testimonial-company,
+.hp-testimonial-text,
+.hp-testimonial-float-tag .person,
+.hp-testimonial-float-tag .workstation {
   color: var(--white);
+}
+
+.hp-testimonial-text {
+  font-size: 14px;
+}
+
+.hp-testimonial-float-tag .person {
+  font-size: 16px;
+}
+
+.hp-testimonial-float-tag .workstation {
+  font-size: 14px;
+  color: rgba(255 255 255 / 0.85);
 }
 
 .hp-testimonial-buttons {
@@ -63,6 +97,12 @@
 
 .hp-testimonial-buttons>button span {
   font-size: 42px;
+  color: #888888;
+  transition: var(--t-200ms-linear);
+}
+
+.hp-testimonial-buttons>button:hover span {
+  color: var(--black);
 }
 
 .hp-testimonial-buttons>.d-flex span {
