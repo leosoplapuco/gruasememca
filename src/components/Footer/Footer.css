@@ -99,7 +99,17 @@ footer {
 }
 
 @media screen and (max-width: 600px) {
+  .footer {
+    padding-bottom: 20px;
+  }
+
   .footer>nav>ul {
     grid-template-columns: 1fr;
+  }
+
+  .footer-map {
+    width: 100%;
+    height: 200px;
+    margin-bottom: 30px;
   }
 }

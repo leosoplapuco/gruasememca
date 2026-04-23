@@ -59,13 +59,13 @@ import './Testimonials.css'
               </div>
             </div>
 
-            <div class="hp-testimonial-buttons d-flex-center-center gap-10">
+            <div class="hp-testimonial-buttons gap-10">
               <button type="button">
                 <span class="material-symbols-outlined">arrow_back</span>
               </button>
 
-              <div class="d-flex gap-5">
-                <span></span>
+              <div class="d-flex">
+                <span class="active"></span>
                 <span></span>
                 <span></span>
               </div>
