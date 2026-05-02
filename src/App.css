@@ -295,6 +295,15 @@ button {
   color: var(--black);
 }
 
+.title {
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.text {
+  color: var(--text);
+}
+
 @media screen and (max-width: 600px) {
   * {
     cursor: none !important;

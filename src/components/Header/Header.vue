@@ -60,29 +60,30 @@ onMounted(() => {
             <button type="button">
               <span class="material-symbols-outlined menu-sub-icon">home_work</span>
               <h2>Servicios</h2>
-              <span class="material-symbols-outlined">keyboard_arrow_down</span>
+              <span class="material-symbols-outlined menu-button-link-arrow"
+                >keyboard_arrow_down</span
+              >
             </button>
 
-            <ul>
-              <li>
-                <a href="/servicios/alquiler-de-gruas-telescopicas/">
-                  <span class="material-symbols-outlined">auto_towing</span>
-                  <h3>Alquiler de grúas telescópicas</h3>
-                </a>
-              </li>
-              <li>
-                <a href="/servicios/izaje/" title="Servicios de izaje">
-                  <span class="material-symbols-outlined">gondola_lift</span>
-                  <h3>Izaje</h3>
-                </a>
-              </li>
-              <li>
-                <a href="/servicios/eliminacion-de-tierra/">
-                  <span class="material-symbols-outlined">front_loader</span>
-                  <h3>Eliminación de tierra</h3>
-                </a>
-              </li>
-            </ul>
+            <div class="sub-menu-container">
+              <nav class="sub-menu">
+                <div class="sub-menu-target-1 d-flex-column gap-10">
+                  <p class="title">
+                    Más de 15 años Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo,
+                    rerum.
+                  </p>
+                  <p class="text">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dignissimos nobis quis
+                    autem cum aspernatur ullam repellat reiciendis impedit. Quod animi dignissimos
+                    minima cumque nostrum accusamus iure libero aut modi eum!
+                  </p>
+                  <a href="" class="button-link button-link-3 margin-right">
+                    <p class="button-link-text">Más de nosotros</p>
+                  </a>
+                </div>
+                <div class="sub-menu-target-2"></div>
+              </nav>
+            </div>
           </li>
 
           <li>
