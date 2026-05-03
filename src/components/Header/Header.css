@@ -3,23 +3,35 @@ header {
   left: 0;
   top: 0;
   width: 100%;
-  padding: 10px 20px;
+  height: 80px;
+  padding: 0 20px;
   background: var(--header);
+  border-bottom: 1px solid #999;
   z-index: 99;
 }
 
 .header {
   margin: auto;
   width: 100%;
+  height: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
   max-width: var(--mx-w-content);
 }
 
+.header-logo {
+  width: auto;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 0;
+}
+
 .header-logo img {
   width: auto;
-  height: 64px;
+  height: 100%;
   object-fit: contain;
 }
 

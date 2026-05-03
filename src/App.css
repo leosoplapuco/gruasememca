@@ -53,10 +53,11 @@ body::-webkit-scrollbar {
 }
 
 main {
+  margin: unset !important;
+  margin-top: 50px !important;
   width: 100%;
   min-height: 50vh;
   padding: unset !important;
-  margin: unset !important;
 }
 
 .d-flex {

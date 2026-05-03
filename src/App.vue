@@ -10,9 +10,3 @@ import Footer from '@/components/Footer/Footer.vue'
   </main>
   <Footer />
 </template>
-
-<style scoped>
-.main-container {
-  padding: 2rem;
-}
-</style>
