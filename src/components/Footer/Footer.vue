@@ -88,7 +88,7 @@ import './Footer.css'
         </ul>
       </nav>
 
-      <a href="/" class="footer-final-link">
+      <a href="/" class="footer-final-link" title="gruasememca.com">
         <p>www.gruasememca.com</p>
       </a>
     </div>

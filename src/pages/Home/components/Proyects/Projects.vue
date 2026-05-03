@@ -1,49 +1,43 @@
 <script setup lang="ts">
 import './Projects.css'
+import projectsData from './Projects.json'
+
+type Project = {
+  id: number
+  title: string
+  resume: string
+  link: string
+  image: string
+}
+
+const projects: Project[] = projectsData.projects
 </script>
 
 <template>
   <div class="block-container">
     <section class="block-content">
       <div class="homepage-projects">
-        <div class="homepage-project homepage-project-1">
+        <div
+          v-for="(project, index) in projects"
+          :key="project.id"
+          class="homepage-project"
+          :class="`homepage-project-${index + 1}`"
+        >
           <div class="homepage-project-tag homepage-project-tag-1">
             <div class="homepage-project-tag-title">
-              <span>01.-</span>
-              <p>Izaje techo REPSOL</p>
+              <span>{{ String(index + 1).padStart(2, '0') }}.-</span>
+              <p>{{ project.title }}</p>
             </div>
 
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti, ut!</p>
+            <p>{{ project.resume }}</p>
 
-            <a href="" title="" className="homepage-project-tag-link">
+            <a :href="project.link" class="homepage-project-tag-link">
               <p>Ver más</p>
             </a>
           </div>
-          <div class="homepage-project-tag homepage-project-tag-2">
-            <img
-              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRLf0zq4dBVib8V264_F91pGKAca4Qh-pUM_w&s"
-              alt=""
-            />
-          </div>
-        </div>
-        <div class="homepage-project homepage-project-2">
-          <div class="homepage-project-tag homepage-project-tag-1">
-            <div class="homepage-project-tag-title">
-              <span>02.-</span>
-              <p>Izaje techo REPSOL</p>
-            </div>
 
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti, ut!</p>
-
-            <a href="" title="" className="homepage-project-tag-link">
-              <p>Ver más</p>
-            </a>
-          </div>
           <div class="homepage-project-tag homepage-project-tag-2">
-            <img
-              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRLf0zq4dBVib8V264_F91pGKAca4Qh-pUM_w&s"
-              alt=""
-            />
+            <img :src="project.image" :alt="project.title" />
           </div>
         </div>
       </div>

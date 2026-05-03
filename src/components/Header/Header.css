@@ -85,6 +85,16 @@ header {
   background: var(--header);
   border-top: 1px solid #999;
   border-bottom: 1px solid #999;
+
+  opacity: 0;
+  pointer-events: none;
+  user-select: none;
+}
+
+.sub-menu-container.active {
+  opacity: 1;
+  pointer-events: unset;
+  user-select: unset;
 }
 
 .sub-menu {
@@ -98,4 +108,50 @@ header {
 .sub-menu-target-1 {
   padding: 40px 20px 40px 0;
   border-right: 1px solid #999;
+}
+
+.menu-button-open {
+  display: none;
+}
+
+.sub-menu-target-menu ul {
+  padding: 20px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.sub-menu-target-menu ul li {
+  display: flex;
+}
+
+.sub-menu-target-menu ul li a {
+  display: flex;
+  flex-direction: column;
+}
+
+.sub-menu-target-menu ul li {
+  display: flex;
+}
+
+.sub-menu-target-menu ul li a {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 5px;
+}
+
+.sub-menu-target-menu ul li a p.title {
+  width: 100%;
+  color: var(--color-1);
+  font-size: 15px;
+}
+
+.sub-menu-target-menu ul li a:hover p.title {
+  background: rgba(220 20 60 / 0.075);
+}
+
+.sub-menu-target-menu ul li a:hover p.text {
+  text-decoration: underline;
 }

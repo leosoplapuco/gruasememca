@@ -65,7 +65,7 @@ onMounted(() => {
               >
             </button>
 
-            <div class="sub-menu-container">
+            <div class="sub-menu-container sub-menu-container-1">
               <nav class="sub-menu">
                 <div class="sub-menu-target-1 d-flex-column gap-10">
                   <p class="title">
@@ -81,7 +81,48 @@ onMounted(() => {
                     <p class="button-link-text">Más de nosotros</p>
                   </a>
                 </div>
-                <div class="sub-menu-target-2"></div>
+                <div class="sub-menu-target-2">
+                  <nav class="sub-menu-target-menu">
+                    <ul>
+                      <li>
+                        <a href="">
+                          <p class="title">Alquiler de grúas</p>
+                          <p class="text">
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Expedita,
+                            reiciendis.
+                          </p>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="">
+                          <p class="title">Servicios de izaje</p>
+                          <p class="text">
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Expedita,
+                            reiciendis.
+                          </p>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="">
+                          <p class="title">Alquiler de grúas</p>
+                          <p class="text">
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Expedita,
+                            reiciendis.
+                          </p>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="">
+                          <p class="title">Eliminación de tierra</p>
+                          <p class="text">
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Expedita,
+                            reiciendis.
+                          </p>
+                        </a>
+                      </li>
+                    </ul>
+                  </nav>
+                </div>
               </nav>
             </div>
           </li>

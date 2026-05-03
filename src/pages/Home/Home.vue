@@ -77,7 +77,7 @@ import Testimonials from './components/Testimonials/Testimonials.vue'
           debitis commodi?
         </p>
 
-        <a href="" class="link">
+        <a href="/nosotros/" class="link">
           <p>Ver más</p>
           <span class="material-symbols-outlined">chevron_right</span>
         </a>

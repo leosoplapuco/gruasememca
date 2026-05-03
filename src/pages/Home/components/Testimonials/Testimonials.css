@@ -76,17 +76,24 @@
   color: var(--white);
 }
 
+.hp-testimonial-company {
+  background: var(--white);
+  color: var(--color-1);
+  padding: 3px 5px;
+  border-radius: 3px;
+}
+
 .hp-testimonial-text {
   font-size: 14px;
 }
 
 .hp-testimonial-float-tag .person {
-  font-size: 16px;
+  font-size: 14px;
 }
 
 .hp-testimonial-float-tag .workstation {
   font-size: 14px;
-  color: rgba(255 255 255 / 0.85);
+  color: rgba(255 255 255 / 0.75);
 }
 
 .hp-testimonial-buttons {
