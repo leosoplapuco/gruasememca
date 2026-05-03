@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { ref } from 'vue'
+import { ref, computed } from 'vue'
 import './Testimonials.css'
 import data from './Testimonial.json'
 
@@ -23,20 +23,37 @@ type Testimonial = {
   workstation: string
 }
 
+// Normalización del JSON (sin any)
 const testimonials = ref<Testimonial[]>(
-  data.testimonials.map((item: any) => ({
-    ...item,
+  data.testimonials.map((item) => ({
+    id: item.id,
+    service: item.service,
+    title: item.title,
+    resume: item.resume,
+    link: item.link,
+    galery: item.galery,
     companyName: item['company-name'],
+    testimonial: item.testimonial,
+    person: item.person,
+    workstation: item.workstation,
   })),
 )
 
 const currentIndex = ref(0)
 
+const currentTestimonial = computed<Testimonial | null>(() => {
+  if (!testimonials.value.length) return null
+
+  return testimonials.value[currentIndex.value] ?? null
+})
+
 const next = () => {
+  if (!testimonials.value.length) return
   currentIndex.value = (currentIndex.value + 1) % testimonials.value.length
 }
 
 const prev = () => {
+  if (!testimonials.value.length) return
   currentIndex.value =
     (currentIndex.value - 1 + testimonials.value.length) % testimonials.value.length
 }
@@ -52,18 +69,22 @@ const prev = () => {
 
       <div class="homepage-testimonials">
         <ul class="homepage-testimonials-list">
-          <li v-if="testimonials.length" class="homepage-testimonial">
+          <li v-if="currentTestimonial" class="homepage-testimonial">
             <div class="homepage-testimonial-content d-flex gap-20">
               <div class="d-flex-column gap-10">
-                <span class="hp-testimonial-service">{{ testimonials[currentIndex].service }}</span>
+                <span class="hp-testimonial-service">
+                  {{ currentTestimonial.service }}
+                </span>
 
-                <p class="title">{{ testimonials[currentIndex].title }}</p>
-                <p class="resume">{{ testimonials[currentIndex].resume }}</p>
+                <p class="title">
+                  {{ currentTestimonial.title }}
+                </p>
 
-                <a
-                  :href="testimonials[currentIndex].link"
-                  class="button-link button-link-1 margin-top-10"
-                >
+                <p class="resume">
+                  {{ currentTestimonial.resume }}
+                </p>
+
+                <a :href="currentTestimonial.link" class="button-link button-link-1 margin-top-10">
                   <p class="button-link-text">Ver proyecto</p>
                   <span class="material-symbols-outlined"> arrow_outward </span>
                 </a>
@@ -71,7 +92,7 @@ const prev = () => {
 
               <div class="hp-testimonial-gallery">
                 <ul>
-                  <li v-for="img in testimonials[currentIndex].galery" :key="img.id">
+                  <li v-for="img in currentTestimonial.galery" :key="img.id">
                     <img :src="img.src" :alt="img.alt" />
                   </li>
                 </ul>
@@ -80,19 +101,19 @@ const prev = () => {
 
             <div class="hp-testimonial-float-tag">
               <p class="hp-testimonial-company">
-                {{ testimonials[currentIndex].companyName }}
+                {{ currentTestimonial.companyName }}
               </p>
 
               <p class="hp-testimonial-text">
-                {{ testimonials[currentIndex].testimonial }}
+                {{ currentTestimonial.testimonial }}
               </p>
 
               <div class="d-flex-column gap-5">
                 <span class="person">
-                  {{ testimonials[currentIndex].person }}
+                  {{ currentTestimonial.person }}
                 </span>
                 <span class="workstation">
-                  {{ testimonials[currentIndex].workstation }}
+                  {{ currentTestimonial.workstation }}
                 </span>
               </div>
             </div>
