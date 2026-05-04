@@ -1,6 +1,7 @@
 <script setup lang="ts">
-import { ref, computed, onMounted } from 'vue'
+import { ref, computed } from 'vue'
 import './Services.css'
+import data from './Services.json'
 
 interface Service {
   id: number
@@ -12,21 +13,10 @@ interface Service {
   link: string
 }
 
-const services = ref<Service[]>([])
-const activeServiceId = ref<number | null>(null)
+const services = ref<Service[]>(data.services)
+const activeServiceId = ref<number | null>(data.services[0]?.id ?? null)
+
 const activeService = computed(() => services.value.find((s) => s.id === activeServiceId.value))
-
-onMounted(async () => {
-  try {
-    const response = await fetch('/JSON/Pages/homepage.json')
-    const data = await response.json()
-
-    services.value = data.services
-    activeServiceId.value = data.services[0]?.id ?? null
-  } catch (error) {
-    console.error('Error cargando servicios:', error)
-  }
-})
 </script>
 
 <template>
@@ -58,7 +48,9 @@ onMounted(async () => {
         </div>
 
         <div class="homepage-services-target homepage-services-target-2">
-          <span class="service-des-title">{{ activeService.title }} </span>
+          <span class="service-des-title">
+            {{ activeService.title }}
+          </span>
 
           <p>{{ activeService.slogan }}</p>
 
@@ -69,8 +61,8 @@ onMounted(async () => {
           </ul>
 
           <a :href="activeService.link" class="button-link button-link-1 margin-right">
-            <span class="material-symbols-outlined">call</span>
             <p class="button-link-text">Cotizar servicio</p>
+            <span class="material-symbols-outlined">arrow_forward</span>
           </a>
         </div>
       </div>

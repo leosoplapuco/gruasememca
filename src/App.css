@@ -53,11 +53,11 @@ body::-webkit-scrollbar {
 }
 
 main {
-  margin: unset !important;
-  margin-top: 50px !important;
-  width: 100%;
-  min-height: 50vh;
-  padding: unset !important;
+  margin-top: 80px;
+  width: 100% !important;
+  display: flex !important;
+  flex-direction: column !important;
+  unicode-bidi: none !important;
 }
 
 .d-flex {

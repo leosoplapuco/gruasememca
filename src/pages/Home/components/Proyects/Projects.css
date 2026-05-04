@@ -85,7 +85,7 @@
 
 @media screen and (max-width: 600px) {
   :root {
-    --height-hp-project: auto;
+    --height-hp-project: 180px;
   }
 
   .homepage-projects {
@@ -104,6 +104,12 @@
   .homepage-project:nth-child(2n - 1) .homepage-project-tag-1,
   .homepage-project:nth-child(2n) .homepage-project-tag-1 {
     padding: 0 0 10px 0;
+    height: auto;
+  }
+
+  .homepage-project:nth-child(2n) .homepage-project-tag-2 img,
+  .homepage-project:nth-child(2n - 1) .homepage-project-tag-2 img {
+    border-radius: 4px;
   }
 
   .homepage-project-tag-title {
