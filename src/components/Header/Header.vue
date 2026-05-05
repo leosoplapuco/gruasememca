@@ -1,171 +1,3 @@
-<!-- <script setup lang="ts">
-import { onMounted } from 'vue'
-import './Header.css'
-
-interface Props {
-  title?: string
-}
-
-const props = withDefaults(defineProps<Props>(), {
-  title: 'Grúas ememca',
-})
-
-onMounted(() => {
-  const btnOpen = document.querySelector('.menu-button-open') as HTMLButtonElement
-  const btnClose = document.querySelector('.menu-button-close') as HTMLButtonElement
-  const nav = document.querySelector('.header-nav') as HTMLElement
-  const header = document.querySelector('header')
-
-  if (btnOpen && btnClose && nav) {
-    btnOpen.addEventListener('click', () => {
-      nav.classList.add('active')
-      btnClose.classList.add('active')
-    })
-
-    btnClose.addEventListener('click', () => {
-      nav.classList.remove('active')
-      btnClose.classList.remove('active')
-    })
-  }
-
-  const handleScroll = () => {
-    if (window.scrollY > 50) {
-      header?.classList.add('active')
-    } else {
-      header?.classList.remove('active')
-    }
-  }
-
-  window.addEventListener('scroll', handleScroll)
-})
-</script>
-
-<template>
-  <header>
-    <div class="header">
-      <a href="/" class="header-logo">
-        <img src="https://www.gruasememca.com/media/img/logo-original-sin-fondo.webp" alt="" />
-      </a>
-
-      <nav class="header-nav">
-        <ul class="header-nav-ul">
-          <li>
-            <a href="/" title="Grúas Ememca">
-              <span class="material-symbols-outlined menu-sub-icon">home</span>
-              <h2>Inicio</h2>
-            </a>
-          </li>
-
-          <li>
-            <button type="button" class="header-sub-menu-button header-sub-menu-button-2">
-              <span class="material-symbols-outlined menu-sub-icon">home_work</span>
-              <h2>Servicios</h2>
-              <span class="material-symbols-outlined menu-button-link-arrow"
-                >keyboard_arrow_down</span
-              >
-            </button>
-
-            <div class="sub-menu-container sub-menu-container-2">
-              <nav class="sub-menu">
-                <div class="sub-menu-target-1 d-flex-column gap-10">
-                  <p class="title">
-                    Más de 15 años Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo,
-                    rerum.
-                  </p>
-                  <p class="text">
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dignissimos nobis quis
-                    autem cum aspernatur ullam repellat reiciendis impedit. Quod animi dignissimos
-                    minima cumque nostrum accusamus iure libero aut modi eum!
-                  </p>
-                  <a href="" class="button-link button-link-3 margin-right">
-                    <p class="button-link-text">Más de nosotros</p>
-                  </a>
-                </div>
-                <div class="sub-menu-target-2">
-                  <nav class="sub-menu-target-menu">
-                    <ul>
-                      <li>
-                        <a href="">
-                          <p class="title">Alquiler de grúas</p>
-                          <p class="text">
-                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Expedita,
-                            reiciendis.
-                          </p>
-                        </a>
-                      </li>
-                      <li>
-                        <a href="">
-                          <p class="title">Servicios de izaje</p>
-                          <p class="text">
-                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Expedita,
-                            reiciendis.
-                          </p>
-                        </a>
-                      </li>
-                      <li>
-                        <a href="">
-                          <p class="title">Alquiler de grúas</p>
-                          <p class="text">
-                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Expedita,
-                            reiciendis.
-                          </p>
-                        </a>
-                      </li>
-                      <li>
-                        <a href="">
-                          <p class="title">Eliminación de tierra</p>
-                          <p class="text">
-                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Expedita,
-                            reiciendis.
-                          </p>
-                        </a>
-                      </li>
-                    </ul>
-                  </nav>
-                </div>
-              </nav>
-            </div>
-          </li>
-
-          <li>
-            <a href="/nosotros/" title="Nosotros | Grúas Ememca">
-              <span class="material-symbols-outlined menu-sub-icon">diversity_3</span>
-              <h2>Nosotros</h2>
-            </a>
-          </li>
-
-          <li>
-            <a href="/maquinaria/" title="Maquinaria | Grúas Ememca">
-              <span class="material-symbols-outlined menu-sub-icon">auto_towing</span>
-              <h2>Maquinaria</h2>
-            </a>
-          </li>
-
-          <li>
-            <a href="/proyectos/" title="Proyectos | Grúas Ememca">
-              <span class="material-symbols-outlined menu-sub-icon">breaking_news</span>
-              <h2>Proyectos</h2>
-            </a>
-          </li>
-        </ul>
-      </nav>
-
-      <a href="/" title="Llamar ahora" class="button-link button-link-1 header-call-button">
-        <span class="material-symbols-outlined">call</span>
-        <p>Llamar ahora</p>
-      </a>
-
-      <button type="button" class="menu-button-open">
-        <span class="material-symbols-outlined">menu</span>
-      </button>
-    </div>
-  </header>
-
-  <button type="button" class="menu-button-close">
-    <span class="material-symbols-outlined">close</span>
-  </button>
-</template> -->
-
 <script setup lang="ts">
 import { ref, onMounted, onBeforeUnmount } from 'vue'
 import './Header.css'
@@ -178,40 +10,21 @@ withDefaults(defineProps<Props>(), {
   title: 'Grúas ememca',
 })
 
-/**
- * Estado reactivo
- */
+const isMenuOpen = ref(false)
 const isSubMenuOpen = ref(false)
 
-/**
- * Toggle submenú
- */
+const toggleMenu = () => {
+  isMenuOpen.value = !isMenuOpen.value
+}
+
 const toggleSubMenu = () => {
   isSubMenuOpen.value = !isSubMenuOpen.value
 }
 
-/**
- * Referencias DOM necesarias (solo donde aplica)
- */
 let handleScroll: () => void
 
 onMounted(() => {
-  const btnOpen = document.querySelector('.menu-button-open') as HTMLButtonElement
-  const btnClose = document.querySelector('.menu-button-close') as HTMLButtonElement
-  const nav = document.querySelector('.header-nav') as HTMLElement
   const header = document.querySelector('header')
-
-  if (btnOpen && btnClose && nav) {
-    btnOpen.addEventListener('click', () => {
-      nav.classList.add('active')
-      btnClose.classList.add('active')
-    })
-
-    btnClose.addEventListener('click', () => {
-      nav.classList.remove('active')
-      btnClose.classList.remove('active')
-    })
-  }
 
   handleScroll = () => {
     if (window.scrollY > 50) {
@@ -233,24 +46,20 @@ onBeforeUnmount(() => {
   <header>
     <div class="header">
       <a href="/" class="header-logo">
-        <img src="https://www.gruasememca.com/media/img/logo-original-sin-fondo.webp" alt="" />
+        <img src="https://www.gruasememca.com/media/img/logo-original-sin-fondo.webp" alt="Logo" />
       </a>
 
-      <nav class="header-nav">
+      <nav class="header-nav" :class="{ active: isMenuOpen }">
         <ul class="header-nav-ul">
           <li>
-            <a href="/" title="Grúas Ememca">
+            <a href="/">
               <span class="material-symbols-outlined menu-sub-icon">home</span>
               <h2>Inicio</h2>
             </a>
           </li>
 
           <li>
-            <button
-              type="button"
-              class="header-sub-menu-button header-sub-menu-button-2"
-              @click="toggleSubMenu"
-            >
+            <button type="button" class="header-sub-menu-button" @click="toggleSubMenu">
               <span class="material-symbols-outlined menu-sub-icon">home_work</span>
               <h2>Servicios</h2>
               <span class="material-symbols-outlined menu-button-link-arrow">
@@ -258,13 +67,13 @@ onBeforeUnmount(() => {
               </span>
             </button>
 
-            <div class="sub-menu-container sub-menu-container-2" :class="{ active: isSubMenuOpen }">
+            <div class="sub-menu-container" :class="{ active: isSubMenuOpen }">
               <nav class="sub-menu">
                 <div class="sub-menu-target-1 d-flex-column gap-10">
-                  <p class="title">
-                    Más de 15 años Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  <p class="title">Más de 15 años de experiencia en servicios de grúas.</p>
+                  <p class="text">
+                    Soluciones confiables para proyectos industriales y de construcción.
                   </p>
-                  <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                   <a href="" class="button-link button-link-3 margin-right">
                     <p class="button-link-text">Más de nosotros</p>
                   </a>
@@ -276,37 +85,25 @@ onBeforeUnmount(() => {
                       <li>
                         <a href="">
                           <p class="title">Alquiler de grúas</p>
-                          <p class="text">
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi,
-                            veritatis.
-                          </p>
+                          <p class="text">Equipos modernos y seguros.</p>
                         </a>
                       </li>
                       <li>
                         <a href="">
                           <p class="title">Servicios de izaje</p>
-                          <p class="text">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates,
-                            explicabo.
-                          </p>
+                          <p class="text">Operaciones de alta precisión.</p>
                         </a>
                       </li>
                       <li>
                         <a href="">
                           <p class="title">Montaje y desmontaje</p>
-                          <p class="text">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi,
-                            temporibus?
-                          </p>
+                          <p class="text">Ejecución técnica especializada.</p>
                         </a>
                       </li>
                       <li>
                         <a href="">
                           <p class="title">Eliminación de tierra</p>
-                          <p class="text">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis,
-                            incidunt.
-                          </p>
+                          <p class="text">Movimiento y retiro de material.</p>
                         </a>
                       </li>
                     </ul>
@@ -317,21 +114,21 @@ onBeforeUnmount(() => {
           </li>
 
           <li>
-            <a href="/nosotros/" title="Nosotros | Grúas Ememca">
+            <a href="/nosotros/">
               <span class="material-symbols-outlined menu-sub-icon">diversity_3</span>
               <h2>Nosotros</h2>
             </a>
           </li>
 
           <li>
-            <a href="/maquinaria/" title="Maquinaria | Grúas Ememca">
+            <a href="/maquinaria/">
               <span class="material-symbols-outlined menu-sub-icon">auto_towing</span>
               <h2>Maquinaria</h2>
             </a>
           </li>
 
           <li>
-            <a href="/proyectos/" title="Proyectos | Grúas Ememca">
+            <a href="/proyectos/">
               <span class="material-symbols-outlined menu-sub-icon">breaking_news</span>
               <h2>Proyectos</h2>
             </a>
@@ -339,18 +136,22 @@ onBeforeUnmount(() => {
         </ul>
       </nav>
 
-      <a href="/" class="button-link button-link-1 header-call-button">
-        <span class="material-symbols-outlined">call</span>
-        <p>Llamar ahora</p>
-      </a>
+      <div class="d-flex-center-center gap-10">
+        <a href="/" class="button-link button-link-1 header-call-button">
+          <span class="material-symbols-outlined">call</span>
+          <p>Llamar ahora</p>
+        </a>
 
-      <button type="button" class="menu-button-open">
-        <span class="material-symbols-outlined">menu</span>
-      </button>
+        <button
+          type="button"
+          class="menu-button"
+          :class="{ active: isMenuOpen }"
+          @click="toggleMenu"
+        >
+          <span class="material-symbols-outlined">menu</span>
+          <span class="material-symbols-outlined">close</span>
+        </button>
+      </div>
     </div>
   </header>
-
-  <button type="button" class="menu-button-close">
-    <span class="material-symbols-outlined">close</span>
-  </button>
 </template>
