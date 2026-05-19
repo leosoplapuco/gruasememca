@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { ref } from 'vue'
 import './FAQ.css'
-import faqData from './Faq.json'
+import faqData from './FAQ.json'
 
 interface FaqItem {
   id: number
