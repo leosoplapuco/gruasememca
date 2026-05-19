@@ -1,0 +1,21 @@
+{
+  "faq": [
+    {
+      "id": 1,
+      "title": "¿ Dónde nos ubicamos ?",
+      "texts": ["lorem1", "lorem2", "lorem3"],
+      "link": "/proyectos/proyecto-1/"
+    },
+    {
+      "id": 2,
+      "title": "¿ Con qué tipos de grúas contamos ?",
+      "texts": ["lorem1", "lorem2", "lorem3"],
+      "link": "/proyectos/proyecto-1/"
+    },
+    {
+      "id": 3,
+      "title": "Tag title 1",
+      "texts": ["lorem1", "lorem2", "lorem3"]
+    }
+  ]
+}

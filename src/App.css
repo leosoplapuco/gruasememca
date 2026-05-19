@@ -30,7 +30,7 @@ body::selection {
 :root {
   --header: #FFFFFF;
   --body: snow;
-  --text: #444444;
+  --text: #555555;
   --footer: #121212;
 
   --color-1: #DA111D;
@@ -136,6 +136,12 @@ main {
 
 .w-100 {
   width: 100%;
+}
+
+.w-100-img {
+  width: 100%;
+  object-fit: contain;
+  border-radius: 5px;
 }
 
 .gap-5 {
@@ -255,6 +261,11 @@ button {
 
 .button-link-4:hover {
   background: rgba(235 235 235 / 0.075);
+}
+
+.button-link-5 .button-link-text,
+.button-link-5 span {
+  color: var(--color-1);
 }
 
 .color-white {

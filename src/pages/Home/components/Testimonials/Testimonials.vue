@@ -23,7 +23,6 @@ type Testimonial = {
   workstation: string
 }
 
-// Normalización del JSON (sin any)
 const testimonials = ref<Testimonial[]>(
   data.testimonials.map((item) => ({
     id: item.id,

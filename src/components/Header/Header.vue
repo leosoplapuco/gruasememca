@@ -59,7 +59,12 @@ onBeforeUnmount(() => {
           </li>
 
           <li>
-            <button type="button" class="header-sub-menu-button" @click="toggleSubMenu">
+            <button
+              type="button"
+              class="header-sub-menu-button"
+              :class="{ active: isSubMenuOpen }"
+              @click="toggleSubMenu"
+            >
               <span class="material-symbols-outlined menu-sub-icon">home_work</span>
               <h2>Servicios</h2>
               <span class="material-symbols-outlined menu-button-link-arrow">

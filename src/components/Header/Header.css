@@ -46,7 +46,7 @@ header {
   position: relative;
 }
 
-.header-nav-ul li button,
+.header-sub-menu-button,
 .header-nav-ul li a {
   position: relative;
   display: flex;
@@ -59,19 +59,29 @@ header {
 }
 
 
-.header-nav-ul li button span,
-.header-nav-ul li button h2,
+.header-sub-menu-button span,
+.header-sub-menu-button h2,
 .header-nav-ul li a span,
 .header-nav-ul li a h2 {
   color: var(--text);
 }
 
 
-.header-nav-ul li button:hover span,
-.header-nav-ul li button:hover h2,
+.header-sub-menu-button:hover span,
+.header-sub-menu-button:hover h2,
 .header-nav-ul li a:hover span,
 .header-nav-ul li a:hover h2 {
   color: var(--color-1);
+}
+
+.header-sub-menu-button.active span,
+.header-sub-menu-button.active h2 {
+  color: var(--color-1);
+}
+
+.header-sub-menu-button.active span {
+  opacity: 1;
+  rotate: 180deg;
 }
 
 .menu-button-link-arrow {
@@ -82,7 +92,7 @@ header {
   opacity: 0;
 }
 
-.header-nav-ul li button:hover .menu-button-link-arrow,
+.header-sub-menu-button:hover .menu-button-link-arrow,
 .header-nav-ul li a:hover .menu-button-link-arrow {
   opacity: 1;
 }
