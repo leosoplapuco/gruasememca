@@ -28,9 +28,9 @@ const toggleFaq = (id: number) => {
 </script>
 
 <template>
-  <div class="block-container">
+  <div class="block-container hp-faq-container">
     <section class="block-content">
-      <div class="d-grid-2-1fr gap-20">
+      <div class="d-grid-2-to-1fr gap-20">
         <div class="d-flex-column">
           <div class="block-title-container margin-bottom-10">
             <span class="block-title-span">Preguntas frecuentes</span>
@@ -55,7 +55,12 @@ const toggleFaq = (id: number) => {
                 <p v-for="(text, index) in item.texts" :key="index" class="text">
                   {{ text }}
                 </p>
-                <a v-if="item.link" :href="item.link" class="button-link button-link-5 margin-left">
+                <a
+                  v-if="item.link"
+                  :href="item.link"
+                  class="button-link button-link-5 margin-left"
+                  title="Ver más"
+                >
                   <p class="button-link-text">Ver más</p>
                   <span class="material-symbols-outlined">arrow_outward</span>
                 </a>
