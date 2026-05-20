@@ -102,6 +102,14 @@ main {
   grid-template-columns: repeat(2, 1fr);
 }
 
+.w-auto {
+  width: auto !important;
+}
+
+.margin-auto {
+  margin: auto !important;
+}
+
 .margin-left {
   margin-left: auto;
 }
@@ -246,7 +254,7 @@ button {
 }
 
 .button-link-3 span,
-.button-link-3 p {
+.button-link-3 .button-link-text {
   color: var(--color-1);
 }
 
@@ -269,7 +277,7 @@ button {
 }
 
 .color-white {
-  color: var(--white);
+  color: var(--white) !important;
 }
 
 .block-container {
@@ -314,6 +322,11 @@ button {
 
 .text {
   color: var(--text);
+  transition: var(--t-200ms-linear);
+}
+
+.text-center {
+  text-align: center;
 }
 
 @media screen and (max-width: 600px) {

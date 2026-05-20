@@ -1,0 +1,76 @@
+{
+  "customers": [
+    {
+      "id": 1,
+      "customerName": "Sem Ingenieros",
+      "customerLink": "/",
+      "customerImage": "https://www.gruasememca.com/media/img/companies/alpa.webp"
+    },
+    {
+      "id": 2,
+      "customerName": "Sem Ingenieros",
+      "customerLink": "/",
+      "customerImage": "https://www.gruasememca.com/media/img/companies/ab-technology.webp"
+    },
+    {
+      "id": 3,
+      "customerName": "Sem Ingenieros",
+      "customerLink": "/",
+      "customerImage": "https://www.gruasememca.com/media/img/companies/binda.webp"
+    },
+    {
+      "id": 4,
+      "customerName": "Sem Ingenieros",
+      "customerLink": "/",
+      "customerImage": "https://www.gruasememca.com/media/img/companies/cerro-negro.webp"
+    },
+    {
+      "id": 5,
+      "customerName": "Sem Ingenieros",
+      "customerLink": "/",
+      "customerImage": "https://www.gruasememca.com/media/img/companies/proyec.webp"
+    },
+    {
+      "id": 6,
+      "customerName": "Sem Ingenieros",
+      "customerLink": "/",
+      "customerImage": "https://www.gruasememca.com/media/img/companies/sergemi.webp"
+    },
+    {
+      "id": 7,
+      "customerName": "Sem Ingenieros",
+      "customerLink": "/",
+      "customerImage": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTD4f_4-ivYZ7dAWlF5DMFOyz6O-tBydWXQ0g&s"
+    },
+    {
+      "id": 8,
+      "customerName": "Sem Ingenieros",
+      "customerLink": "/",
+      "customerImage": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTD4f_4-ivYZ7dAWlF5DMFOyz6O-tBydWXQ0g&s"
+    },
+    {
+      "id": 9,
+      "customerName": "Sem Ingenieros",
+      "customerLink": "/",
+      "customerImage": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTD4f_4-ivYZ7dAWlF5DMFOyz6O-tBydWXQ0g&s"
+    },
+    {
+      "id": 10,
+      "customerName": "Sem Ingenieros",
+      "customerLink": "/",
+      "customerImage": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTD4f_4-ivYZ7dAWlF5DMFOyz6O-tBydWXQ0g&s"
+    },
+    {
+      "id": 11,
+      "customerName": "Sem Ingenieros",
+      "customerLink": "/",
+      "customerImage": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTD4f_4-ivYZ7dAWlF5DMFOyz6O-tBydWXQ0g&s"
+    },
+    {
+      "id": 12,
+      "customerName": "Sem Ingenieros",
+      "customerLink": "/",
+      "customerImage": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTD4f_4-ivYZ7dAWlF5DMFOyz6O-tBydWXQ0g&s"
+    }
+  ]
+}

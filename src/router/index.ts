@@ -3,6 +3,7 @@ import { createRouter, createWebHistory } from 'vue-router'
 import Home from '@/pages/Home/Home.vue'
 import About from '@/pages/About/About.vue'
 import Machinery from '@/pages/Machinery/Machinery.vue'
+import Projects from '@/pages/Projects/Projects.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -19,7 +20,7 @@ const router = createRouter({
       },
     },
     {
-      path: '/nosotros',
+      path: '/nosotros/',
       name: 'about',
       component: About,
       meta: {
@@ -29,11 +30,21 @@ const router = createRouter({
       },
     },
     {
-      path: '/maquinaria',
+      path: '/maquinaria/',
       name: 'machinery',
       component: Machinery,
       meta: {
         title: 'Maquinaria | Gruas Ememca',
+        description:
+          'Explora nuestra flota de grúas y maquinaria pesada disponible para alquiler en proyectos de construcción e industria.',
+      },
+    },
+    {
+      path: '/proyectos/',
+      name: 'projects',
+      component: Projects,
+      meta: {
+        title: 'Proyectoss | Gruas Ememca',
         description:
           'Explora nuestra flota de grúas y maquinaria pesada disponible para alquiler en proyectos de construcción e industria.',
       },
@@ -47,12 +58,9 @@ router.afterEach((to) => {
 
   // DESCRIPTION
   const description =
-    (to.meta.description as string) ||
-    'Gruas Ememca - Alquiler de grúas y maquinaria pesada.'
+    (to.meta.description as string) || 'Gruas Ememca - Alquiler de grúas y maquinaria pesada.'
 
-  let metaDescription = document.querySelector(
-    'meta[name="description"]',
-  )
+  let metaDescription = document.querySelector('meta[name="description"]')
 
   // Si no existe, la crea
   if (!metaDescription) {

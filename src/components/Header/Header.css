@@ -61,8 +61,8 @@ header {
 
 .header-sub-menu-button span,
 .header-sub-menu-button h2,
-.header-nav-ul li a span,
-.header-nav-ul li a h2 {
+.header-nav-ul li>a span,
+.header-nav-ul li>a h2 {
   color: var(--text);
 }
 

@@ -79,7 +79,8 @@ onBeforeUnmount(() => {
                   <p class="text">
                     Soluciones confiables para proyectos industriales y de construcción.
                   </p>
-                  <a href="" class="button-link button-link-3 margin-right">
+                  <a href="/nosotros/" class="button-link button-link-3 margin-left">
+                    <span class="material-symbols-outlined">person</span>
                     <p class="button-link-text">Más de nosotros</p>
                   </a>
                 </div>
@@ -88,25 +89,25 @@ onBeforeUnmount(() => {
                   <nav class="sub-menu-target-menu">
                     <ul>
                       <li>
-                        <a href="">
+                        <a href="/servicios/alquiler-de-gruas/">
                           <p class="title">Alquiler de grúas</p>
                           <p class="text">Equipos modernos y seguros.</p>
                         </a>
                       </li>
                       <li>
-                        <a href="">
+                        <a href="/servicios/izaje/">
                           <p class="title">Servicios de izaje</p>
                           <p class="text">Operaciones de alta precisión.</p>
                         </a>
                       </li>
                       <li>
-                        <a href="">
+                        <a href="/servicios/montaje-y-desmontaje/">
                           <p class="title">Montaje y desmontaje</p>
                           <p class="text">Ejecución técnica especializada.</p>
                         </a>
                       </li>
                       <li>
-                        <a href="">
+                        <a href="/servicios/eliminacion-de-tierra/">
                           <p class="title">Eliminación de tierra</p>
                           <p class="text">Movimiento y retiro de material.</p>
                         </a>
