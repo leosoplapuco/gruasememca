@@ -1,21 +1,9 @@
 <script setup lang="ts">
 import './About.css'
 
+import Customers from '../../components/Customers/Customers.vue'
 import Testimonials from '../Home/components/Testimonials/Testimonials.vue'
-import customersData from './Customers.json'
-
-interface Customer {
-  id: number
-  customerName: string
-  customerLink: string
-  customerImage: string
-}
-
-interface CustomersData {
-  customers: Customer[]
-}
-
-const data: CustomersData = customersData
+import Timeline from '../../components/Timeline/Timeline.vue'
 </script>
 
 <template>
@@ -38,25 +26,7 @@ const data: CustomersData = customersData
     </section>
   </div>
 
-  <div class="block-container">
-    <section class="block-content">
-      <div class="block-title-container">
-        <span>Confían en nosotros</span>
-        <h3 class="block-title">Clientes frecuentes</h3>
-      </div>
-
-      <div class="customers-container">
-        <ul class="customers-content">
-          <li v-for="customer in data.customers" :key="customer.id">
-            <a :href="customer.customerLink" target="_blank">
-              <img :src="customer.customerImage" :alt="customer.customerName" />
-              <!-- <span>{{ customer.customerName }}</span> -->
-            </a>
-          </li>
-        </ul>
-      </div>
-    </section>
-  </div>
+  <Customers />
 
   <div class="block-container">
     <section class="block-content">
@@ -120,6 +90,8 @@ const data: CustomersData = customersData
       </div>
     </section>
   </div>
+
+  <Timeline />
 
   <Testimonials />
 </template>

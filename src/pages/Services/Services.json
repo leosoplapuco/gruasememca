@@ -1,0 +1,36 @@
+{
+  "servicios": [
+    {
+      "id": 1,
+      "name": "Alquiler de grúas",
+      "slug": "alquiler-de-gruas",
+      "title": "Alquiler de grúas | Gruas Ememca",
+      "metaDescription": "Servicio profesional de alquiler de grúas para proyectos industriales y construcción.",
+      "content": "Contenido de alquiler de grúas."
+    },
+    {
+      "id": 2,
+      "name": "Izaje",
+      "slug": "izaje",
+      "title": "Servicios de izaje | Gruas Ememca",
+      "metaDescription": "Servicio especializado de izaje para maquinaria y estructuras pesadas.",
+      "content": "Contenido de izaje."
+    },
+    {
+      "id": 3,
+      "name": "Montaje y desmontaje",
+      "slug": "montaje-y-desmontaje",
+      "title": "Montaje y desmontaje | Gruas Ememca",
+      "metaDescription": "Servicio de montaje y desmontaje industrial en Perú.",
+      "content": "Contenido de montaje y desmontaje."
+    },
+    {
+      "id": 4,
+      "name": "Eliminación de tierra",
+      "slug": "eliminacion-de-tierra",
+      "title": "Eliminación de tierra | Gruas Ememca",
+      "metaDescription": "Servicio de eliminación y traslado de tierra para construcción.",
+      "content": "Contenido de eliminación de tierra."
+    }
+  ]
+}
