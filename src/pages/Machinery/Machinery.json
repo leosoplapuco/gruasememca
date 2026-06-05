@@ -1,0 +1,104 @@
+{
+  "machinery": [
+    {
+      "id": 1,
+      "name": "NOMBRE DE LA GRUA",
+      "categoria": "alquiler",
+      "slug": "nombre-de-la-grua-1",
+      "images": [
+        {
+          "img": "",
+          "alt": ""
+        },
+        {
+          "img": "",
+          "alt": ""
+        },
+        {
+          "img": "",
+          "alt": ""
+        },
+        {
+          "img": "",
+          "alt": ""
+        }
+      ],
+      "short": "texto para el card del producto",
+      "video": [
+        {
+          "url": "",
+          "alt": ""
+        }
+      ],
+      "largeImage": [
+        {
+          "src": "",
+          "alt": ""
+        }
+      ],
+      "texts": ["loeoleoeoe", "kahslkahsdkla", "ajsdlkasdkkkas", "kajslasllkasdla", "alsdkkaskask"],
+      "details": [
+        {
+          "uno": "asdasdas",
+          "dos": "askksks"
+        }
+      ],
+      "technicalSheet": [
+        {
+          "unouno": "akslskks",
+          "dosdos": "asdasd"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "NOMBRE DE LA GRUA 2",
+      "categoria": "venta",
+      "slug": "nombre-de-la-grua-2",
+      "images": [
+        {
+          "img": "",
+          "alt": ""
+        },
+        {
+          "img": "",
+          "alt": ""
+        },
+        {
+          "img": "",
+          "alt": ""
+        },
+        {
+          "img": "",
+          "alt": ""
+        }
+      ],
+      "short": "texto para el card del producto",
+      "video": [
+        {
+          "url": "",
+          "alt": ""
+        }
+      ],
+      "largeImage": [
+        {
+          "src": "",
+          "alt": ""
+        }
+      ],
+      "texts": ["loeoleoeoe", "kahslkahsdkla", "ajsdlkasdkkkas", "kajslasllkasdla", "alsdkkaskask"],
+      "details": [
+        {
+          "uno": "asdasdas",
+          "dos": "askksks"
+        }
+      ],
+      "technicalSheet": [
+        {
+          "unouno": "akslskks",
+          "dosdos": "asdasd"
+        }
+      ]
+    }
+  ]
+}

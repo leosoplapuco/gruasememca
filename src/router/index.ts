@@ -4,6 +4,7 @@ import Home from '@/pages/Home/Home.vue'
 import About from '@/pages/About/About.vue'
 import Machinery from '@/pages/Machinery/Machinery.vue'
 import Projects from '@/pages/Projects/Projects.vue'
+import ProductPage from '@/pages/Machinery/ProductPage/ProductPage.vue'
 
 import ServicesLayout from '@/pages/Services/Layout.vue'
 
@@ -27,6 +28,18 @@ const router = createRouter({
       path: '/maquinaria/',
       name: 'machinery',
       component: Machinery,
+    },
+
+    {
+      path: '/maquinaria/:categoria/',
+      name: 'machinery-category',
+      component: Machinery,
+    },
+
+    {
+      path: '/maquinaria/:categoria/:slug/',
+      name: 'product-page',
+      component: ProductPage,
     },
 
     {
