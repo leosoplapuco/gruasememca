@@ -72,7 +72,7 @@ const router = createRouter({
   ],
 })
 
-router.beforeEach((to, from, next) => {
+router.beforeEach((to, _from, next) => {
   let title = 'Grúas Ememca'
   let description = 'Grúas Ememca'
 
@@ -90,14 +90,12 @@ router.beforeEach((to, from, next) => {
       description = 'Servicio de alquiler de maquinaria pesada.'
     } else {
       title = categoria.charAt(0).toUpperCase() + categoria.slice(1) + ' | Grúas Ememca'
-
       description = `Maquinaria categoría ${categoria}.`
     }
   } else if (to.name === 'product-page') {
     const slug = String(to.params.slug)
 
     title = slug.replaceAll('-', ' ') + ' | Grúas Ememca'
-
     description = `Información técnica y características de ${slug.replaceAll('-', ' ')}.`
   } else {
     title = (to.meta.title as string) || 'Grúas Ememca'
