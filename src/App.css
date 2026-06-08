@@ -333,6 +333,10 @@ button {
   text-align: center;
 }
 
+.padding-0 {
+  padding: 0 !important;
+}
+
 @media screen and (max-width: 600px) {
   * {
     cursor: none !important;

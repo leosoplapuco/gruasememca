@@ -1,6 +1,8 @@
 <script setup lang="ts">
-import { computed } from 'vue'
+import { computed, ref } from 'vue'
 import { useRoute } from 'vue-router'
+
+import './ProductPage.css'
 
 import machineryData from '../Machinery.json'
 
@@ -11,78 +13,91 @@ const machine = computed(() => {
     (item) => item.slug === route.params.slug && item.categoria === route.params.categoria,
   )
 })
+
+const currentImageIndex = ref(0)
+
+const currentImage = computed(() => {
+  if (!machine.value?.images?.length) return null
+  return machine.value.images[currentImageIndex.value]
+})
+
+const nextImage = () => {
+  if (!machine.value?.images?.length) return
+  currentImageIndex.value = (currentImageIndex.value + 1) % machine.value.images.length
+}
+
+const prevImage = () => {
+  if (!machine.value?.images?.length) return
+  currentImageIndex.value =
+    (currentImageIndex.value - 1 + machine.value.images.length) % machine.value.images.length
+}
 </script>
 
 <template>
   <div v-if="machine" class="block-container">
-    <section class="block-content">
-      <div class="block-title-container">
-        <span>{{ machine.categoria }}</span>
-        <h1 class="block-title">
-          {{ machine.name }}
-        </h1>
-      </div>
+    <div class="block-content">
+      <section class="machinery-page-container">
+        <div class="machinery-page-tag machinery-page-tag-1">
+          <img
+            v-if="currentImage"
+            :src="currentImage.img"
+            :alt="currentImage.alt || machine.name"
+          />
 
-      <!-- Imagen principal -->
-      <img
-        v-if="machine.largeImage?.length"
-        :src="machine.largeImage[0].src"
-        :alt="machine.largeImage[0].alt"
-        class="product-large-image"
-      />
+          <button
+            v-if="machine.images?.length > 1"
+            type="button"
+            class="machinery-page-images-button machinery-page-images-button-left"
+            @click="prevImage"
+          >
+            <span class="material-symbols-outlined">chevron_left</span>
+          </button>
+          <button
+            v-if="machine.images?.length > 1"
+            type="button"
+            class="machinery-page-images-button machinery-page-images-button-right"
+            @click="nextImage"
+          >
+            <span class="material-symbols-outlined">chevron_right</span>
+          </button>
 
-      <!-- Galería -->
-      <div v-if="machine.images?.length" class="product-gallery">
-        <img
-          v-for="(image, index) in machine.images"
-          :key="index"
-          :src="image.img"
-          :alt="image.alt"
-        />
-      </div>
+          <div class="machinery-page-images-list">
+            <ul v-if="machine.images?.length">
+              <li
+                v-for="(image, index) in machine.images"
+                :key="index"
+                :class="{ active: currentImageIndex === index }"
+                @click="currentImageIndex = index"
+              >
+                <img :src="image.img" :alt="image.alt || machine.name" />
+              </li>
+            </ul>
+          </div>
+        </div>
 
-      <!-- Descripción -->
-      <div class="product-description">
-        <p v-for="(text, index) in machine.texts" :key="index">
-          {{ text }}
-        </p>
-      </div>
+        <div class="machinery-page-tag machinery-page-tag-2">
+          <h1 class="block-title">{{ machine.name }}</h1>
 
-      <!-- Detalles -->
-      <div v-if="machine.details?.length" class="product-details">
-        <h2>Detalles</h2>
+          <div v-if="machine.video?.length && machine.video[0].url">play video</div>
 
-        <ul>
-          <li v-for="(detail, index) in machine.details" :key="index">
-            <strong>{{ detail.uno }}</strong>
-            {{ detail.dos }}
-          </li>
-        </ul>
-      </div>
+          <p v-for="(text, index) in machine.texts" :key="index" class="text">
+            {{ text }}
+          </p>
 
-      <!-- Ficha técnica -->
-      <div v-if="machine.technicalSheet?.length" class="product-technical-sheet">
-        <h2>Ficha técnica</h2>
+          <ul v-if="machine.details?.length">
+            <li v-for="(detail, index) in machine.details" :key="index">
+              <strong>{{ detail.uno }}</strong> {{ detail.dos }}
+            </li>
+          </ul>
 
-        <ul>
-          <li v-for="(sheet, index) in machine.technicalSheet" :key="index">
-            <strong>{{ sheet.unouno }}</strong>
-            {{ sheet.dosdos }}
-          </li>
-        </ul>
-      </div>
-
-      <!-- Video -->
-      <div v-if="machine.video?.length" class="product-video">
-        <iframe
-          :src="machine.video[0].url"
-          width="100%"
-          height="500"
-          frameborder="0"
-          allowfullscreen
-        />
-      </div>
-    </section>
+          <ul v-if="machine.technicalSheet?.length">
+            <li v-for="(sheet, index) in machine.technicalSheet" :key="index">
+              <strong>{{ sheet.unouno }}</strong> {{ sheet.dosdos }}
+            </li>
+          </ul>
+        </div>
+      </section>
+    </div>
   </div>
 
   <div v-else class="block-container">

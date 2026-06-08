@@ -2,28 +2,36 @@
   "machinery": [
     {
       "id": 1,
-      "name": "NOMBRE DE LA GRUA",
+      "name": "PPM 40",
       "categoria": "alquiler",
-      "slug": "nombre-de-la-grua-1",
+      "slug": "ppm-40",
       "images": [
         {
-          "img": "",
+          "img": "https://gruasememca.com/media/img/gruas/PPM-40-PPM-ATT-400.webp",
           "alt": ""
         },
         {
-          "img": "",
+          "img": "https://gruasememca.com/media/img/gruas/PPM-40-PPM-ATT-400.webp",
           "alt": ""
         },
         {
-          "img": "",
+          "img": "https://gruasememca.com/media/img/gruas/PPM-40-PPM-ATT-400.webp",
           "alt": ""
         },
         {
-          "img": "",
+          "img": "https://gruasememca.com/media/img/gruas/PPM-40-PPM-ATT-400.webp",
+          "alt": ""
+        },
+        {
+          "img": "https://gruasememca.com/media/img/gruas/PPM-40-PPM-ATT-400.webp",
+          "alt": ""
+        },
+        {
+          "img": "https://gruasememca.com/media/img/gruas/PPM-40-PPM-ATT-400.webp",
           "alt": ""
         }
       ],
-      "short": "texto para el card del producto",
+      "short": "La PPM ATT 400 es la mejor para trabajos en llano y pesados",
       "video": [
         {
           "url": "",
@@ -57,19 +65,7 @@
       "slug": "nombre-de-la-grua-2",
       "images": [
         {
-          "img": "",
-          "alt": ""
-        },
-        {
-          "img": "",
-          "alt": ""
-        },
-        {
-          "img": "",
-          "alt": ""
-        },
-        {
-          "img": "",
+          "img": "https://gruasvileon.com/wp-content/uploads/2019/06/alquiler-grua-telescopica-vileon.png",
           "alt": ""
         }
       ],

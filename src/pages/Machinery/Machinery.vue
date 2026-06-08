@@ -74,7 +74,7 @@ const pageTitle = computed(() => {
 <template>
   <div class="block-container">
     <section class="block-content">
-      <div class="block-title-container">
+      <div class="block-title-container margin-bottom-20">
         <span>Nuestra</span>
 
         <h1 class="block-title">
@@ -84,7 +84,7 @@ const pageTitle = computed(() => {
 
       <ul class="machinery-page-products">
         <li v-for="machine in machinery" :key="machine.id" class="machinery-card">
-          <span class="machinery-card-category">
+          <span class="machinery-card-category" :class="machine.categoria">
             {{ machine.categoria }}
           </span>
 
@@ -100,7 +100,7 @@ const pageTitle = computed(() => {
 
           <RouterLink
             :to="`/maquinaria/${machine.categoria}/${machine.slug}/`"
-            class="button-link button-link-1 margin-left margin-top"
+            class="machinery-card-link button-link button-link-5 margin-left margin-top-10 padding-0"
           >
             <p class="button-link-text">Ver más</p>
 

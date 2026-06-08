@@ -1,0 +1,65 @@
+.machinery-page-products {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.machinery-card {
+  border: 1px solid var(--color-1);
+  border-radius: 6px;
+  background: var(--body);
+  /* background: red; */
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  overflow: hidden;
+}
+
+.machinery-card-category {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  /* background: rebeccapurple; */
+  padding: 4px 7px;
+  border-radius: 4px;
+  font-size: 12px;
+
+  display: inline-block;
+}
+
+.machinery-card-category::first-letter {
+  text-transform: uppercase;
+}
+
+.machinery-card-category.venta {
+  background: crimson;
+  color: var(--white);
+}
+
+.machinery-card-category.alquiler {
+  background: rgb(22, 90, 226);
+  color: var(--white);
+}
+
+.machinery-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.machinery-card-title {
+  padding: 0 10px;
+  color: var(--black);
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.machinery-card>p.text {
+  padding: 0 10px;
+}
+
+.machinery-card-link {
+  margin-bottom: 10px;
+  margin-right: 10px;
+}
