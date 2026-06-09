@@ -63,3 +63,13 @@
   height: 100%;
   cursor: pointer;
 }
+
+.products-page-list-details {
+  display: flex;
+  flex-direction: column !important;
+  gap: 5px;
+}
+
+.products-page-list-details li {
+  display: flex;
+}

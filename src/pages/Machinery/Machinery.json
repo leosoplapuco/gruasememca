@@ -13,22 +13,6 @@
         {
           "img": "https://gruasememca.com/media/img/gruas/PPM-40-PPM-ATT-400.webp",
           "alt": ""
-        },
-        {
-          "img": "https://gruasememca.com/media/img/gruas/PPM-40-PPM-ATT-400.webp",
-          "alt": ""
-        },
-        {
-          "img": "https://gruasememca.com/media/img/gruas/PPM-40-PPM-ATT-400.webp",
-          "alt": ""
-        },
-        {
-          "img": "https://gruasememca.com/media/img/gruas/PPM-40-PPM-ATT-400.webp",
-          "alt": ""
-        },
-        {
-          "img": "https://gruasememca.com/media/img/gruas/PPM-40-PPM-ATT-400.webp",
-          "alt": ""
         }
       ],
       "short": "La PPM ATT 400 es la mejor para trabajos en llano y pesados",
@@ -44,17 +28,19 @@
           "alt": ""
         }
       ],
-      "texts": ["loeoleoeoe", "kahslkahsdkla", "ajsdlkasdkkkas", "kajslasllkasdla", "alsdkkaskask"],
+      "texts": [
+        "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since 1966, when designers at Letraset and James Mosley",
+        "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has"
+      ],
       "details": [
         {
-          "uno": "asdasdas",
-          "dos": "askksks"
+          "Año": "1999",
+          "Motor": "Diesel"
         }
       ],
       "technicalSheet": [
         {
-          "unouno": "akslskks",
-          "dosdos": "asdasd"
+          "Motor": "Diesel"
         }
       ]
     },

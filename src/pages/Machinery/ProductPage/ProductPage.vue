@@ -31,6 +31,32 @@ const prevImage = () => {
   currentImageIndex.value =
     (currentImageIndex.value - 1 + machine.value.images.length) % machine.value.images.length
 }
+
+// Función para aplanar los detalles - cada propiedad en un item separado
+const flattenedDetails = computed(() => {
+  if (!machine.value?.details) return []
+
+  const result: Array<{ key: string; value: any }> = []
+  machine.value.details.forEach((detail) => {
+    Object.entries(detail).forEach(([key, value]) => {
+      result.push({ key, value })
+    })
+  })
+  return result
+})
+
+// Función para aplanar la ficha técnica - cada propiedad en un item separado
+const flattenedTechnicalSheet = computed(() => {
+  if (!machine.value?.technicalSheet) return []
+
+  const result: Array<{ key: string; value: any }> = []
+  machine.value.technicalSheet.forEach((sheet) => {
+    Object.entries(sheet).forEach(([key, value]) => {
+      result.push({ key, value })
+    })
+  })
+  return result
+})
 </script>
 
 <template>
@@ -80,19 +106,21 @@ const prevImage = () => {
 
           <div v-if="machine.video?.length && machine.video[0].url">play video</div>
 
-          <p v-for="(text, index) in machine.texts" :key="index" class="text">
-            {{ text }}
-          </p>
+          <p v-for="(text, index) in machine.texts" :key="index" class="text">{{ text }}</p>
 
-          <ul v-if="machine.details?.length">
-            <li v-for="(detail, index) in machine.details" :key="index">
-              <strong>{{ detail.uno }}</strong> {{ detail.dos }}
+          <!-- <p class="title" v-if="flattenedDetails.length">Detalles</p>
+          <ul v-if="flattenedDetails.length">
+            <li v-for="(item, index) in flattenedDetails" :key="`detail-${index}`">
+              <strong>{{ item.key }}:</strong>
+              <p>{{ item.value }}</p>
             </li>
-          </ul>
+          </ul> -->
 
-          <ul v-if="machine.technicalSheet?.length">
-            <li v-for="(sheet, index) in machine.technicalSheet" :key="index">
-              <strong>{{ sheet.unouno }}</strong> {{ sheet.dosdos }}
+          <p class="title" v-if="flattenedTechnicalSheet.length">Ficha Técnica</p>
+          <ul v-if="flattenedTechnicalSheet.length">
+            <li v-for="(item, index) in flattenedTechnicalSheet" :key="`sheet-${index}`">
+              <strong>{{ item.key }}:</strong>
+              <p>{{ item.value }}</p>
             </li>
           </ul>
         </div>
