@@ -6,10 +6,24 @@ import './ProductPage.css'
 
 import machineryData from '../Machinery.json'
 
+interface Machine {
+  id: number
+  name: string
+  categoria: string
+  slug: string
+  images: { img: string; alt: string }[]
+  short: string
+  video: { url: string; alt: string }[]
+  largeImage: { src: string; alt: string }[]
+  texts: string[]
+  details: Record<string, any>[]
+  technicalSheet: Record<string, any>[]
+}
+
 const route = useRoute()
 
 const machine = computed(() => {
-  return machineryData.machinery.find(
+  return (machineryData as { machinery: Machine[] }).machinery.find(
     (item) => item.slug === route.params.slug && item.categoria === route.params.categoria,
   )
 })
@@ -32,7 +46,6 @@ const prevImage = () => {
     (currentImageIndex.value - 1 + machine.value.images.length) % machine.value.images.length
 }
 
-// Función para aplanar los detalles - cada propiedad en un item separado
 const flattenedDetails = computed(() => {
   if (!machine.value?.details) return []
 
@@ -45,7 +58,6 @@ const flattenedDetails = computed(() => {
   return result
 })
 
-// Función para aplanar la ficha técnica - cada propiedad en un item separado
 const flattenedTechnicalSheet = computed(() => {
   if (!machine.value?.technicalSheet) return []
 
