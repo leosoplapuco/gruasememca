@@ -4,27 +4,15 @@ import { useRoute } from 'vue-router'
 
 import './ProductPage.css'
 
-import machineryData from '../Machinery.json'
-
-interface Machine {
-  id: number
-  name: string
-  categoria: string
-  slug: string
-  images: { img: string; alt: string }[]
-  short: string
-  video: { url: string; alt: string }[]
-  largeImage: { src: string; alt: string }[]
-  texts: string[]
-  details: Record<string, any>[]
-  technicalSheet: Record<string, any>[]
-}
+// Importar JSON y forzar tipo any para evitar conflictos
+import machineryDataRaw from '../Machinery.json'
+const machineryData = machineryDataRaw as any
 
 const route = useRoute()
 
 const machine = computed(() => {
-  return (machineryData as { machinery: Machine[] }).machinery.find(
-    (item) => item.slug === route.params.slug && item.categoria === route.params.categoria,
+  return machineryData.machinery.find(
+    (item: any) => item.slug === route.params.slug && item.categoria === route.params.categoria,
   )
 })
 
@@ -50,7 +38,7 @@ const flattenedDetails = computed(() => {
   if (!machine.value?.details) return []
 
   const result: Array<{ key: string; value: any }> = []
-  machine.value.details.forEach((detail) => {
+  machine.value.details.forEach((detail: any) => {
     Object.entries(detail).forEach(([key, value]) => {
       result.push({ key, value })
     })
@@ -62,7 +50,7 @@ const flattenedTechnicalSheet = computed(() => {
   if (!machine.value?.technicalSheet) return []
 
   const result: Array<{ key: string; value: any }> = []
-  machine.value.technicalSheet.forEach((sheet) => {
+  machine.value.technicalSheet.forEach((sheet: any) => {
     Object.entries(sheet).forEach(([key, value]) => {
       result.push({ key, value })
     })

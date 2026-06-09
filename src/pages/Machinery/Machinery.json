@@ -34,51 +34,14 @@
       ],
       "details": [
         {
-          "Año": "1999",
-          "Motor": "Diesel"
+          "key": "Año",
+          "value": "1999"
         }
       ],
       "technicalSheet": [
         {
-          "Motor": "Diesel"
-        }
-      ]
-    },
-    {
-      "id": 2,
-      "name": "NOMBRE DE LA GRUA 2",
-      "categoria": "venta",
-      "slug": "nombre-de-la-grua-2",
-      "images": [
-        {
-          "img": "https://gruasvileon.com/wp-content/uploads/2019/06/alquiler-grua-telescopica-vileon.png",
-          "alt": ""
-        }
-      ],
-      "short": "texto para el card del producto",
-      "video": [
-        {
-          "url": "",
-          "alt": ""
-        }
-      ],
-      "largeImage": [
-        {
-          "src": "",
-          "alt": ""
-        }
-      ],
-      "texts": ["loeoleoeoe", "kahslkahsdkla", "ajsdlkasdkkkas", "kajslasllkasdla", "alsdkkaskask"],
-      "details": [
-        {
-          "uno": "asdasdas",
-          "dos": "askksks"
-        }
-      ],
-      "technicalSheet": [
-        {
-          "unouno": "akslskks",
-          "dosdos": "asdasd"
+          "key": "Diesel",
+          "value": "0000"
         }
       ]
     }
