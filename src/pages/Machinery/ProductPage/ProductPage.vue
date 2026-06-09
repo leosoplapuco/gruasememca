@@ -108,13 +108,13 @@ const flattenedTechnicalSheet = computed(() => {
 
           <p v-for="(text, index) in machine.texts" :key="index" class="text">{{ text }}</p>
 
-          <!-- <p class="title" v-if="flattenedDetails.length">Detalles</p>
+          <p class="title" v-if="flattenedDetails.length">Detalles</p>
           <ul v-if="flattenedDetails.length">
             <li v-for="(item, index) in flattenedDetails" :key="`detail-${index}`">
               <strong>{{ item.key }}:</strong>
               <p>{{ item.value }}</p>
             </li>
-          </ul> -->
+          </ul>
 
           <p class="title" v-if="flattenedTechnicalSheet.length">Ficha Técnica</p>
           <ul v-if="flattenedTechnicalSheet.length">
