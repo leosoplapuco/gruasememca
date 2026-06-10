@@ -25,13 +25,11 @@
   justify-content: center;
 }
 
-.customers-track img {
-  width: 180px;
-  height: 80px;
-
+.customers-track a img {
+  width: clamp(90px, 15vw, 180px);
+  height: auto;
+  max-height: 80px;
   object-fit: contain;
-
-  transition: transform 0.3s ease;
 }
 
 .customers-track img:hover {
