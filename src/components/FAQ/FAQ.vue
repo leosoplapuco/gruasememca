@@ -58,7 +58,7 @@ const toggleFaq = (id: number) => {
                 <a
                   v-if="item.link"
                   :href="item.link"
-                  class="button-link button-link-5 margin-left"
+                  class="button-link button-link-5 margin-left padding-0"
                   title="Ver más"
                 >
                   <p class="button-link-text">Ver más</p>

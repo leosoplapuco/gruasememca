@@ -25,21 +25,21 @@ const data: CustomersData = customersData
         <p class="block-title">Clientes frecuentes</p>
       </div>
 
-      <ul class="customers-track">
-        <!-- Primera copia -->
-        <li v-for="customer in data.customers" :key="`first-${customer.id}`">
-          <a :href="customer.customerLink" target="_blank">
-            <img :src="customer.customerImage" :alt="customer.customerName" />
-          </a>
-        </li>
+      <div class="customers-container">
+        <ul class="customers-track">
+          <li v-for="customer in data.customers" :key="`first-${customer.id}`">
+            <a :href="customer.customerLink" target="_blank">
+              <img :src="customer.customerImage" :alt="customer.customerName" />
+            </a>
+          </li>
 
-        <!-- Segunda copia -->
-        <li v-for="customer in data.customers" :key="`second-${customer.id}`">
-          <a :href="customer.customerLink" target="_blank">
-            <img :src="customer.customerImage" :alt="customer.customerName" />
-          </a>
-        </li>
-      </ul>
+          <li v-for="customer in data.customers" :key="`second-${customer.id}`">
+            <a :href="customer.customerLink" target="_blank">
+              <img :src="customer.customerImage" :alt="customer.customerName" />
+            </a>
+          </li>
+        </ul>
+      </div>
     </section>
   </div>
 </template>

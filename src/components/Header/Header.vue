@@ -45,7 +45,7 @@ onBeforeUnmount(() => {
 <template>
   <header>
     <div class="header">
-      <a href="/" class="header-logo">
+      <a href="/" title="www.gruasememca.com" class="header-logo">
         <img src="https://www.gruasememca.com/media/img/logo-original-sin-fondo.webp" alt="Logo" />
       </a>
 

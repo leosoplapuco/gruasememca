@@ -58,7 +58,6 @@ header {
   display: none;
 }
 
-
 .header-sub-menu-button span,
 .header-sub-menu-button h2,
 .header-nav-ul li>a span,
@@ -79,7 +78,7 @@ header {
   color: var(--color-1);
 }
 
-.header-sub-menu-button.active span {
+.header-sub-menu-button.active .menu-button-link-arrow {
   opacity: 1;
   rotate: 180deg;
 }
@@ -214,13 +213,19 @@ header {
   .header-nav-ul li button {
     width: 100%;
     padding: 20px 10px;
-    align-items: flex-start;
-    justify-content: flex-start;
+    align-items: center;
+    justify-content: left;
+    gap: 10px;
   }
 
   .header-nav-ul li a:hover,
-  .header-nav-ul li button:hover {
+  .header-nav-ul li button:hover,
+  .header-sub-menu-button.active{
     background: rgba(0 0 0 / 0.025);
+  }
+
+  .menu-sub-icon {
+    display: unset;
   }
 
   .menu-button-link-arrow {
@@ -288,7 +293,7 @@ header {
     border-radius: 100%;
   }
 
-  .menu-button span {
+  .menu-button > span {
     position: absolute;
     left: 50%;
     top: 50%;
