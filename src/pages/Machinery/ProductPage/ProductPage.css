@@ -8,8 +8,12 @@
 .machinery-page-tag {
   display: flex;
   flex-direction: column;
-  gap: 5px;
+  gap: 10px;
   width: 100%;
+  position: relative;
+}
+
+.machinery-page-tag-1 {
   position: relative;
 }
 
@@ -72,4 +76,38 @@
 
 .products-page-list-details li {
   display: flex;
+}
+
+.div-list {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.div-list>ul {
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  gap: 5px;
+}
+
+.div-list>ul li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.div-list>ul li:nth-child(1) p {
+  font-weight: bold !important;
+  color: var(--black);
+}
+
+.div-list>ul li:nth-child(1) p::after {
+  content: ':';
+}
+
+@media screen and (max-width: 600px) {
+  .machinery-page-container {
+    grid-template-columns: 1fr;
+  }
 }

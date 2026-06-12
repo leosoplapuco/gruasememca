@@ -4,6 +4,8 @@ import { useRoute } from 'vue-router'
 
 import './ProductPage.css'
 
+import ProductVideo from './components/ProductVideo/ProductVideo.vue'
+
 // Importar JSON y forzar tipo any para evitar conflictos
 import machineryDataRaw from '../Machinery.json'
 const machineryData = machineryDataRaw as any
@@ -87,6 +89,8 @@ const flattenedTechnicalSheet = computed(() => {
             <span class="material-symbols-outlined">chevron_right</span>
           </button>
 
+          <ProductVideo />
+
           <div class="machinery-page-images-list">
             <ul v-if="machine.images?.length">
               <li
@@ -108,21 +112,25 @@ const flattenedTechnicalSheet = computed(() => {
 
           <p v-for="(text, index) in machine.texts" :key="index" class="text">{{ text }}</p>
 
-          <p class="title" v-if="flattenedDetails.length">Detalles</p>
-          <ul v-if="flattenedDetails.length">
-            <li v-for="(item, index) in flattenedDetails" :key="`detail-${index}`">
-              <strong>{{ item.key }}:</strong>
-              <p>{{ item.value }}</p>
-            </li>
-          </ul>
+          <div class="div-list">
+            <p class="title" v-if="flattenedDetails.length">Detalles</p>
+            <ul v-if="flattenedDetails.length">
+              <li v-for="(item, index) in flattenedDetails" :key="`detail-${index}`">
+                <!-- <strong>{{ item.key }}:</strong> -->
+                <p>{{ item.value }}</p>
+              </li>
+            </ul>
+          </div>
 
-          <p class="title" v-if="flattenedTechnicalSheet.length">Ficha Técnica</p>
-          <ul v-if="flattenedTechnicalSheet.length">
-            <li v-for="(item, index) in flattenedTechnicalSheet" :key="`sheet-${index}`">
-              <strong>{{ item.key }}:</strong>
-              <p>{{ item.value }}</p>
-            </li>
-          </ul>
+          <div class="div-list">
+            <p class="title" v-if="flattenedTechnicalSheet.length">Ficha Técnica</p>
+            <ul v-if="flattenedTechnicalSheet.length">
+              <li v-for="(item, index) in flattenedTechnicalSheet" :key="`sheet-${index}`">
+                <!-- <strong>{{ item.key }}:</strong> -->
+                <p>{{ item.value }}</p>
+              </li>
+            </ul>
+          </div>
         </div>
       </section>
     </div>
