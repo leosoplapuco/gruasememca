@@ -6,7 +6,6 @@ import './ProductPage.css'
 
 import ProductVideo from './components/ProductVideo/ProductVideo.vue'
 
-// Importar JSON y forzar tipo any para evitar conflictos
 import machineryDataRaw from '../Machinery.json'
 const machineryData = machineryDataRaw as any
 
@@ -16,6 +15,13 @@ const machine = computed(() => {
   return machineryData.machinery.find(
     (item: any) => item.slug === route.params.slug && item.categoria === route.params.categoria,
   )
+})
+
+const videoUrl = computed(() => {
+  if (machine.value?.video?.length && machine.value.video[0].url) {
+    return machine.value.video[0].url
+  }
+  return null
 })
 
 const currentImageIndex = ref(0)
@@ -89,7 +95,7 @@ const flattenedTechnicalSheet = computed(() => {
             <span class="material-symbols-outlined">chevron_right</span>
           </button>
 
-          <ProductVideo />
+          <ProductVideo :video-url="videoUrl" />
 
           <div class="machinery-page-images-list">
             <ul v-if="machine.images?.length">
@@ -108,15 +114,12 @@ const flattenedTechnicalSheet = computed(() => {
         <div class="machinery-page-tag machinery-page-tag-2">
           <h1 class="block-title">{{ machine.name }}</h1>
 
-          <div v-if="machine.video?.length && machine.video[0].url">play video</div>
-
           <p v-for="(text, index) in machine.texts" :key="index" class="text">{{ text }}</p>
 
           <div class="div-list">
             <p class="title" v-if="flattenedDetails.length">Detalles</p>
             <ul v-if="flattenedDetails.length">
               <li v-for="(item, index) in flattenedDetails" :key="`detail-${index}`">
-                <!-- <strong>{{ item.key }}:</strong> -->
                 <p>{{ item.value }}</p>
               </li>
             </ul>
@@ -126,7 +129,6 @@ const flattenedTechnicalSheet = computed(() => {
             <p class="title" v-if="flattenedTechnicalSheet.length">Ficha Técnica</p>
             <ul v-if="flattenedTechnicalSheet.length">
               <li v-for="(item, index) in flattenedTechnicalSheet" :key="`sheet-${index}`">
-                <!-- <strong>{{ item.key }}:</strong> -->
                 <p>{{ item.value }}</p>
               </li>
             </ul>

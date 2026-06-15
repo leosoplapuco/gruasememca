@@ -1,24 +1,42 @@
 <script setup lang="ts">
+import { ref } from 'vue'
 import './ProductVideo.css'
+
+const props = defineProps<{
+  videoUrl?: string
+}>()
+
+const isActive = ref(false)
+
+const openVideo = () => {
+  isActive.value = true
+}
+
+const closeVideo = () => {
+  isActive.value = false
+}
 </script>
 
-<template>
-  <button class="button-play-video">
+<template v-if="props.videoUrl">
+  <button class="button-play-video" @click="openVideo">
     <span class="material-symbols-outlined">play_circle</span>
   </button>
 
-  <div class="product-page-layer"></div>
+  <div class="product-page-layer" :class="{ active: isActive }"></div>
 
-  <div class="product-page-video">
-    <iframe
-      width="560"
-      height="315"
-      src="https://www.youtube.com/embed/L0AuNQEh5DM?si=uU9NononVhsVqpv9"
-      title="YouTube video player"
-      frameborder="0"
-      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-      referrerpolicy="strict-origin-when-cross-origin"
-      allowfullscreen
-    ></iframe>
-  </div>
+  <button
+    type="button"
+    class="button-close-video"
+    :class="{ active: isActive }"
+    @click="closeVideo"
+  >
+    <span class="material-symbols-outlined">close</span>
+  </button>
+
+  <video
+    :src="props.videoUrl"
+    class="product-page-video"
+    :class="{ active: isActive }"
+    controls
+  ></video>
 </template>
