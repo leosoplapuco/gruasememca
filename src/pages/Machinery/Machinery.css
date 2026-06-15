@@ -12,7 +12,7 @@
   position: relative;
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  /* gap: 10px; */
   overflow: hidden;
 }
 
@@ -48,19 +48,40 @@
   object-fit: cover;
 }
 
+.machinery-card>.d-flex-column.gap-10 {
+  width: 100%;
+  padding: 10px;
+}
+
 .machinery-card-title {
-  padding: 0 10px;
   color: var(--black);
   font-weight: bold;
   font-size: 20px;
 }
 
-.machinery-card>p.text {
-  padding: 0 10px;
-}
-
 .machinery-card-link {
   margin-top: auto;
-  margin-bottom: 10px;
-  margin-right: 10px;
+}
+
+@media screen and (max-width: 600px) {
+  .machinery-page-products {
+    grid-template-columns: 1fr;
+    /* grid-template-columns: repeat(2, 1fr); */
+    gap: 10px;
+  }
+
+  .machinery-card {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .machinery-card-category {
+    left: 10px;
+    top: 10px;
+    right: unset;
+  }
+
+  .machinery-card img {
+    width: 100%;
+  }
 }
