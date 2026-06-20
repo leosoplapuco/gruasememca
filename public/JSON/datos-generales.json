@@ -2,5 +2,31 @@
   "tel1": "998877665",
   "tel2": "990088776",
   "mail1": "correo1@gmail.com",
-  "mail2": "correo2@gmail.com"
+  "direccion": "Antigua Panamericana Sur 927, Pachacamac",
+  "networks": [
+    {
+      "id": 1,
+      "app": "Facebook",
+      "link": "https://www.facebook.com/gruasememcasac08/",
+      "icon": "fa-brands fa-facebook",
+      "username": "@gruasememcasac08",
+      "title": "Facebook | Grúas Ememca SAC"
+    },
+    {
+      "id": 2,
+      "app": "Instagram",
+      "link": "https://www.instagram.com/gruasememca._/",
+      "icon": "fa-brands fa-instagram",
+      "username": "@gruasememcasac08",
+      "title": "Instagram | Grúas Ememca SAC"
+    },
+    {
+      "id": 3,
+      "app": "LinkedIn",
+      "link": "https://www.linkedin.com/in/gruas-ememca-s-a-c-049243336/",
+      "icon": "fa-brands fa-linkedin",
+      "username": "@gruasememca",
+      "title": "LinkedIn | Grúas Ememca SAC"
+    }
+  ]
 }

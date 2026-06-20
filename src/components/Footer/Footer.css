@@ -1,7 +1,7 @@
 footer {
   background: var(--footer);
   padding: 40px 20px;
-  z-index: 0;
+  z-index: 1;
 }
 
 .footer {

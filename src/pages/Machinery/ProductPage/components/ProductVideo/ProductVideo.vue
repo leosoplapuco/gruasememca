@@ -22,21 +22,23 @@ const closeVideo = () => {
     <span class="material-symbols-outlined">play_circle</span>
   </button>
 
-  <div class="product-page-layer" :class="{ active: isActive }"></div>
+  <Teleport to="body">
+    <div class="product-page-layer" :class="{ active: isActive }"></div>
 
-  <button
-    type="button"
-    class="button-close-video"
-    :class="{ active: isActive }"
-    @click="closeVideo"
-  >
-    <span class="material-symbols-outlined">close</span>
-  </button>
+    <button
+      type="button"
+      class="button-close-video"
+      :class="{ active: isActive }"
+      @click="closeVideo"
+    >
+      <span class="material-symbols-outlined">close</span>
+    </button>
 
-  <video
-    :src="props.videoUrl"
-    class="product-page-video"
-    :class="{ active: isActive }"
-    controls
-  ></video>
+    <video
+      :src="props.videoUrl"
+      class="product-page-video"
+      :class="{ active: isActive }"
+      controls
+    ></video>
+  </Teleport>
 </template>

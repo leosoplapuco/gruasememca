@@ -68,7 +68,7 @@ const flattenedTechnicalSheet = computed(() => {
 </script>
 
 <template>
-  <div v-if="machine" class="block-container">
+  <div v-if="machine" class="block-container" style="position: relative; z-index: 10">
     <div class="block-content">
       <section class="machinery-page-container">
         <div class="machinery-page-tag machinery-page-tag-1">
