@@ -35,7 +35,7 @@
   display: flex;
   background: rgba(0 0 0 / 0.25);
   backdrop-filter: blur(5px);
-  z-index: 997;
+  z-index: 998 !important;
 
   opacity: 0;
   pointer-events: none;
@@ -48,18 +48,18 @@
   user-select: unset;
 }
 
-
 .product-page-video {
   position: fixed;
   left: 50%;
   top: calc(50% + 80px);
   translate: -50% calc(-50% - 60px);
-  z-index: 998;
+  z-index: 999;
 
   width: 480px;
   height: auto;
 
-  aspect-ratio: 3/2;
+  /* aspect-ratio: 3/2; */
+  border-radius: 5px;
 
   opacity: 0;
   pointer-events: none;
@@ -83,7 +83,7 @@
   position: fixed;
   right: 20px;
   top: 100px;
-  z-index: 998;
+  z-index: 999 !important;
   background: var(--white);
   display: flex;
   align-items: center;
@@ -116,4 +116,10 @@
 
 .button-close-video:hover span {
   color: var(--white);
+}
+
+@media screen and (max-width: 600px) {
+  .product-page-video {
+    width: calc(100% - 40px);
+  }
 }

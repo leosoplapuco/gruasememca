@@ -122,4 +122,13 @@
   .machinery-page-container {
     grid-template-columns: 1fr;
   }
+
+  .machinery-page-tag-1>img {
+    height: auto;
+  }
+
+  .machinery-page-images-list {
+    width: auto;
+    height: 80px;
+  }
 }
