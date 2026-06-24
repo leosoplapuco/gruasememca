@@ -17,8 +17,9 @@ const router = createRouter({
       name: 'home',
       component: Home,
       meta: {
-        title: 'Inicio',
-        description: 'Página principal de Grúas Ememca.',
+        title: 'Alquiler de grúas | Grúas Ememca SAC',
+        description:
+          'Llevamos más de 15 años trabajando con seguridad y garantía en tus proyectos.',
       },
     },
 
@@ -28,7 +29,7 @@ const router = createRouter({
       component: About,
       meta: {
         title: 'Nosotros',
-        description: 'Conoce más sobre nuestra empresa y trayectoria.',
+        description: 'Conoce más sobre nosotros y trayectoria.',
       },
     },
 
@@ -41,13 +42,11 @@ const router = createRouter({
         description: 'Catálogo de maquinaria pesada disponible.',
       },
     },
-
     {
       path: '/maquinaria/:categoria/',
       name: 'machinery-category',
       component: Machinery,
     },
-
     {
       path: '/maquinaria/:categoria/:slug/',
       name: 'product-page',
@@ -63,7 +62,6 @@ const router = createRouter({
         description: 'Nuestros proyectos realizados.',
       },
     },
-
     {
       path: '/servicios/:slug/',
       name: 'service-layout',

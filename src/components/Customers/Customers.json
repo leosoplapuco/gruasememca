@@ -2,8 +2,8 @@
   "customers": [
     {
       "id": 1,
-      "customerName": "Sem Ingenieros",
-      "customerLink": "/",
+      "customerName": "Almacenera Pacificos",
+      "customerLink": "https://alpa.com.pe/",
       "customerImage": "https://www.gruasememca.com/media/img/companies/alpa.webp"
     },
     {
