@@ -2,7 +2,12 @@
 import { computed, watchEffect } from 'vue'
 import { useRoute } from 'vue-router'
 
+import './Layout.css'
+
 import servicesData from './Services.json'
+
+import Customers from '../../components/Customers/Customers.vue'
+import Stack from '../../components/Stack/Stack.vue'
 
 interface Service {
   id: number
@@ -39,19 +44,11 @@ watchEffect(() => {
 </script>
 
 <template>
-  <div v-if="service" class="block-container">
-    <section class="block-content">
-      <div class="block-title-container">
-        <span>Servicios</span>
-
-        <h1 class="block-title">
-          {{ service.name }}
-        </h1>
-      </div>
-
-      <p class="text">
-        {{ service.content }}
-      </p>
+  <div class="p-services-hero-container" v-if="service">
+    <img src="https://www.gruasememca.com/media/img/gruas/PPM-40-PPM-ATT-400.webp" alt="" />
+    <section class="block-content p-services-hero-content">
+      <span class="p-s-hero-span">Servicios</span>
+      <h1 class="block-title">{{ service.name }}</h1>
     </section>
   </div>
 
@@ -60,4 +57,8 @@ watchEffect(() => {
       <h1>Servicio no encontrado</h1>
     </section>
   </div>
+
+  <Stack />
+
+  <Customers />
 </template>

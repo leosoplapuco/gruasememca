@@ -97,7 +97,7 @@ onBeforeUnmount(() => {
       >
         <ul ref="trackRef" class="customers-track" :class="{ paused: isHovering }">
           <li v-for="customer in data.customers" :key="`first-${customer.id}`">
-            <a :href="customer.customerLink" target="_blank" :title="customer.customerName">
+            <a :href="customer.customerLink" target="_blank">
               <img :src="customer.customerImage" :alt="customer.customerName" />
             </a>
           </li>

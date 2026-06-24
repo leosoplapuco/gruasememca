@@ -29,7 +29,7 @@ body::selection {
 
 :root {
   --header: #FFFFFF;
-  --body: snow;
+  --body: #FFFFFF;
   --text: #555555;
   --footer: #121212;
 
@@ -149,7 +149,7 @@ main {
 }
 
 .w-100 {
-  width: 100%;
+  width: 100% !important;
 }
 
 .w-100-img {
@@ -332,8 +332,16 @@ button {
   transition: var(--t-200ms-linear);
 }
 
+.uppercase {
+  text-transform: uppercase !important;
+}
+
 .text-center {
   text-align: center;
+}
+
+.text-left {
+  text-align: left !important;
 }
 
 .padding-0 {
