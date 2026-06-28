@@ -6,7 +6,7 @@ import Machinery from '@/pages/Machinery/Machinery.vue'
 import Projects from '@/pages/Projects/Projects.vue'
 import ProductPage from '@/pages/Machinery/ProductPage/ProductPage.vue'
 
-import ServicesLayout from '@/pages/Services/Layout.vue'
+import Alquiler from '@/pages/Services/Alquiler.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -32,7 +32,15 @@ const router = createRouter({
         description: 'Conoce más sobre nosotros y trayectoria.',
       },
     },
-
+    {
+      path: '/servicios/alquiler-de-gruas/',
+      name: 'alquiler',
+      component: Alquiler,
+      meta: {
+        title: 'Alquiler de grúas - Servicios | Grúas Ememca',
+        description: 'bla bla bla bla',
+      },
+    },
     {
       path: '/maquinaria/',
       name: 'machinery',
@@ -52,7 +60,6 @@ const router = createRouter({
       name: 'product-page',
       component: ProductPage,
     },
-
     {
       path: '/proyectos/',
       name: 'projects',
@@ -61,11 +68,6 @@ const router = createRouter({
         title: 'Proyectos',
         description: 'Nuestros proyectos realizados.',
       },
-    },
-    {
-      path: '/servicios/:slug/',
-      name: 'service-layout',
-      component: ServicesLayout,
     },
   ],
 })
