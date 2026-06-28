@@ -128,6 +128,10 @@ main {
   margin-top: 10px;
 }
 
+.margin-top-20 {
+  margin-top: 20px;
+}
+
 .margin-bottom {
   margin-bottom: auto;
 }
@@ -172,6 +176,18 @@ main {
 
 .gap-20 {
   gap: 20px;
+}
+
+.border-r-4 {
+  border-radius: 4px;
+}
+
+.border-r-5 {
+  border-radius: 5px;
+}
+
+.border-r-10 {
+  border-radius: 10px;
 }
 
 button {
@@ -284,6 +300,18 @@ button {
 
 .color-white {
   color: var(--white) !important;
+}
+
+.color-black {
+  color: var(--black) !important;
+}
+
+.color-gray {
+  color: #555555 !important;
+}
+
+.color-1 {
+  color: var(--color-1) !important;
 }
 
 .block-container {

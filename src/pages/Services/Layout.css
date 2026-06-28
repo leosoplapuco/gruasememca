@@ -1,6 +1,8 @@
 .p-services-hero-container {
   width: 100%;
-  height: auto;
+  height: calc(100vh - 80px);
+  max-height: 600px;
+  display: flex;
   position: relative;
   padding: 20px;
 }
@@ -28,9 +30,19 @@
   z-index: -1;
 }
 
+.p-services-hero-content {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  max-width: var(--mx-w-content);
+  /* gap: 10px; */
+}
+
 .p-s-hero-span {
   color: var(--white);
-  text-decoration: underline;
+  /* text-decoration: underline; */
 }
 
 .p-services-hero-content h1 {

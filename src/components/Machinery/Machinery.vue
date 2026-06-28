@@ -3,7 +3,7 @@ import './Machinery.css'
 import { computed } from 'vue'
 import { RouterLink, useRoute } from 'vue-router'
 
-import machineryData from './Machinery.json'
+import machineryData from '../../pages/Machinery/Machinery.json'
 
 export interface Machine {
   id: number
