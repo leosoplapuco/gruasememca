@@ -47,26 +47,156 @@
     },
     {
       "id": 2,
-      "name": "PPM 40",
+      "name": "Grove 80",
       "categoria": "venta",
-      "slug": "ppm-40",
+      "slug": "grove-80",
       "images": [
         {
-          "img": "https://gruasememca.com/media/img/gruas/PPM-40-PPM-ATT-400.webp",
-          "alt": ""
-        },
-        {
-          "img": "https://gruasememca.com/media/img/gruas/PPM-40-PPM-ATT-400.webp",
+          "img": "https://gruasememca.com/media/img/gruas/GROVE-80-GROVE-TMS-875.webp",
           "alt": ""
         }
       ],
       "short": "La PPM ATT 400 es la mejor para trabajos en llano y pesados",
-      "video": [
+      "largeImage": [
         {
-          "url": "https://www.gruasememca.com/media/videos/video-1.webm",
+          "src": "",
           "alt": ""
         }
       ],
+      "texts": [
+        "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since 1966, when designers at Letraset and James Mosley",
+        "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has"
+      ],
+      "details": [
+        {
+          "key": "Año",
+          "value": "1999"
+        }
+      ],
+      "technicalSheet": [
+        {
+          "key": "Diesel",
+          "value": "0000"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "PH 40",
+      "categoria": "venta",
+      "slug": "ph-40",
+      "images": [
+        {
+          "img": "https://gruasememca.com/media/img/gruas/PH-40_PHT300A.webp",
+          "alt": ""
+        }
+      ],
+      "short": "La PPM ATT 400 es la mejor para trabajos en llano y pesados",
+      "largeImage": [
+        {
+          "src": "",
+          "alt": ""
+        }
+      ],
+      "texts": [
+        "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since 1966, when designers at Letraset and James Mosley",
+        "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has"
+      ],
+      "details": [
+        {
+          "key": "Año",
+          "value": "1999"
+        }
+      ],
+      "technicalSheet": [
+        {
+          "key": "Diesel",
+          "value": "0000"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "name": "PH 50",
+      "categoria": "venta",
+      "slug": "ph-50",
+      "images": [
+        {
+          "img": "https://gruasememca.com/media/img/gruas/PH-50_PHT500.webp",
+          "alt": ""
+        }
+      ],
+      "short": "La PPM ATT 400 es la mejor para trabajos en llano y pesados",
+      "largeImage": [
+        {
+          "src": "",
+          "alt": ""
+        }
+      ],
+      "texts": [
+        "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since 1966, when designers at Letraset and James Mosley",
+        "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has"
+      ],
+      "details": [
+        {
+          "key": "Año",
+          "value": "1999"
+        }
+      ],
+      "technicalSheet": [
+        {
+          "key": "Diesel",
+          "value": "0000"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "name": "Pettibone 80",
+      "categoria": "venta",
+      "slug": "pettibone-80",
+      "images": [
+        {
+          "img": "https://gruasememca.com/media/img/gruas/PETTIBONE-80_PETTBONE.webp",
+          "alt": ""
+        }
+      ],
+      "short": "La PPM ATT 400 es la mejor para trabajos en llano y pesados",
+      "largeImage": [
+        {
+          "src": "",
+          "alt": ""
+        }
+      ],
+      "texts": [
+        "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since 1966, when designers at Letraset and James Mosley",
+        "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has"
+      ],
+      "details": [
+        {
+          "key": "Año",
+          "value": "1999"
+        }
+      ],
+      "technicalSheet": [
+        {
+          "key": "Diesel",
+          "value": "0000"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "name": "Demag",
+      "categoria": "venta",
+      "slug": "demag",
+      "images": [
+        {
+          "img": "https://gruasememca.com/media/img/gruas/AC_205.webp",
+          "alt": ""
+        }
+      ],
+      "short": "La PPM ATT 400 es la mejor para trabajos en llano y pesados",
       "largeImage": [
         {
           "src": "",

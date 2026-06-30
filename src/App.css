@@ -40,6 +40,8 @@ body::selection {
 
   --t-200ms-linear: all 200ms linear;
 
+  --whatsapp: #25d366;
+
   --mx-w-content: 1600px;
 }
 
@@ -54,7 +56,6 @@ body::-webkit-scrollbar {
 
 main {
   width: 100vw;
-  min-height: 100vh;
   margin-top: 80px;
   width: 100% !important;
   display: flex !important;

@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import './Machinery.css'
 import { computed } from 'vue'
-import { RouterLink, useRoute } from 'vue-router'
+import { useRoute } from 'vue-router'
 
 import machineryData from './Machinery.json'
 
@@ -85,25 +85,20 @@ const pageTitle = computed(() => {
 
       <ul class="machinery-page-products">
         <li v-for="machine in machinery" :key="machine.id" class="machinery-card">
-          <span class="machinery-card-category" :class="machine.categoria">{{
-            machine.categoria
-          }}</span>
-          <img :src="machine.images[0]?.img" :alt="machine.images[0]?.alt" />
+          <a :href="`/maquinaria/${machine.categoria}/${machine.slug}/`" title="" target="_blank">
+            <span class="machinery-card-category" :class="machine.categoria">{{
+              machine.categoria
+            }}</span>
 
-          <div class="d-flex-column gap-10">
-            <h2 class="machinery-card-title">{{ machine.name }}</h2>
-            <p class="text">{{ machine.short }}</p>
+            <div class="machinery-page-products-image">
+              <img :src="machine.images[0]?.img" :alt="machine.images[0]?.alt" />
+            </div>
 
-            <RouterLink
-              :to="`/maquinaria/${machine.categoria}/${machine.slug}/`"
-              class="machinery-card-link button-link button-link-5 margin-left margin-top-10 padding-0"
-              target="_blank"
-            >
-              <p class="button-link-text">Ver más</p>
-
-              <span class="material-symbols-outlined"> arrow_outward </span>
-            </RouterLink>
-          </div>
+            <div class="d-flex-column gap-10">
+              <h2 class="machinery-card-title">{{ machine.name }}</h2>
+              <p class="text">{{ machine.short }}</p>
+            </div>
+          </a>
         </li>
       </ul>
     </section>

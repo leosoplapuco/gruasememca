@@ -51,16 +51,9 @@ import Timeline from '../../components/Timeline/Timeline.vue'
             </li>
             <li>
               <p class="text">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusantium fuga
-                consectetur labore.
-              </p>
-            </li>
-            <li>
-              <p class="text">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Id omnis optio officiis
                 ipsa ipsam eaque earum nobis atque laborum ex nesciunt similique molestiae sunt
-                debitis autem excepturi exercitationem voluptatibus, ratione et reprehenderit
-                voluptas labore non?
+                debitis
               </p>
             </li>
           </ul>
@@ -73,7 +66,8 @@ import Timeline from '../../components/Timeline/Timeline.vue'
               </div>
 
               <p class="text">
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsam, odit?
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsam, odit? Lorem ipsum
+                dolor sit amet.
               </p>
             </div>
 

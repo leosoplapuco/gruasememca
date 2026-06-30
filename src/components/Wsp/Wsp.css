@@ -1,0 +1,26 @@
+.wsp-btn-link-container {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  z-index: 100;
+  background: var(--whatsapp);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 60px;
+  aspect-ratio: 1/1;
+  border-radius: 100%;
+}
+
+.wsp-btn-link-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+
+.wsp-btn-link-content i {
+  color: var(--white);
+  font-size: 28px;
+}
