@@ -1,29 +1,32 @@
 .machinery-page-products {
+  width: 100%;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 20px;
+  gap: 10px;
 }
 
 .machinery-card {
-  border: 1px solid var(--color-1);
+  width: 100%;
+  display: flex;
+  overflow: hidden;
   border-radius: 6px;
-  background: var(--body);
-  /* background: red; */
+  border: 1px solid #D9D9D9;
+}
+
+.machinery-card a {
   position: relative;
   display: flex;
   flex-direction: column;
-  /* gap: 10px; */
-  overflow: hidden;
 }
 
 .machinery-card-category {
   position: absolute;
-  right: 10px;
+  left: 10px;
   top: 10px;
-  /* background: rebeccapurple; */
-  padding: 4px 7px;
-  border-radius: 4px;
+  z-index: 1;
   font-size: 12px;
+  padding: 5px 10px;
+  border-radius: 3px 10px 10px 10px;
 
   display: inline-block;
 }
@@ -38,39 +41,46 @@
 }
 
 .machinery-card-category.alquiler {
-  background: rgb(22, 90, 226);
+  background: #2d2dea;
   color: var(--white);
 }
 
-.machinery-card img {
+.machinery-page-products-image {
   width: 100%;
   height: 200px;
-  object-fit: cover;
+  overflow: hidden;
+  display: flex;
 }
 
-.machinery-card>.d-flex-column.gap-10 {
+.machinery-page-products-image img {
+  display: flex;
   width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: var(--t-200ms-linear);
+}
+
+.machinery-page-products-image:hover img {
+  scale: 1.1;
+}
+
+.machinery-card a .d-flex-column.gap-10 {
   padding: 10px;
 }
 
-.machinery-card-title {
+.machinery-card a div .machinery-card-title {
   color: var(--black);
-  font-weight: bold;
   font-size: 20px;
-}
-
-.machinery-card-link {
-  margin-top: auto;
+  text-transform: uppercase;
 }
 
 @media screen and (max-width: 600px) {
   .machinery-page-products {
     grid-template-columns: 1fr;
-    /* grid-template-columns: repeat(2, 1fr); */
     gap: 10px;
   }
 
-  .machinery-card {
+  .machinery-card a {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
   }

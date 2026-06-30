@@ -28,7 +28,7 @@ const router = createRouter({
       name: 'about',
       component: About,
       meta: {
-        title: 'Nosotros',
+        title: 'Nosotros | Grúas Ememca SAC',
         description: 'Conoce más sobre nosotros y trayectoria.',
       },
     },
@@ -65,7 +65,7 @@ const router = createRouter({
       name: 'projects',
       component: Projects,
       meta: {
-        title: 'Proyectos',
+        title: 'Proyectos | Grúas Ememca SAC',
         description: 'Nuestros proyectos realizados.',
       },
     },
